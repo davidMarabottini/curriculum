@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curriculum>
+  <dati-personali>
+    <nome>David Marabottini</nome>
+  </dati-personali>
+  
+  <esperienze>
+    <esperienza>
+      <titolo>Front-end developer</titolo>
+      <azienda>Key2Business</azienda>
+      <periodo>06/2019-05/2025</periodo>
+      <attivita>
+        <attivita-item>Front-end development of various web portals and management applications in dynamic and often agile environments</attivita-item>
+        <!-- <attivita-item>Sviluppo test unitari e design system e pagine amp relativi presso vari clienti.</attivita-item>
+        <attivita-item>Partecipazione attiva in team agile cross-funzionali e autogestiti.</attivita-item> -->
+      </attivita>
+    </esperienza>
+    <esperienza>
+      <titolo>Front-end developer</titolo>
+      <azienda>Blazar</azienda>
+      <periodo>02/2018-01/2019</periodo>
+      <attivita>
+        <attivita-item>Front-end development of various web portals and management applications in dynamic and often agile environments</attivita-item>
+      </attivita>
+    </esperienza>
+    <esperienza>
+      <titolo>PHP developer</titolo>
+      <azienda>JigGiga</azienda>
+      <periodo>04/2017 - 12/2017</periodo>
+      <attivita>
+        <attivita-item>Development of a PHP portal for managing black boxes for car fleets</attivita-item>
+      </attivita>
+    </esperienza>
+    <esperienza>
+      <titolo>Fullstack developer</titolo>
+      <azienda>Modis/Business changers</azienda>
+      <periodo>01/2016 - 04/2017</periodo>
+      <attivita>
+        <attivita-item>Front-end development, procedures, reports, and XML spreadsheets for calls for tenders in the Lombardy region.</attivita-item>
+      </attivita>
+    </esperienza>
+    <esperienza>
+      <titolo>SQL expert and report employee</titolo>
+      <azienda>Runtime Solutions</azienda>
+      <periodo>01/2015 - 10/2015</periodo>
+      <attivita>
+        <attivita-item>Created queries, reports and layouts based on SAP platform of documents for various customers</attivita-item>
+      </attivita>
+    </esperienza>
+    <esperienza>
+      <titolo>.NET Developer</titolo>
+      <azienda>Crenway Srl</azienda>
+      <periodo>07/2014 - 11/2014</periodo>
+      <attivita>
+        <attivita-item>Developing of various portals in .net</attivita-item>
+      </attivita>
+    </esperienza>
+  </esperienze>
+  
+  <formazione>
+    <corso-studio>
+      <titolo>A deep understanding of deep learning</titolo>
+      <ente>Udemy</ente>
+      <anno>08/2025</anno>
+    </corso-studio>
+    <corso-studio>
+      <titolo>Machine learning e data science in python: il corso completo</titolo>
+      <ente>Udemy</ente>
+      <anno>06/2025 - 08/2025</anno>
+    </corso-studio>
+    <corso-studio>
+      <titolo>PSMII Certificate</titolo>
+      <ente>Scrum.org</ente>
+      <anno>19/05/2025</anno>
+    </corso-studio>
+    <corso-studio>
+      <titolo>English lessons</titolo>
+      <ente>Preply</ente>
+      <anno>2025</anno>
+    </corso-studio>
+    <corso-studio>
+      <titolo>PSMI Certificate</titolo>
+      <ente>Scrum.org</ente>
+      <anno>10/05/2024</anno>
+    </corso-studio>
+    <corso-studio>
+      <titolo>English lesson</titolo>
+      <ente>My English School</ente>
+      <anno>2015 - 2016</anno>
+    </corso-studio>
+    <corso-studio>
+      <titolo>Computer Engeenering</titolo>
+      <ente>Siena University</ente>
+      <anno>2010 - 2013</anno>
+    </corso-studio>
+    <corso-studio>
+      <titolo>Degree of accounter/developer</titolo>
+      <ente>ITCG CA Dalla Chiesa</ente>
+      <anno>2009</anno>
+    </corso-studio>
+  </formazione>
+
+  <link-esterni>
+    <link>
+      <tipo>github</tipo>
+      <url>https://github.com/davidMarabottini</url>
+    </link>
+    <link>
+      <tipo>linkedin</tipo>
+      <url>https://www.linkedin.com/in/david-m-551aba81/</url>
+    </link>
+    <link>
+      <tipo>scrum.org</tipo>
+      <url>https://www.scrum.org/user/1419987</url>
+    </link>
+    
+
+  </link-esterni>
+  
+  <competenze>
+    <skillsspiderweb>./david_marabottini/skills_chart.svg</skillsspiderweb>
+    <hardskills>
+      <item>Python</item>
+      <item>SQL</item>
+      <item>Notebook Jupiter</item>
+      <item>Machine learning</item>
+      <item>Deep learning</item>
+      <item>JavaScript, TypeScript</item>
+      <item>React, Redux, Next.js</item>
+      <item>XSLT, XSL-FO</item>
+      <item>Scrum</item>
+      <item>Jira, Confluence</item>
+      <item>figma, Miro</item>
+    </hardskills>
+    <softskills>
+      <item>Team work</item>
+      <item>Problem solving</item>
+      <item>Lateral Thinking</item>
+    </softskills>
+    <!-- <relazionali>
+      <item>Ottima capacità di comunicazione e ascolto attivo all'interno nel team.</item>
+      <item>Predisposizione a dialoghi onesti, costruttivi e trasparenti.</item>
+    </relazionali>
+    <organizzative>
+      <item>Partecipazione e contributo attivo al refinement ed alla pianificazione di sprint.</item>
+      <item>Partecipazione e contributo attivo alle sprint retrospective.</item>
+    </organizzative> -->
+  </competenze>
+  
+  <lingue>
+    <lingua>
+      <nome>Italiano</nome>
+      <livello>Madrelingua</livello>
+    </lingua>
+    <lingua>
+      <nome>Inglese</nome>
+      <livello>B1</livello>
+    </lingua>
+  </lingue>
+</curriculum>

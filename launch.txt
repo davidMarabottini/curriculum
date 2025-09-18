@@ -1,0 +1,2 @@
+ ..\fop-2.7\fop\fop -xml onepagecv.xml -xsl onepagecv.xsl -pdf cv_david_uk.pdf
+ ..\fop-2.7\fop\fop -xml onepagecv.xml -xsl onepagecv.xsl -param lang "en" -pdf cv_david_one_page.pdf
