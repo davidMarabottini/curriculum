@@ -1,1 +1,1 @@
- ..\fop-2.7\fop\fop -xml dummy.xml -xsl onepagecv.xsl -param root_folder "david_marabottini" -param lang "it" -pdf ./david_marabottini/en/cv_david_one_page.pdf
+ ..\fop-2.7\fop\fop -xml dummy.xml -xsl onepagecv.xsl -param root_folder "david_marabottini" -param lang "it" -pdf ./david_marabottini/it/cv_david_one_page.pdf
