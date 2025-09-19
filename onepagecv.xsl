@@ -16,10 +16,14 @@
   <xsl:variable name="spaziatura-base" select="'2mm'"/>
   <xsl:variable name="spazio-colonne" select="'0.3cm'"/>
 
+  <xsl:variable name="progressbar-width" select="'100'"/>
+  <xsl:variable name="progressbar-height" select="'2'"/>
+
   <xsl:variable name="font-size-titolo-principale" select="'16pt'"/>
   <xsl:variable name="font-size-titolo-sezione" select="'12pt'"/>
   <xsl:variable name="font-size-sottotitolo" select="'10pt'"/>
   <xsl:variable name="font-size-base" select="'10pt'"/>
+  <xsl:variable name="font-size-small" select="'8pt'"/>
 
   <xsl:template name="titolo-sezione">
     <xsl:param name="testo"/>
@@ -45,6 +49,30 @@
       <xsl:value-of select="$testo"/>
     </fo:block>
   </xsl:template>
+
+ <xsl:template name="progress-bar" >
+  <xsl:param name="valore"/>
+  <fo:block>
+    <fo:instream-foreign-object>
+      <svg width="{$progressbar-width}" height="{$progressbar-height}" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="progGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:rgb(255,0,0)"/>
+            <stop offset="100%" style="stop-color:rgb(0,0,255)"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="{$progressbar-width}" height="{$progressbar-height}" fill="#e0e0e0"/>
+        <xsl:variable name="width" select="100 * (number($valore) div 10)"/>
+        <rect x="0" y="0">
+          <xsl:attribute name="width"><xsl:value-of select="$width"/></xsl:attribute>
+          <xsl:attribute name="height"><xsl:value-of select="$progressbar-height"/></xsl:attribute>
+          <xsl:attribute name="fill">url(#progGradient)</xsl:attribute>
+        </rect>
+      </svg>
+    </fo:instream-foreign-object>
+  </fo:block>
+</xsl:template>
+
   <!-- document('it/onepagecv.xml') -->
   <xsl:template match="/">
     <fo:root>
@@ -90,11 +118,11 @@
                         <xsl:call-template name="sottotitolo">
                           <xsl:with-param name="testo" select="titolo"/>
                         </xsl:call-template>
-                        <fo:block font-size="{$font-size-base}" color="{$colore-secondario}">
+                        <fo:block font-size="{$font-size-small}" color="{$colore-secondario}">
                           <xsl:value-of select="azienda"/> | <xsl:value-of select="periodo"/>
                         </fo:block>
                         <xsl:for-each select="attivita/attivita-item">
-                          <fo:block font-size="{$font-size-base}" margin-top="1mm" color="{$colore-secondario}">
+                          <fo:block font-size="{$font-size-base}" margin-top="1mm" color="{$colore-principale}">
                             <xsl:value-of select="."/>
                           </fo:block>
                         </xsl:for-each>
@@ -150,20 +178,35 @@
                     </fo:block>
 
                     <xsl:call-template name="titolo-sezione">
-                      <xsl:with-param name="testo" select="$labels/hard-skills" />
+                      <xsl:with-param name="testo" select="$labels/certificates" />
                     </xsl:call-template>
-                    <xsl:for-each select="$cv_data/competenze/hardskills/item">
+                    <xsl:for-each select="$cv_data/competenze/certificates/item">
                       <fo:block font-size="{$font-size-base}" color="{$colore-secondario}">
                         <xsl:value-of select="."/>
                       </fo:block>
                     </xsl:for-each>
 
                     <xsl:call-template name="titolo-sezione">
+                      <xsl:with-param name="testo" select="$labels/hard-skills" />
+                    </xsl:call-template>
+                    <xsl:for-each select="$cv_data/competenze/hardskills/hardskill">
+                      <fo:block font-size="{$font-size-base}" color="{$colore-secondario}" space-after="2.1mm" space-before="0" line-height="0.7">
+                        <xsl:value-of select="item"/>
+                        <xsl:call-template name="progress-bar">
+                          <xsl:with-param name="valore" select="valore" />
+                        </xsl:call-template>
+                      </fo:block>
+                    </xsl:for-each>
+
+                    <xsl:call-template name="titolo-sezione">
                       <xsl:with-param name="testo" select="$labels/soft-skills" />
                     </xsl:call-template>
-                    <xsl:for-each font-size="{$font-size-base}" select="$cv_data/competenze/softskills/item">
-                      <fo:block color="{$colore-secondario}">
-                        <xsl:value-of select="."/>
+                    <xsl:for-each select="$cv_data/competenze/softskills/softskill">
+                      <fo:block font-size="{$font-size-base}" color="{$colore-secondario}" space-after="2.1mm" space-before="0" line-height="0.7">
+                        <xsl:value-of select="item"/>
+                        <xsl:call-template name="progress-bar">
+                          <xsl:with-param name="valore" select="valore" />
+                        </xsl:call-template>
                       </fo:block>
                     </xsl:for-each>
 

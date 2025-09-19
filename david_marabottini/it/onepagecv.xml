@@ -10,7 +10,7 @@
       <azienda>Key2Business</azienda>
       <periodo>06/2019-05/2025</periodo>
       <attivita>
-        <attivita-item>Attività di sviluppo front-end di vari portali web e applicativi gestionali in ambienti dinamici e spesso agili</attivita-item>
+        <attivita-item>Attività di sviluppo front-end e AM su portali web e applicativi gestionali in contesti bancario, televisivo e retail lavorando in ambienti dinamici e spesso agili</attivita-item>
         <!-- <attivita-item>Sviluppo test unitari e design system e pagine amp relativi presso vari clienti.</attivita-item>
         <attivita-item>Partecipazione attiva in team agile cross-funzionali e autogestiti.</attivita-item> -->
       </attivita>
@@ -20,7 +20,7 @@
       <azienda>Blazar</azienda>
       <periodo>02/2018-01/2019</periodo>
       <attivita>
-        <attivita-item>Attività di sviluppo front-end di vari portali web e applicativi gestionali in ambienti dinamici e spesso agili</attivita-item>
+        <attivita-item>Attività di sviluppo front-end su vari applicativi gestionali in contesti bancario ed energetico in ambienti dinamici e spesso agili</attivita-item>
       </attivita>
     </esperienza>
     <esperienza>
@@ -119,32 +119,81 @@
   
   <competenze>
     <skillsspiderweb>./david_marabottini/skills_chart.svg</skillsspiderweb>
+
+    <certificates>
+      <item>PSM II - Professional Scrum Master II</item>
+      <item>PSM I - Professional Scrum Master I</item>
+    </certificates>
+
     <hardskills>
-      <item>Python</item>
-      <item>SQL</item>
-      <item>Notebook Jupiter</item>
-      <item>Machine learning</item>
-      <item>Deep learning</item>
-      <item>JavaScript, TypeScript</item>
-      <item>React, Redux, Next.js</item>
-      <item>XSLT, XSL-FO</item>
-      <item>Scrum</item>
-      <item>Jira, Confluence</item>
-      <item>figma, Miro</item>
+      <hardskill>
+        <item>Python</item>
+        <valore>8</valore>
+      </hardskill>
+      <hardskill>
+        <item>SQL</item>
+        <valore>8.5</valore>
+      </hardskill>
+      <hardskill>
+        <item>Notebook Jupiter</item>
+        <valore>8.5</valore>
+      </hardskill>
+      <hardskill>
+        <item>Machine learning</item>
+        <valore>8</valore>
+      </hardskill>
+      <hardskill>
+        <item>Deep learning</item>
+        <valore>6</valore>
+      </hardskill>
+      <hardskill>
+        <item>JavaScript, TypeScript</item>
+        <valore>9.5</valore>
+      </hardskill>
+      <hardskill>
+        <item>React, Redux, Next.js</item>
+        <valore>9</valore>
+      </hardskill>
+      <hardskill>
+        <item>XSLT, XSL-FO</item>
+        <valore>7</valore>
+      </hardskill>
+      <hardskill>
+        <item>Scrum</item>
+        <valore>8.5</valore>
+      </hardskill>
+      <hardskill>
+        <item>Jira, Confluence</item>
+        <valore>8</valore>
+      </hardskill>
+      <hardskill>
+        <item>figma, Miro</item>
+        <valore>8</valore>
+      </hardskill>
     </hardskills>
+
     <softskills>
-      <item>Team work</item>
-      <item>Problem solving</item>
-      <item>Pensiero laterale</item>
+      <softskill>
+        <item>Team work</item>
+        <valore>8</valore>
+        </softskill>
+        <softskill><item>Problem solving</item>
+        <valore>8</valore>
+        </softskill>
+        <softskill>
+        <item>Lateral thinking</item>
+        <valore>8.5</valore>
+      </softskill>
     </softskills>
-    <relazionali>
+
+    <!-- <relazionali>
       <item>Ottima capacità di comunicazione e ascolto attivo all'interno nel team.</item>
       <item>Predisposizione a dialoghi onesti, costruttivi e trasparenti.</item>
     </relazionali>
     <organizzative>
       <item>Partecipazione e contributo attivo al refinement ed alla pianificazione di sprint.</item>
       <item>Partecipazione e contributo attivo alle sprint retrospective.</item>
-    </organizzative>
+    </organizzative> -->
   </competenze>
   
   <lingue>
