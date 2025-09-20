@@ -56,7 +56,11 @@
       </attivita>
     </esperienza>
   </esperienze>
-  
+  <approfondimento-esperienze>
+    <label><![CDATA[APPROFONDISCI >
+]]></label>
+    <url>https://github.com/davidMarabottini/CV_Insights/blob/main/it/work_experiences.md</url>
+  </approfondimento-esperienze>
   <formazione>
     <corso-studio>
       <titolo>A deep understanding of deep learning</titolo>
@@ -99,11 +103,27 @@
       <anno>2009</anno>
     </corso-studio>
   </formazione>
+  <approfondimento-formazione>
+    <label><![CDATA[APPROFONDISCI >]]></label>
+    <url>https://github.com/davidMarabottini/CV_Insights/blob/main/it/education.md</url>
+  </approfondimento-formazione>
 
   <link-esterni>
     <link>
       <tipo>github</tipo>
       <url>https://github.com/davidMarabottini</url>
+    </link>
+    <link>
+      <tipo>Portfolio Machine Learning</tipo>
+      <url>https://github.com/davidMarabottini/studio_data_science</url>
+    </link>
+    <link>
+      <tipo>Teorema relazione triangolari tra medie varie</tipo>
+      <url>https://github.com/davidMarabottini/relazione_media_deviazione_standard</url>
+    </link>
+    <link>
+      <tipo>Ipotesi hanoi 4 + pioli</tipo>
+      <url>https://zenodo.org/records/15713333</url>
     </link>
     <link>
       <tipo>linkedin</tipo>

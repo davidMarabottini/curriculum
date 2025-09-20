@@ -10,6 +10,8 @@
 
   <xsl:variable name="colore-principale" select="'#222'"/>
   <xsl:variable name="colore-secondario" select="'#555'"/>
+  <xsl:variable name="colore-link" select="'#007acc'"/>
+  
   <xsl:variable name="margine-pagina" select="'1cm'"/>
   <xsl:variable name="spaziatura-titolo-sezione" select="'5mm'"/>
   <xsl:variable name="spaziatura-dettaglio" select="'2mm'"/>
@@ -50,39 +52,67 @@
     </fo:block>
   </xsl:template>
 
- <xsl:template name="progress-bar" >
+  <xsl:template name="link">
+    <xsl:param name="url"/>
+    <xsl:param name="tipo"/>
+
+    <fo:basic-link
+      external-destination="{$url}"
+      color="{$colore-link}"
+      text-decoration="underline"
+    >
+      <xsl:value-of select="$tipo"/>
+    </fo:basic-link>
+  </xsl:template>
+
+<xsl:template name="progress-bar">
   <xsl:param name="valore"/>
+
+  <xsl:variable name="percent" select="number($valore) div 10"/> <!-- valore da 0 a 10 -->
+  <xsl:variable name="perc100" select="$percent * 100"/> <!-- percentuale da 0 a 100 -->
+
+  <!-- calcolo del colore in base alla percentuale -->
+  <xsl:variable name="r" select="255 - floor(255 * $perc100 div 100)"/>
+  <xsl:variable name="g" select="0"/>
+  <xsl:variable name="b" select="floor(255 * $perc100 div 100)"/>
+
+  <!-- conversione a stringa colore rgb -->
+  <xsl:variable name="fillColor" select="concat('rgb(',$r,',',$g,',',$b,')')"/>
+
+  <!-- calcolo larghezza riempita -->
+  <xsl:variable name="width" select="$progressbar-width * $perc100 div 100"/>
+
   <fo:block>
     <fo:instream-foreign-object>
       <svg width="{$progressbar-width}" height="{$progressbar-height}" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="progGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style="stop-color:rgb(255,0,0)"/>
-            <stop offset="100%" style="stop-color:rgb(0,0,255)"/>
-          </linearGradient>
-        </defs>
+        <!-- background grigio -->
         <rect x="0" y="0" width="{$progressbar-width}" height="{$progressbar-height}" fill="#e0e0e0"/>
-        <xsl:variable name="width" select="100 * (number($valore) div 10)"/>
-        <rect x="0" y="0">
-          <xsl:attribute name="width"><xsl:value-of select="$width"/></xsl:attribute>
-          <xsl:attribute name="height"><xsl:value-of select="$progressbar-height"/></xsl:attribute>
-          <xsl:attribute name="fill">url(#progGradient)</xsl:attribute>
-        </rect>
+
+        <!-- riempimento con colore calcolato -->
+        <rect x="0" y="0" width="{$width}" height="{$progressbar-height}" fill="{$fillColor}"/>
       </svg>
     </fo:instream-foreign-object>
   </fo:block>
 </xsl:template>
 
-  <!-- document('it/onepagecv.xml') -->
   <xsl:template match="/">
     <fo:root>
       <fo:layout-master-set>
         <fo:simple-page-master master-name="A4" page-height="29.7cm" page-width="21cm" margin="{$margine-pagina}">
           <fo:region-body/>
+          <fo:region-after extent=".2cm"/>
         </fo:simple-page-master>
       </fo:layout-master-set>
 
+      
+
       <fo:page-sequence master-reference="A4">
+          <fo:static-content flow-name="xsl-region-after">
+            <fo:block text-align="right" font-size="8pt" color="{$colore-secondario}">
+              <xsl:value-of select="$labels/footer"/>
+            </fo:block>
+          </fo:static-content>
+
         <fo:flow flow-name="xsl-region-body">
 
           <fo:block-container text-align="center">
@@ -129,6 +159,13 @@
                       </fo:block>
                     </xsl:for-each>
 
+                    <fo:block margin-top="{$spaziatura-base}" font-size="{$font-size-small}">
+                       <xsl:call-template name="link">
+                        <xsl:with-param name="url" select="$cv_data/approfondimento-esperienze/url"/>
+                        <xsl:with-param name="tipo" select="$cv_data/approfondimento-esperienze/label"/>
+                      </xsl:call-template>
+                    </fo:block>
+
                     <xsl:call-template name="titolo-sezione">
                       <xsl:with-param name="testo" select="$labels/education" />
                     </xsl:call-template>
@@ -142,21 +179,34 @@
                         </fo:block>
                       </fo:block>
                     </xsl:for-each>
+
+                    <fo:block margin-top="{$spaziatura-base}" font-size="{$font-size-small}" >
+                       <xsl:call-template name="link">
+                        <xsl:with-param name="url" select="$cv_data/approfondimento-formazione/url"/>
+                        <xsl:with-param name="tipo" select="$cv_data/approfondimento-formazione/label"/>
+                      </xsl:call-template>
+                    </fo:block>
                   </fo:block>
 
                   <xsl:call-template name="titolo-sezione">
                       <xsl:with-param name="testo" select="$labels/external-links" />
                     </xsl:call-template>
-                    <xsl:for-each select="$cv_data/link-esterni/link">
-                      <fo:block space-after="{$spaziatura-dettaglio}">
-                        <xsl:call-template name="sottotitolo">
-                          <xsl:with-param name="testo" select="tipo"/>
-                        </xsl:call-template>
-                        <fo:block font-size="{$font-size-base}" color="{$colore-secondario}">
-                          <xsl:value-of select="url"/>
-                        </fo:block>
-                      </fo:block>
-                    </xsl:for-each>
+                    <fo:block margin-top="{$spaziatura-base}">
+                      <xsl:for-each select="$cv_data/link-esterni/link">
+                        <fo:inline font-size="{$font-size-base}" color="{$colore-secondario}">
+                          <xsl:call-template name="link">
+                            <xsl:with-param name="url" select="url"/>
+                            <xsl:with-param name="tipo" select="tipo"/>
+                          </xsl:call-template>
+
+                          <xsl:if test="position() != last()">
+                            <fo:inline padding-start="5pt" padding-end="5pt" font-size="{$font-size-base}" color="{$colore-secondario}">
+                              •
+                            </fo:inline>
+                          </xsl:if>
+                        </fo:inline>
+                      </xsl:for-each>
+                    </fo:block>
                 </fo:table-cell>
 
                 <fo:table-cell padding-left="{$spazio-colonne}">

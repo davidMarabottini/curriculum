@@ -56,6 +56,12 @@
       </attivita>
     </esperienza>
   </esperienze>
+
+    <approfondimento-esperienze>
+    <label><![CDATA[INSIGHTS >
+]]></label>
+    <url>https://github.com/davidMarabottini/CV_Insights/blob/main/en/work_experiences.md</url>
+  </approfondimento-esperienze>
   
   <formazione>
     <corso-studio>
@@ -100,10 +106,27 @@
     </corso-studio>
   </formazione>
 
+  <approfondimento-formazione>
+    <label><![CDATA[INSIGHT >]]></label>
+    <url>https://github.com/davidMarabottini/CV_Insights/blob/main/en/education.md</url>
+  </approfondimento-formazione>
+
   <link-esterni>
     <link>
       <tipo>github</tipo>
       <url>https://github.com/davidMarabottini</url>
+    </link>
+    <link>
+      <tipo>Portfolio Machine Learning</tipo>
+      <url>https://github.com/davidMarabottini/studio_data_science</url>
+    </link>
+    <link>
+      <tipo>Theorem triangolar relationships through various means</tipo>
+      <url>https://github.com/davidMarabottini/relazione_media_deviazione_standard</url>
+    </link>
+    <link>
+      <tipo>hypotesis hanoi 4 + pillars</tipo>
+      <url>https://zenodo.org/records/15713333</url>
     </link>
     <link>
       <tipo>linkedin</tipo>
@@ -113,10 +136,7 @@
       <tipo>scrum.org</tipo>
       <url>https://www.scrum.org/user/1419987</url>
     </link>
-    
-
   </link-esterni>
-  
   <competenze>
     <skillsspiderweb>./david_marabottini/skills_chart.svg</skillsspiderweb>
 
