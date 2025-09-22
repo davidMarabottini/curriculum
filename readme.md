@@ -10,6 +10,18 @@ Questo progetto genera un pdf partendo da dati strutturati in XML e trasformando
 ├── launch.txt                   # Esempio di comando per generare il PDF
 ├── dummy.xml                    # File XML vuoto, richiesto da FOP
 ├── .gitignore                   # Esclusione file sensibili
+├── constants/                      
+│   ├── colors.xsl           
+│   ├── fonts.xsl        
+│   ├── spacing.xsl
+│   └── index.xsl
+├── components/                      
+│   ├── link.xsl           
+│   ├── progress-bar.xsl        
+│   ├── rating.xsl
+│   ├── sottotitolo.xsl
+│   ├── titolo-sezione.xsl
+│   └── index.xsl
 └── david_marabottini/           # Cartella dati personali
     ├── dati_personali.xml       # ⚠️ NON va su git o ci va vuota; il consiglio è inserirla nel .gitignore (contiene dati sensibili)
     ├── skills_chart.ipynb       # Notebook Python per generare grafico a ragnatela
