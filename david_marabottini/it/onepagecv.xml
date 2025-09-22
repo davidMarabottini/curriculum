@@ -14,6 +14,19 @@
         <!-- <attivita-item>Sviluppo test unitari e design system e pagine amp relativi presso vari clienti.</attivita-item>
         <attivita-item>Partecipazione attiva in team agile cross-funzionali e autogestiti.</attivita-item> -->
       </attivita>
+      <attivita-ats>
+        - Attività di sviluppo front-end di vari portali web e applicativi gestionali, sviluppo test unitari e design system e pagine amp relativi presso vari clienti.
+
+        - Partecipazione attiva in team agile cross-funzionali e autogestiti
+
+        - AM su xstore
+
+        Tecnologie, ide e strumenti utilizzati:
+        Reactjs, Nextjs, Redux/saga/selectors, jest, storybook, AMP, SCSS, javascript, visual studio code, git, Jira, Jenkins, typescript, material ui, styled components, redux-slice, recoil, miro
+
+        Modalità di lavoro:
+        Scrum, kamban, waterfall
+      </attivita-ats>
     </esperienza>
     <esperienza>
       <titolo>Front-end developer</titolo>
@@ -22,6 +35,15 @@
       <attivita>
         <attivita-item>Attività di sviluppo front-end su vari applicativi gestionali in contesti bancario ed energetico in ambienti dinamici e spesso agili</attivita-item>
       </attivita>
+      <attivita-ats>
+        Svolta attività di sviluppo di applicazioni web presso vari clienti in ambito front-end.
+
+        Tecnologie, ide e strumenti utilizzati:
+        React, SCSS, jss, javascript, visual studio code, git, gitlab, trello
+
+        Modalità di lavoro:
+        Scrum
+      </attivita-ats>
     </esperienza>
     <esperienza>
       <titolo>PHP developer</titolo>
@@ -30,6 +52,12 @@
       <attivita>
         <attivita-item>Sviluppo di un portale in php per la gestione di scatole nere per flotte di auto</attivita-item>
       </attivita>
+      <attivita-ats>
+        Fullstack developer in php5 + javascript/jquery per gestionale di black box basato su un framework MVC custom.
+
+        Tecnologie utilizzate:
+        PHP5, mysql, jquery, bootstrap
+      </attivita-ats>
     </esperienza>
     <esperienza>
       <titolo>Fullstack developer</titolo>
@@ -38,6 +66,13 @@
       <attivita>
         <attivita-item>Sviluppo frontend, procedure, report e xslt per i bandi della regione lombardia</attivita-item>
       </attivita>
+      <attivita-ats>
+        Creazione di procedure ed algoritmi per i bandi della regione Lombardia in javascript.
+        Creazione pdf con fop
+
+        Tecnologie utilizzate:
+        Javascript,Oracle V9, apache FOP
+      </attivita-ats>
     </esperienza>
     <esperienza>
       <titolo>SQL expert e addetto report</titolo>
@@ -46,6 +81,13 @@
       <attivita>
         <attivita-item>Creazione query, report e layout basati su piattaforma SAP di documenti per vari clienti</attivita-item>
       </attivita>
+      <attivita-ats>
+        Creazione reports in Crystal, interfacciati con SAP Business One.
+        Creazione queries
+
+        Tecnologie utilizzate:
+        Crystal Report,SQL Server,SAP HANA
+      </attivita-ats>
     </esperienza>
     <esperienza>
       <titolo>.NET Developer</titolo>
@@ -54,6 +96,12 @@
       <attivita>
         <attivita-item>Sviluppo vari portali in .Net</attivita-item>
       </attivita>
+      <attivita-ats>
+        Attività di sviluppo e monitoraggio di vari portali.
+
+        Tecnologie utilizzate:
+        Framework ASP.NET, C#, Javascript, SQL (MS SQL SERVER), Linq, Web services, Visual Studio, team foundation, Team explorer, Google analytics, Windows azure
+      </attivita-ats>
     </esperienza>
   </esperienze>
   <approfondimento-esperienze>
@@ -66,41 +114,68 @@
       <titolo>A deep understanding of deep learning</titolo>
       <ente>Udemy</ente>
       <anno>08/2025</anno>
+      <descrizione-ats>
+        Matematica e programmazione dietro al deep learning, ripasso python e concetti di ML legati alle reti neurali e apprendimento pytorch
+      </descrizione-ats>
     </corso-studio>
     <corso-studio>
       <titolo>Machine learning e data science in python: il corso completo</titolo>
       <ente>Udemy</ente>
+      <descrizione-ats>
+        Impara a creare modelli di apprendimento supervisionato e non supervisionato con Python e Scikit-learn
+      </descrizione-ats>
       <anno>06/2025 - 08/2025</anno>
     </corso-studio>
     <corso-studio>
       <titolo>Certificazione PSMII</titolo>
       <ente>Scrum.org</ente>
       <anno>19/05/2025</anno>
+      <descrizione-ats>
+        Certificazione Scrum master livello intermedio
+      </descrizione-ats>
     </corso-studio>
     <corso-studio>
       <titolo>Lezioni di inglese</titolo>
       <ente>Preply</ente>
       <anno>2025</anno>
+      <descrizione-ats>
+        Sessioni di talking in Inglese
+      </descrizione-ats>
     </corso-studio>
     <corso-studio>
       <titolo>Certificazione PSMI</titolo>
       <ente>Scrum.org</ente>
       <anno>10/05/2024</anno>
+      <descrizione-ats>
+        Certificazione Scrum master livello base
+      </descrizione-ats>
     </corso-studio>
     <corso-studio>
       <titolo>Lezioni di inglese</titolo>
       <ente>My English School</ente>
       <anno>2015 - 2016</anno>
+      <descrizione-ats>
+        Lezioni di Inglese
+      </descrizione-ats>
     </corso-studio>
     <corso-studio>
       <titolo>Ingegneria informatica e dell'informazione</titolo>
       <ente>Università degli Studi di Siena</ente>
       <anno>2010 - 2013</anno>
+      <descrizione-ats>
+        Programmazione e progettazione Software, Reti di calcolatori, Basi di dati, Analisi matematica I e II, Agebra lineare, Sistemi dinamici, ecc.
+        Programmazione ad oggetti e design patterns.
+        Studio di strumenti matematici.
+        Sviluppo di vari progetti in C++ e PHP.
+      </descrizione-ats>
     </corso-studio>
     <corso-studio>
       <titolo>Diploma da ragioniere programmatore</titolo>
       <ente>ITCG CA Dalla Chiesa</ente>
       <anno>2009</anno>
+      <descrizione-ats>
+        Basi di ragioneria, programmazione e matematica
+      </descrizione-ats>
     </corso-studio>
   </formazione>
   <approfondimento-formazione>
@@ -144,6 +219,10 @@
       <item>PSM II - Professional Scrum Master II</item>
       <item>PSM I - Professional Scrum Master I</item>
     </certificates>
+
+    <chart-description>
+      Grafico radar delle competenze. Frontend 9 su 10, ML e DL 8 su 10, Scrum 8 su 10, SQL 8 su 10, Matematics 7 su 10.
+    </chart-description>
 
     <hardskills>
       <hardskill>
@@ -220,10 +299,12 @@
     <lingua>
       <nome>Italiano</nome>
       <livello>Madrelingua</livello>
+      <valore>5</valore>
     </lingua>
     <lingua>
       <nome>Inglese</nome>
       <livello>B1</livello>
+      <valore>3</valore>
     </lingua>
   </lingue>
 </curriculum>

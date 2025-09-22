@@ -14,6 +14,19 @@
         <!-- <attivita-item>Sviluppo test unitari e design system e pagine amp relativi presso vari clienti.</attivita-item>
         <attivita-item>Partecipazione attiva in team agile cross-funzionali e autogestiti.</attivita-item> -->
       </attivita>
+      <attivita-ats>
+        - Attività di sviluppo front-end di vari portali web e applicativi gestionali, sviluppo test unitari e design system e pagine amp relativi presso vari clienti.
+
+        - Partecipazione attiva in team agile cross-funzionali e autogestiti
+
+        - AM su xstore
+
+        Tecnologie, ide e strumenti utilizzati:
+        Reactjs, Nextjs, Redux/saga/selectors, jest, storybook, AMP, SCSS, javascript, visual studio code, git, Jira, Jenkins, typescript, material ui, styled components, redux-slice, recoil, miro
+
+        Modalità di lavoro:
+        Scrum, kamban, waterfall
+      </attivita-ats>
     </esperienza>
     <esperienza>
       <titolo>Front-end developer</titolo>
@@ -22,6 +35,15 @@
       <attivita>
         <attivita-item>Front-end development of various web portals and management applications in dynamic and often agile environments</attivita-item>
       </attivita>
+      <attivita-ats>
+        Svolta attività di sviluppo di applicazioni web presso vari clienti in ambito front-end.
+
+        Tecnologie, ide e strumenti utilizzati:
+        React, SCSS, jss, javascript, visual studio code, git, gitlab, trello
+
+        Modalità di lavoro:
+        Scrum
+      </attivita-ats>
     </esperienza>
     <esperienza>
       <titolo>PHP developer</titolo>
@@ -30,6 +52,12 @@
       <attivita>
         <attivita-item>Development of a PHP portal for managing black boxes for car fleets</attivita-item>
       </attivita>
+      <attivita-ats>
+        Fullstack developer in php5 + javascript/jquery per gestionale di black box basato su un framework MVC custom.
+
+        Tecnologie utilizzate:
+        PHP5, mysql, jquery, bootstrap
+      </attivita-ats>
     </esperienza>
     <esperienza>
       <titolo>Fullstack developer</titolo>
@@ -46,6 +74,13 @@
       <attivita>
         <attivita-item>Created queries, reports and layouts based on SAP platform of documents for various customers</attivita-item>
       </attivita>
+      <attivita-ats>
+        Creazione reports in Crystal, interfacciati con SAP Business One.
+        Creazione queries
+
+        Tecnologie utilizzate:
+        Crystal Report,SQL Server,SAP HANA
+      </attivita-ats>
     </esperienza>
     <esperienza>
       <titolo>.NET Developer</titolo>
@@ -54,6 +89,12 @@
       <attivita>
         <attivita-item>Developing of various portals in .net</attivita-item>
       </attivita>
+      <attivita-ats>
+        Attività di sviluppo e monitoraggio di vari portali.
+
+        Tecnologie utilizzate:
+        Framework ASP.NET, C#, Javascript, SQL (MS SQL SERVER), Linq, Web services, Visual Studio, team foundation, Team explorer, Google analytics, Windows azure
+      </attivita-ats>
     </esperienza>
   </esperienze>
 
@@ -68,41 +109,68 @@
       <titolo>A deep understanding of deep learning</titolo>
       <ente>Udemy</ente>
       <anno>08/2025</anno>
+      <descrizione-ats>
+        Matematica e programmazione dietro al deep learning, ripasso python e concetti di ML legati alle reti neurali e apprendimento pytorch
+      </descrizione-ats>
     </corso-studio>
     <corso-studio>
       <titolo>Machine learning e data science in python: il corso completo</titolo>
       <ente>Udemy</ente>
       <anno>06/2025 - 08/2025</anno>
+      <descrizione-ats>
+        Impara a creare modelli di apprendimento supervisionato e non supervisionato con Python e Scikit-learn
+      </descrizione-ats>
     </corso-studio>
     <corso-studio>
       <titolo>PSMII Certificate</titolo>
       <ente>Scrum.org</ente>
       <anno>19/05/2025</anno>
+      <descrizione-ats>
+        Certificazione Scrum master livello intermedio
+      </descrizione-ats>
     </corso-studio>
     <corso-studio>
       <titolo>English lessons</titolo>
       <ente>Preply</ente>
       <anno>2025</anno>
+      <descrizione-ats>
+        Sessioni di talking in Inglese
+      </descrizione-ats>
     </corso-studio>
     <corso-studio>
       <titolo>PSMI Certificate</titolo>
       <ente>Scrum.org</ente>
       <anno>10/05/2024</anno>
+      <descrizione-ats>
+        Certificazione Scrum master livello base
+      </descrizione-ats>
     </corso-studio>
     <corso-studio>
       <titolo>English lesson</titolo>
       <ente>My English School</ente>
       <anno>2015 - 2016</anno>
+      <descrizione-ats>
+        Lezioni di Inglese
+      </descrizione-ats>
     </corso-studio>
     <corso-studio>
       <titolo>Computer Engeenering</titolo>
       <ente>Siena University</ente>
       <anno>2010 - 2013</anno>
+      <descrizione-ats>
+        Programmazione e progettazione Software, Reti di calcolatori, Basi di dati, Analisi matematica I e II, Agebra lineare, Sistemi dinamici, ecc.
+        Programmazione ad oggetti e design patterns.
+        Studio di strumenti matematici.
+        Sviluppo di vari progetti in C++ e PHP.
+      </descrizione-ats>
     </corso-studio>
     <corso-studio>
       <titolo>Degree of accounter/developer</titolo>
       <ente>ITCG CA Dalla Chiesa</ente>
       <anno>2009</anno>
+      <descrizione-ats>
+        Basi di ragioneria, programmazione e matematica
+      </descrizione-ats>
     </corso-studio>
   </formazione>
 
@@ -139,6 +207,9 @@
   </link-esterni>
   <competenze>
     <skillsspiderweb>./david_marabottini/skills_chart.svg</skillsspiderweb>
+        <chart-description>
+          Frontend 9/10, ML and DL 8/10, Scrum 8/10, SQL 8/10, Matematics 7/10.
+        </chart-description>
 
     <certificates>
       <item>PSM II - Professional Scrum Master II</item>
@@ -217,12 +288,14 @@
   
   <lingue>
     <lingua>
-      <nome>Italiano</nome>
-      <livello>Madrelingua</livello>
+      <nome>Italian</nome>
+      <livello>Mothertongue</livello>
+      <valore>5</valore>
     </lingua>
     <lingua>
-      <nome>Inglese</nome>
+      <nome>English</nome>
       <livello>B1</livello>
+      <valore>3</valore>
     </lingua>
   </lingue>
 </curriculum>

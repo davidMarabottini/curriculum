@@ -3,9 +3,11 @@
   <education>Education</education>
   <external-links>External links</external-links>
   <expertise>Expertise</expertise>
+  <expertise-chart-title>Expertise Chart</expertise-chart-title>
+  <expertise-chart>Generated with matplotlib</expertise-chart>
   <hard-skills>Hard skills</hard-skills>
   <soft-skills>Soft skills</soft-skills>
   <languages>Languages</languages>
   <certificates>Certificates</certificates>
-  <footer>designed in Figma and developed in XSLT/FOP</footer>
+  <footer>Designed in Figma and developed in XSLT/FOP</footer>
 </labels>
