@@ -12,7 +12,7 @@
       font-size="{$font-size-titolo-sezione}"
       font-weight="bold"
       color="{$colore-secondario}"
-      space-after="3mm"
+      space-after="2mm"
       border-bottom="1pt solid black"
       margin-top="{$spaziatura-titolo-sezione}"
     >

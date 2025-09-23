@@ -45,13 +45,19 @@
             </fo:block>
           </fo:block-container>
 
-          <fo:table table-layout="fixed" width="100%" space-before="0.2cm">
-            <fo:table-column column-width="66.6%"/>
-            <fo:table-column column-width="33.4%"/>
+          <fo:table table-layout="fixed" width="100%" space-before="0.05cm">
+            <fo:table-column column-width="70%"/>
+            <fo:table-column column-width="30%"/>
             <fo:table-body>
               <fo:table-row>
 
                 <fo:table-cell padding-right="{$spazio-colonne}">
+                  <fo:block font-size="{$font-size-small}" color="{$colore-secondario}"><!--da riscrivere e dinamicizzare-->
+                    <xsl:call-template name="titolo-sezione">
+                      <xsl:with-param name="testo" select="$labels/professional-profile"/>
+                    </xsl:call-template>
+                    <xsl:value-of select="$cv_data/descrizione"/>
+                  </fo:block>
                   <fo:block>
                     <xsl:call-template name="titolo-sezione">
                       <xsl:with-param name="testo" select="$labels/work-experience"/>
@@ -151,7 +157,7 @@
                         </desc>
                       </fo:external-graphic>
 
-                      <fo:block font-size="{$font-size-base}" color="{$colore-secondario}">
+                      <fo:block font-size="{$font-size-small}" color="{$colore-secondario}">
                         <xsl:value-of select="$labels/expertise-chart" />
                       </fo:block>
                     </fo:block>
@@ -160,7 +166,7 @@
                       <xsl:with-param name="testo" select="$labels/certificates" />
                     </xsl:call-template>
                     <xsl:for-each select="$cv_data/competenze/certificates/item">
-                      <fo:block font-size="{$font-size-base}" color="{$colore-secondario}">
+                      <fo:block font-size="{$font-size-small}" color="{$colore-secondario}">
                         <xsl:value-of select="."/>
                       </fo:block>
                     </xsl:for-each>
@@ -169,7 +175,7 @@
                       <xsl:with-param name="testo" select="$labels/hard-skills" />
                     </xsl:call-template>
                     <xsl:for-each select="$cv_data/competenze/hardskills/hardskill">
-                      <fo:block font-size="{$font-size-base}" color="{$colore-secondario}" space-after="2.1mm" space-before="0" line-height="0.7">
+                      <fo:block font-size="{$font-size-small}" color="{$colore-secondario}" space-after="2.1mm" space-before="0" line-height="0.7">
                         <xsl:call-template name="conditional-link">
                           <xsl:with-param name="text" select="item" />
                           <xsl:with-param name="url" select="url" />
@@ -184,7 +190,7 @@
                       <xsl:with-param name="testo" select="$labels/soft-skills" />
                     </xsl:call-template>
                     <xsl:for-each select="$cv_data/competenze/softskills/softskill">
-                      <fo:block font-size="{$font-size-base}" color="{$colore-secondario}" space-after="2.1mm" space-before="0" line-height="0.7">
+                      <fo:block font-size="{$font-size-small}" color="{$colore-secondario}" space-after="2.1mm" space-before="0" line-height="0.7">
                         <xsl:call-template name="conditional-link">
                           <xsl:with-param name="text" select="item" />
                           <xsl:with-param name="url" select="url"  disable-output-escaping="yes" />

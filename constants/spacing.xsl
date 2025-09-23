@@ -3,9 +3,9 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:variable name="margine-pagina" select="'.5cm'"/>
-  <xsl:variable name="spaziatura-titolo-sezione" select="'5mm'"/>
+  <xsl:variable name="spaziatura-titolo-sezione" select="'3mm'"/>
   <xsl:variable name="spaziatura-dettaglio" select="'2mm'"/>
   <xsl:variable name="spaziatura-base" select="'2mm'"/>
-  <xsl:variable name="spazio-colonne" select="'0.3cm'"/>
+  <xsl:variable name="spazio-colonne" select="'0.2cm'"/>
 
 </xsl:stylesheet>

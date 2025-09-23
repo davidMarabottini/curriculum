@@ -4,6 +4,10 @@
     <nome>David Marabottini</nome>
   </dati-personali>
   
+  <descrizione>
+    Sono un sviluppatore front-end, ma ciò che davvero mi muove è la matematica e tutto ciò che fa vibrare il cervello. Amo scoprire schemi nascosti nei problemi, seguire intuizioni che a volte si trasformano in piccole teorie, e trasformare idee astratte in soluzioni concrete. Negli ultimi anni ho incanalato questa curiosità nello studio di machine learning e data analysis, cercando di far parlare i dati e di creare insight reali e innovativi.
+  </descrizione>
+  
   <esperienze>
     <esperienza>
       <titolo>Front-end developer</titolo>
@@ -11,8 +15,6 @@
       <periodo>06/2019-05/2025</periodo>
       <attivita>
         <attivita-item>Attività di sviluppo front-end e AM su portali web e applicativi gestionali in contesti bancario, televisivo e retail lavorando in ambienti dinamici e spesso agili</attivita-item>
-        <!-- <attivita-item>Sviluppo test unitari e design system e pagine amp relativi presso vari clienti.</attivita-item>
-        <attivita-item>Partecipazione attiva in team agile cross-funzionali e autogestiti.</attivita-item> -->
       </attivita>
       <attivita-ats>
         - Attività di sviluppo front-end di vari portali web e applicativi gestionali, sviluppo test unitari e design system e pagine amp relativi presso vari clienti.
@@ -184,14 +186,6 @@
   </approfondimento-formazione>
 
   <link-esterni>
-    <!-- <link>
-      <tipo>github</tipo>
-      <url>https://github.com/davidMarabottini</url>
-    </link>
-    <link>
-      <tipo>Portfolio Machine Learning</tipo>
-      <url>https://github.com/davidMarabottini/studio_data_science</url>
-    </link> -->
     <link>
       <tipo>Teorema relazione triangolari tra medie varie</tipo>
       <url>https://github.com/davidMarabottini/relazione_media_deviazione_standard</url>
@@ -204,12 +198,6 @@
       <tipo>linkedin</tipo>
       <url>https://www.linkedin.com/in/david-m-551aba81/</url>
     </link>
-    <!-- <link>
-      <tipo>scrum.org</tipo>
-      <url>https://www.scrum.org/user/1419987</url>
-    </link> -->
-    
-
   </link-esterni>
   
   <competenze>
@@ -295,15 +283,6 @@
         <valore>8.5</valore>
       </softskill>
     </softskills>
-
-    <!-- <relazionali>
-      <item>Ottima capacità di comunicazione e ascolto attivo all'interno nel team.</item>
-      <item>Predisposizione a dialoghi onesti, costruttivi e trasparenti.</item>
-    </relazionali>
-    <organizzative>
-      <item>Partecipazione e contributo attivo al refinement ed alla pianificazione di sprint.</item>
-      <item>Partecipazione e contributo attivo alle sprint retrospective.</item>
-    </organizzative> -->
   </competenze>
   
   <lingue>
