@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 
-  <xsl:include href="./constants/index.xsl"/>
-  <xsl:include href="./components/index.xsl"/>
+  <xsl:import href="./constants/index.xsl"/>
+  <xsl:import href="./components/index.xsl"/>
 
   <xsl:param name="root_folder" select="'david_marabottini'"/>
   <xsl:param name="lang" select="'it'"/>
@@ -16,7 +16,7 @@
       <fo:layout-master-set>
         <fo:simple-page-master master-name="A4" page-height="29.7cm" page-width="21cm" margin="{$margine-pagina}">
           <fo:region-body/>
-          <fo:region-after extent=".2cm"/>
+          <fo:region-after extent=".0cm"/>
         </fo:simple-page-master>
       </fo:layout-master-set>
 
@@ -170,7 +170,10 @@
                     </xsl:call-template>
                     <xsl:for-each select="$cv_data/competenze/hardskills/hardskill">
                       <fo:block font-size="{$font-size-base}" color="{$colore-secondario}" space-after="2.1mm" space-before="0" line-height="0.7">
-                        <xsl:value-of select="item"/>
+                        <xsl:call-template name="conditional-link">
+                          <xsl:with-param name="text" select="item" />
+                          <xsl:with-param name="url" select="url" />
+                        </xsl:call-template>
                         <xsl:call-template name="progress-bar">
                           <xsl:with-param name="valore" select="valore" />
                         </xsl:call-template>
@@ -182,7 +185,10 @@
                     </xsl:call-template>
                     <xsl:for-each select="$cv_data/competenze/softskills/softskill">
                       <fo:block font-size="{$font-size-base}" color="{$colore-secondario}" space-after="2.1mm" space-before="0" line-height="0.7">
-                        <xsl:value-of select="item"/>
+                        <xsl:call-template name="conditional-link">
+                          <xsl:with-param name="text" select="item" />
+                          <xsl:with-param name="url" select="url"  disable-output-escaping="yes" />
+                        </xsl:call-template>
                         <xsl:call-template name="progress-bar">
                           <xsl:with-param name="valore" select="valore" />
                         </xsl:call-template>
@@ -195,8 +201,12 @@
 
                     <xsl:for-each select="$cv_data/lingue/lingua">
                       <fo:block font-size="{$font-size-base}" space-after="{$spaziatura-dettaglio}">
-                        <xsl:call-template name="sottotitolo">
+                        <!-- <xsl:call-template name="sottotitolo">
                           <xsl:with-param name="testo" select="nome"/>
+                        </xsl:call-template> -->
+                        <xsl:call-template name="conditional-link">
+                          <xsl:with-param name="text" select="nome" />
+                          <xsl:with-param name="url" select="url"  disable-output-escaping="yes" />
                         </xsl:call-template>
 
                         <xsl:call-template name="rating">

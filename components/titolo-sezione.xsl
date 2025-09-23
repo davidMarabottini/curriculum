@@ -3,8 +3,8 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:fo="http://www.w3.org/1999/XSL/Format">
 
-  <xsl:include href="../constants/fonts.xsl"/>
-  <xsl:include href="../constants/spacing.xsl"/>
+  <xsl:import href="../constants/fonts.xsl"/>
+  <xsl:import href="../constants/spacing.xsl"/>
 
   <xsl:template name="titolo-sezione">
     <xsl:param name="testo"/>
