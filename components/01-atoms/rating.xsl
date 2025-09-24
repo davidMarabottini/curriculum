@@ -3,7 +3,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:fo="http://www.w3.org/1999/XSL/Format">
 
-  <xsl:import href="../constants/index.xsl"/>
+  <xsl:import href="../../constants/index.xsl"/>
 
   <xsl:template name="rating">
     <xsl:param name="value"/>

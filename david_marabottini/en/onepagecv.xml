@@ -2,12 +2,12 @@
 <curriculum>
   <dati-personali>
     <nome>David Marabottini</nome>
+    <foto>./assets/david_bn.png</foto>
   </dati-personali>
 
   <descrizione>
-    I'm a front-end developer, but what really moves me is mathematics and everything that makes my brain tick. I love discovering hidden patterns in problems, following intuitions that sometimes turn into small theories, and turning abstract ideas into concrete solutions. In recent years, I've channeled this curiosity into studying machine learning and data analysis, striving to make data speak and create real, innovative insights.
+    I'm a front-end developer, driven by a strong passion for mathematics and anything that stimulates critical thinking. I enjoy identifying hidden patterns in problems, following intuitions that sometimes turn into personal theories, and translating abstract ideas into concrete solutions. In recent months, I've delved deeper into machine learning and data analysis, developing predictive models that integrate various techniques. I also have a solid knowledge of SQL and am certified PSM I and PSM II. I'm particularly comfortable in dynamic teams where people cultivate a respectful, responsible, and proactive approach.
   </descrizione>
-  
   <esperienze>
     <esperienza>
       <titolo>Front-end developer</titolo>
@@ -149,14 +149,14 @@
         Certificazione Scrum master livello base
       </descrizione-ats>
     </corso-studio>
-    <corso-studio>
+    <!-- <corso-studio>
       <titolo>English lesson</titolo>
       <ente>My English School</ente>
       <anno>2015 - 2016</anno>
       <descrizione-ats>
         Lezioni di Inglese
       </descrizione-ats>
-    </corso-studio>
+    </corso-studio> -->
     <corso-studio>
       <titolo>Computer Engeenering</titolo>
       <ente>Siena University</ente>

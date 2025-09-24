@@ -2,12 +2,12 @@
 <curriculum>
   <dati-personali>
     <nome>David Marabottini</nome>
+    <foto>./assets/david_bn.png</foto>
   </dati-personali>
   
   <descrizione>
-    Sono un sviluppatore front-end, ma ciò che davvero mi muove è la matematica e tutto ciò che fa vibrare il cervello. Amo scoprire schemi nascosti nei problemi, seguire intuizioni che a volte si trasformano in piccole teorie, e trasformare idee astratte in soluzioni concrete. Negli ultimi anni ho incanalato questa curiosità nello studio di machine learning e data analysis, cercando di far parlare i dati e di creare insight reali e innovativi.
+    Sono uno sviluppatore front-end, mosso da una forte passione per la matematica e per tutto ciò che stimola il pensiero critico. Mi piace individuare schemi nascosti nei problemi, seguire intuizioni che talvolta si trasformano in piccole teorie personali e tradurre idee astratte in soluzioni concrete. Negli ultimi mesi ho approfondito machine learning e data analysis, sviluppando modelli predittivi che integrano diverse tecniche. Possiedo inoltre una solida conoscenza di SQL e sono certificato PSM I e PSM II. Mi trovo particolarmente a mio agio in team dinamici, dove le persone coltivano un approccio rispettoso, responsabile e propositivo.
   </descrizione>
-  
   <esperienze>
     <esperienza>
       <titolo>Front-end developer</titolo>
@@ -163,7 +163,7 @@
     <corso-studio>
       <titolo>Ingegneria informatica e dell'informazione</titolo>
       <ente>Università degli Studi di Siena</ente>
-      <anno>2010 - 2013</anno>
+      <anno>2010 - 2013 (non terminata)</anno>
       <descrizione-ats>
         Programmazione e progettazione Software, Reti di calcolatori, Basi di dati, Analisi matematica I e II, Agebra lineare, Sistemi dinamici, ecc.
         Programmazione ad oggetti e design patterns.
@@ -215,12 +215,12 @@
     <hardskills>
       <hardskill>
         <item>Python</item>
-        <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url>
+        <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url> -->
         <valore>8</valore>
       </hardskill>
       <hardskill>
         <item>SQL</item>
-        <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-sql-clausola-with-httpslnkdin-activity-7282160278614536193-aJwb/?utm_source=share&utm_medium=member_desktop]]></url>
+        <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-sql-clausola-with-httpslnkdin-activity-7282160278614536193-aJwb/?utm_source=share&utm_medium=member_desktop]]></url> -->
         <valore>8.5</valore>
       </hardskill>
       <hardskill>
@@ -238,12 +238,12 @@
       </hardskill>
       <hardskill>
         <item>JavaScript</item>
-        <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_javascript-index-consoletime-consoletimeend-activity-7289412701972303872-2ShA/?utm_source=share&utm_medium=member_desktop]]></url>
+        <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_javascript-index-consoletime-consoletimeend-activity-7289412701972303872-2ShA/?utm_source=share&utm_medium=member_desktop]]></url> -->
         <valore>9.5</valore>
       </hardskill>
       <hardskill>
         <item>TypeScript</item>
-        <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_typescript-guide-ita-activity-7270215107379347458-yjqR/?utm_source=share&utm_medium=member_desktop]]></url>
+        <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_typescript-guide-ita-activity-7270215107379347458-yjqR/?utm_source=share&utm_medium=member_desktop]]></url> -->
         <valore>9.5</valore>
       </hardskill>
       <hardskill>
