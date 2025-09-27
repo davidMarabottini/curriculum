@@ -126,9 +126,9 @@
                         </desc>
                       </fo:external-graphic>
 
-                      <fo:block font-size="{$font-size-small}" color="{$colore-secondario}">
+                      <!-- <fo:block font-size="{$font-size-small}" color="{$colore-secondario}">
                         <xsl:value-of select="$labels/expertise-chart" />
-                      </fo:block>
+                      </fo:block> -->
                     </fo:block>
 
                     <xsl:call-template name="titolo-sezione">
@@ -136,7 +136,7 @@
                     </xsl:call-template>
                     <xsl:for-each select="$cv_data/competenze/certificates/item">
                       <fo:block font-size="{$font-size-small}" color="{$colore-secondario}">
-                        <xsl:value-of select="."/>
+                        <fo:inline font-family="FontAwesome" padding-right="1mm">&#xf005;</fo:inline><xsl:value-of select="."/>
                       </fo:block>
                     </xsl:for-each>
 
@@ -175,16 +175,19 @@
                     </xsl:call-template>
 
                     <xsl:for-each select="$cv_data/lingue/lingua">
-                      <fo:block font-size="{$font-size-base}" space-after="{$spaziatura-dettaglio}">
-                        <xsl:call-template name="conditional-link">
-                          <xsl:with-param name="text" select="nome" />
-                          <xsl:with-param name="url" select="url"  disable-output-escaping="yes" />
-                        </xsl:call-template>
-
-                        <xsl:call-template name="rating">
-                          <xsl:with-param name="value" select="valore"/>
-                          <xsl:with-param name="livello" select="livello"/>
-                        </xsl:call-template>
+                      <fo:block font-size="{$font-size-small}" space-after="{$spaziatura-dettaglio}">
+                        <fo:inline>
+                          <xsl:call-template name="conditional-link">
+                            <xsl:with-param name="text" select="nome" />
+                            <xsl:with-param name="url" select="url"  disable-output-escaping="yes" />
+                          </xsl:call-template>
+                        </fo:inline>
+                        <fo:inline>
+                          <xsl:call-template name="rating">
+                            <xsl:with-param name="value" select="valore"/>
+                            <xsl:with-param name="livello" select="livello"/>
+                          </xsl:call-template>
+                        </fo:inline>
                       </fo:block>
                     </xsl:for-each>
                   </fo:block>

@@ -17,14 +17,17 @@
         <xsl:value-of select="$nome"/>
       </fo:block>
       <fo:block font-size="{$font-size-base}" space-after="1mm" color="{$colore-secondario}">
+        <fo:inline font-family="FontAwesome" padding-right="1mm">&#xf0e0;</fo:inline>
         <xsl:value-of select="$email"/>
-        <xsl:if test="$email and $telefono">
+        <!-- <xsl:if test="$email and $telefono">
           <xsl:text> | </xsl:text>
-        </xsl:if>
+        </xsl:if> -->
+        <fo:inline font-family="FontAwesome" padding-left="3mm" padding-right="1mm">&#xf2b9;</fo:inline>
         <xsl:value-of select="$telefono"/>
-        <xsl:if test="$telefono and $luogo">
+        <!-- <xsl:if test="$telefono and $luogo">
           <xsl:text> | </xsl:text>
-        </xsl:if>
+        </xsl:if> -->
+        <fo:inline font-family="FontAwesome" padding-left="3mm" padding-right="1mm">&#xf279;</fo:inline>
         <xsl:value-of select="$luogo"/>
       </fo:block>
     </fo:block-container>

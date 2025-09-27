@@ -10,7 +10,7 @@
     <xsl:param name="testo"/>
     <fo:block
       font-weight="bold"
-      font-size="{$font-size-sottotitolo}"
+      font-size="{$font-size-small}"
       color="{$colore-principale}"
     >
       <xsl:value-of select="$testo"/>

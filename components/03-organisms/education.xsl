@@ -22,14 +22,21 @@
           <xsl:with-param name="testo" select="titolo"/>
         </xsl:call-template>
 
-        <fo:block font-size="{$font-size-base}" color="{$colore-secondario}">
-          <xsl:value-of select="ente"/> | <xsl:value-of select="anno"/>
+        <fo:block font-size="{$font-size-small}" color="{$colore-secondario}">
+          <fo:inline font-family="FontAwesome" padding-right="1mm">&#xf044;</fo:inline>
+          <xsl:value-of select="ente"/>
+          <fo:inline font-family="FontAwesome" padding-left="3mm" padding-right="1mm">&#xf133;</fo:inline>
+          <xsl:value-of select="anno"/>
+        </fo:block>
+        <fo:block font-size="{$font-size-small}" color="{$colore-secondario}" margin-top="1mm">
+          <xsl:value-of select="descrizione"/>
         </fo:block>
       </fo:block>
     </xsl:for-each>
 
     <fo:block margin-top="{$spaziatura-base}" font-size="{$font-size-small}" >
         <xsl:call-template name="link">
+        <xsl:with-param name="icon">&#x2b;</xsl:with-param>
         <xsl:with-param name="url" select="$approfondimento-formazione/url"/>
         <xsl:with-param name="tipo" select="$approfondimento-formazione/label"/>
       </xsl:call-template>

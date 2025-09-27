@@ -26,10 +26,16 @@
   <xsl:param name="max"/>
   <xsl:param name="livello"/>
 
-  <fo:inline font-size="15pt" word-spacing="0pt" letter-spacing="0pt" padding-right="5pt">
+  <xsl:variable name="r" select="255 - floor(255 * $value div $max)"/>
+  <xsl:variable name="g" select="0"/>
+  <xsl:variable name="b" select="floor(255 * $value div $max)"/>
+
+  <xsl:variable name="fillColor" select="concat('rgb(',$r,',',$g,',',$b,')')"/>
+
+  <fo:inline font-size="{$font-size-small}" word-spacing="0pt" letter-spacing="0pt" padding-right="2pt">
     <xsl:attribute name="color">
       <xsl:choose>
-        <xsl:when test="$pos &lt;= $value">blue</xsl:when>
+        <xsl:when test="$pos &lt;= $value"><xsl:value-of select="$fillColor"/></xsl:when>
         <xsl:otherwise>lightgrey</xsl:otherwise>
       </xsl:choose>
     </xsl:attribute>

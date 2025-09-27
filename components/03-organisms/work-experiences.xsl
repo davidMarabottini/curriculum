@@ -18,11 +18,15 @@
       <xsl:for-each select="$esperienze/esperienza">
         <fo:block space-after="{$spaziatura-dettaglio}">
           <xsl:call-template name="sottotitolo">
+            <!-- <fo:inline font-family="FontAwesome" padding-left="3mm" padding-right="1mm">&#xf2b9;</fo:inline> -->
             <xsl:with-param name="testo" select="titolo"/>
           </xsl:call-template>
 
           <fo:block font-size="{$font-size-small}" color="{$colore-secondario}">
-            <xsl:value-of select="azienda"/> | <xsl:value-of select="periodo"/>
+            <fo:inline font-family="FontAwesome" padding-right="1mm">&#xf2b5;</fo:inline>
+            <xsl:value-of select="azienda"/>
+            <fo:inline font-family="FontAwesome" padding-left="3mm" padding-right="1mm">&#xf133;</fo:inline>
+            <xsl:value-of select="periodo"/>
           </fo:block>
 
           <xsl:for-each select="attivita/attivita-item">
@@ -36,6 +40,7 @@
 
     <fo:block margin-top="{$spaziatura-base}" font-size="{$font-size-small}">
       <xsl:call-template name="link">
+        <xsl:with-param name="icon">&#x2b;</xsl:with-param>
         <xsl:with-param name="url" select="$approfondimento-esperienze/url"/>
         <xsl:with-param name="tipo" select="$approfondimento-esperienze/label"/>
       </xsl:call-template>

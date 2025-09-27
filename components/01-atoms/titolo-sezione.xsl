@@ -8,6 +8,12 @@
 
   <xsl:template name="titolo-sezione">
     <xsl:param name="testo"/>
+    <!-- <xsl:param name="icon" /> -->
+    <!-- <xsl:if test="$icon">
+      <fo:inline font-family="FontAwesome" padding-left="1mm" padding-right="1mm">
+        {$icon}
+      </fo:inline>
+    </xsl:if> -->
     <fo:block
       font-size="{$font-size-titolo-sezione}"
       font-weight="bold"
