@@ -2,11 +2,10 @@
   <renderers>
     <renderer mime="application/pdf">
       <fonts>
-        <!-- Qui dentro vanno i font -->
-        <font embed-url="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/webfonts/fa-regular-400.ttf" embedding-mode="subset">
+        <font embed-url="./assets/fonts/fa-regular-400.ttf" embedding-mode="subset">
           <font-triplet name="FontAwesome" style="normal" weight="normal"/>
         </font>
-        <font embed-url="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.ttf" embedding-mode="subset">
+        <font embed-url="./assets/fonts/fa-solid-900.ttf" embedding-mode="subset">
           <font-triplet name="FontAwesome" style="normal" weight="bold"/>
         </font>
       </fonts>

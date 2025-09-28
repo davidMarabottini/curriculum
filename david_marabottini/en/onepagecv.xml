@@ -103,52 +103,77 @@
   </esperienze>
 
     <approfondimento-esperienze>
-    <label><![CDATA[INSIGHTS >
-]]></label>
+    <label>INSIGHT</label>
     <url>https://github.com/davidMarabottini/CV_Insights/blob/main/en/work_experiences.md</url>
   </approfondimento-esperienze>
   
   <formazione>
     <corso-studio>
+      <titolo>Data Analysis</titolo>
+      <ente>UNIMI</ente>
+      <anno>26/09/2025 - In progress</anno>
+      <descrizione>
+        Data analysis theory and language R
+      </descrizione>
+      <descrizione-ats>
+        Data analysis theory and language R
+      </descrizione-ats>
+    </corso-studio>
+    <corso-studio>
       <titolo>A deep understanding of deep learning</titolo>
       <ente>Udemy</ente>
-      <anno>08/2025</anno>
+      <anno>08/2025 - In progress</anno>
+      <descrizione>
+        Mathematics and programming behind deep learning, Python review and ML concepts related to neural networks and Python learning
+      </descrizione>
       <descrizione-ats>
-        Matematica e programmazione dietro al deep learning, ripasso python e concetti di ML legati alle reti neurali e apprendimento pytorch
+        Mathematics and programming behind deep learning, Python review and ML concepts related to neural networks and Python learning
       </descrizione-ats>
     </corso-studio>
     <corso-studio>
       <titolo>Machine learning e data science in python: il corso completo</titolo>
       <ente>Udemy</ente>
       <anno>06/2025 - 08/2025</anno>
+      <descrizione>
+        Learn to build supervised and unsupervised learning models with Python and Scikit-learn
+      </descrizione>
       <descrizione-ats>
-        Impara a creare modelli di apprendimento supervisionato e non supervisionato con Python e Scikit-learn
+        Learn to build supervised and unsupervised learning models with Python and Scikit-learn
       </descrizione-ats>
     </corso-studio>
     <corso-studio>
       <titolo>PSMII Certificate</titolo>
       <ente>Scrum.org</ente>
       <anno>19/05/2025</anno>
+      <descrizione>
+        Intermediate Level Scrum Master Certification
+      </descrizione>
       <descrizione-ats>
-        Certificazione Scrum master livello intermedio
+        Intermediate Level Scrum Master Certification
       </descrizione-ats>
     </corso-studio>
     <corso-studio>
       <titolo>English lessons</titolo>
       <ente>Preply</ente>
       <anno>2025</anno>
+      <descrizione>
+        English talking sessions
+      </descrizione>
       <descrizione-ats>
-        Sessioni di talking in Inglese
+        English talking sessions
       </descrizione-ats>
     </corso-studio>
-    <corso-studio>
+    <!-- <corso-studio>
       <titolo>PSMI Certificate</titolo>
       <ente>Scrum.org</ente>
       <anno>10/05/2024</anno>
+      <descrizione>
+        Base Level Scrum Master Certification
+      </descrizione>
       <descrizione-ats>
-        Certificazione Scrum master livello base
+        Base Level Scrum Master Certification
       </descrizione-ats>
-    </corso-studio>
+    </corso-studio> -->
     <!-- <corso-studio>
       <titolo>English lesson</titolo>
       <ente>My English School</ente>
@@ -157,7 +182,7 @@
         Lezioni di Inglese
       </descrizione-ats>
     </corso-studio> -->
-    <corso-studio>
+    <!-- <corso-studio>
       <titolo>Computer Engeenering</titolo>
       <ente>Siena University</ente>
       <anno>2010 - 2013</anno>
@@ -175,11 +200,11 @@
       <descrizione-ats>
         Basi di ragioneria, programmazione e matematica
       </descrizione-ats>
-    </corso-studio>
+    </corso-studio> -->
   </formazione>
 
   <approfondimento-formazione>
-    <label><![CDATA[INSIGHT >]]></label>
+    <label>INSIGHT</label>
     <url>https://github.com/davidMarabottini/CV_Insights/blob/main/en/education.md</url>
   </approfondimento-formazione>
 
@@ -211,40 +236,69 @@
     <hardskills>
       <hardskill>
         <item>Python</item>
-        <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url>
+        <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url> -->
+        <valore>8</valore>
+      </hardskill>
+      <hardskill>
+        <item>R</item>
+        <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url> -->
         <valore>8</valore>
       </hardskill>
       <hardskill>
         <item>SQL</item>
-        <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-sql-clausola-with-httpslnkdin-activity-7282160278614536193-aJwb/?utm_source=share&utm_medium=member_desktop]]></url>
+        <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-sql-clausola-with-httpslnkdin-activity-7282160278614536193-aJwb/?utm_source=share&utm_medium=member_desktop]]></url> -->
         <valore>8.5</valore>
       </hardskill>
       <hardskill>
-        <item>Notebook Jupiter</item>
+        <item>Notebook Jupyter</item>
         <valore>8.5</valore>
       </hardskill>
       <hardskill>
-        <item>Machine learning</item>
+        <item>ML, Sci-kit-learn</item>
         <url>https://github.com/davidMarabottini/studio_data_science/blob/main/readme.md</url>
         <valore>8</valore>
       </hardskill>
       <hardskill>
-        <item>Deep learning</item>
+        <item>numpy, pandas, matplotlib</item>
+        <valore>8</valore>
+      </hardskill>
+      <hardskill>
+        <item>sympy</item>
+        <valore>7</valore>
+      </hardskill>
+      <hardskill>
+        <item>imbalanced-learn</item>
         <valore>6</valore>
       </hardskill>
       <hardskill>
+        <item>Deep learning, pytorch</item>
+        <valore>4</valore>
+      </hardskill>
+      <hardskill>
         <item>JavaScript</item>
-        <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_javascript-index-consoletime-consoletimeend-activity-7289412701972303872-2ShA/?utm_source=share&utm_medium=member_desktop]]></url>
+        <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_javascript-index-consoletime-consoletimeend-activity-7289412701972303872-2ShA/?utm_source=share&utm_medium=member_desktop]]></url> -->
         <valore>9.5</valore>
       </hardskill>
       <hardskill>
         <item>TypeScript</item>
-        <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_typescript-guide-ita-activity-7270215107379347458-yjqR/?utm_source=share&utm_medium=member_desktop]]></url>
+        <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_typescript-guide-ita-activity-7270215107379347458-yjqR/?utm_source=share&utm_medium=member_desktop]]></url> -->
         <valore>9.5</valore>
       </hardskill>
       <hardskill>
-        <item>React, Redux, Next.js</item>
+        <item>React, Next.js</item>
         <valore>9</valore>
+      </hardskill>
+      <hardskill>
+        <item>Redux/saga, redux toolkit</item>
+        <valore>9</valore>
+      </hardskill>
+      <hardskill>
+        <item>CSS, SCSS, Tailwind</item>
+        <valore>9</valore>
+      </hardskill>
+      <hardskill>
+        <item>shadcn</item>
+        <valore>8</valore>
       </hardskill>
       <hardskill>
         <item>XSL-FO</item>

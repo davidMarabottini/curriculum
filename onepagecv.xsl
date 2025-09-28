@@ -74,9 +74,9 @@
                       </fo:block>
                     </fo:table-cell>
                     <fo:table-cell>
-                    <fo:block>
-                    <xsl:value-of select="$cv_data/descrizione"/>
-                    </fo:block>
+                      <fo:block>
+                        <xsl:value-of select="$cv_data/descrizione"/>
+                      </fo:block>
                     </fo:table-cell>
                     </fo:table-row>
                     </fo:table-body>
@@ -108,13 +108,13 @@
                     <xsl:call-template name="titolo-sezione">
                       <xsl:with-param name="testo" select="$labels/expertise" />
                     </xsl:call-template>
-                    <fo:block>
+                    <fo:block text-align="center">
                       <fo:external-graphic>
                         <xsl:attribute name="src">
                           <xsl:value-of select="concat('url(', $cv_data/competenze/skillsspiderweb, ')')"/>
                         </xsl:attribute>
                         <xsl:attribute name="content-width">scale-to-fit</xsl:attribute>
-                        <xsl:attribute name="width">100%</xsl:attribute>
+                        <xsl:attribute name="width">60%</xsl:attribute>
                         <xsl:attribute name="height">auto</xsl:attribute>
                         <xsl:attribute name="space-after">10mm</xsl:attribute>
 
@@ -176,18 +176,15 @@
 
                     <xsl:for-each select="$cv_data/lingue/lingua">
                       <fo:block font-size="{$font-size-small}" space-after="{$spaziatura-dettaglio}">
-                        <fo:inline>
+                        
                           <xsl:call-template name="conditional-link">
                             <xsl:with-param name="text" select="nome" />
                             <xsl:with-param name="url" select="url"  disable-output-escaping="yes" />
                           </xsl:call-template>
-                        </fo:inline>
-                        <fo:inline>
                           <xsl:call-template name="rating">
                             <xsl:with-param name="value" select="valore"/>
                             <xsl:with-param name="livello" select="livello"/>
                           </xsl:call-template>
-                        </fo:inline>
                       </fo:block>
                     </xsl:for-each>
                   </fo:block>
@@ -195,6 +192,7 @@
               </fo:table-row>
             </fo:table-body>
           </fo:table>
+
           <fo:block font-size="{$font-size-small}" space-before="6mm">
             <xsl:value-of select="$labels/policies"/>
           </fo:block>

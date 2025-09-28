@@ -23,7 +23,7 @@
         </xsl:call-template>
 
         <fo:block font-size="{$font-size-small}" color="{$colore-secondario}">
-          <fo:inline font-family="FontAwesome" padding-right="1mm">&#xf044;</fo:inline>
+          <fo:inline font-family="FontAwesome" padding-right="1mm" font-weight="bold">&#xf02d;</fo:inline>
           <xsl:value-of select="ente"/>
           <fo:inline font-family="FontAwesome" padding-left="3mm" padding-right="1mm">&#xf133;</fo:inline>
           <xsl:value-of select="anno"/>
