@@ -14,6 +14,7 @@
     <fo:block>
     <xsl:call-template name="titolo-sezione">
       <xsl:with-param name="testo" select="$label" />
+      <xsl:with-param name="link" select="$approfondimento-formazione" />
     </xsl:call-template>
 
     <xsl:for-each select="$formazione/corso-studio">
@@ -33,14 +34,6 @@
         </fo:block>
       </fo:block>
     </xsl:for-each>
-
-    <fo:block margin-top="{$spaziatura-base}" font-size="{$font-size-small}" >
-        <xsl:call-template name="link">
-        <xsl:with-param name="icon">&#x2b;</xsl:with-param>
-        <xsl:with-param name="url" select="$approfondimento-formazione/url"/>
-        <xsl:with-param name="tipo" select="$approfondimento-formazione/label"/>
-      </xsl:call-template>
-    </fo:block>
     </fo:block>
   </xsl:template>
   

@@ -125,10 +125,6 @@
                           <xsl:value-of select="$cv_data/competenze/chart-description" />
                         </desc>
                       </fo:external-graphic>
-
-                      <!-- <fo:block font-size="{$font-size-small}" color="{$colore-secondario}">
-                        <xsl:value-of select="$labels/expertise-chart" />
-                      </fo:block> -->
                     </fo:block>
 
                     <xsl:call-template name="titolo-sezione">
@@ -143,16 +139,25 @@
                     <xsl:call-template name="titolo-sezione">
                       <xsl:with-param name="testo" select="$labels/hard-skills" />
                     </xsl:call-template>
-                    <xsl:for-each select="$cv_data/competenze/hardskills/hardskill">
-                      <fo:block font-size="{$font-size-small}" color="{$colore-secondario}" space-after="2.1mm" space-before="0" line-height="0.7">
-                        <xsl:call-template name="conditional-link">
-                          <xsl:with-param name="text" select="item" />
-                          <xsl:with-param name="url" select="url" />
-                        </xsl:call-template>
-                        <xsl:call-template name="progress-bar">
-                          <xsl:with-param name="valore" select="valore" />
-                        </xsl:call-template>
+                    <xsl:for-each select="$cv_data/competenze/hardskills/area">
+                      <xsl:variable name="iconCode" select="./icon"/>
+
+                      <fo:block font-size="{$font-size-small}" font-weight="bold" margin-bottom="{$spaziatura-dettaglio}">
+                        <fo:inline font-family="FontAwesome" padding-right="1mm" font-weight="bold">&#xf005;</fo:inline>
+                        <xsl:value-of select="./name" />
                       </fo:block>
+
+                      <xsl:for-each select="./skills/hardskill">
+                        <fo:block font-size="{$font-size-small}" color="{$colore-secondario}" space-after="2.1mm" space-before="0" line-height="0.7">
+                          <xsl:call-template name="conditional-link">
+                            <xsl:with-param name="text" select="item" />
+                            <xsl:with-param name="url" select="url" />
+                          </xsl:call-template>
+                          <xsl:call-template name="progress-bar">
+                            <xsl:with-param name="valore" select="valore" />
+                          </xsl:call-template>
+                        </fo:block>
+                      </xsl:for-each>
                     </xsl:for-each>
 
                     <xsl:call-template name="titolo-sezione">
@@ -193,7 +198,7 @@
             </fo:table-body>
           </fo:table>
 
-          <fo:block font-size="{$font-size-small}" space-before="6mm">
+          <fo:block font-size="{$font-size-small}" color="{$colore-secondario}" space-before="6mm">
             <xsl:value-of select="$labels/policies"/>
           </fo:block>
         </fo:flow>

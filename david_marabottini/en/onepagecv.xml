@@ -35,7 +35,7 @@
     <esperienza>
       <titolo>Front-end developer</titolo>
       <azienda>Blazar</azienda>
-      <periodo>02/2018-01/2019</periodo>
+      <periodo>02/2018-05/2019</periodo>
       <attivita>
         <attivita-item>Front-end development of various web portals and management applications in dynamic and often agile environments</attivita-item>
       </attivita>
@@ -108,6 +108,17 @@
   </approfondimento-esperienze>
   
   <formazione>
+      <corso-studio>
+      <titolo>Power BI and advanced Excel</titolo>
+      <ente>AKG</ente>
+      <anno>01/10/2025 - In progress</anno>
+      <descrizione>
+        Advanced course of Excel, Power Query and Power BI
+      </descrizione>
+      <descrizione-ats>
+        Advanced course of Excel, Power Query and Power BI
+      </descrizione-ats>
+    </corso-studio>
     <corso-studio>
       <titolo>Data Analysis</titolo>
       <ente>UNIMI</ente>
@@ -142,17 +153,6 @@
       </descrizione-ats>
     </corso-studio>
     <corso-studio>
-      <titolo>PSMII Certificate</titolo>
-      <ente>Scrum.org</ente>
-      <anno>19/05/2025</anno>
-      <descrizione>
-        Intermediate Level Scrum Master Certification
-      </descrizione>
-      <descrizione-ats>
-        Intermediate Level Scrum Master Certification
-      </descrizione-ats>
-    </corso-studio>
-    <corso-studio>
       <titolo>English lessons</titolo>
       <ente>Preply</ente>
       <anno>2025</anno>
@@ -163,29 +163,14 @@
         English talking sessions
       </descrizione-ats>
     </corso-studio>
-    <!-- <corso-studio>
-      <titolo>PSMI Certificate</titolo>
-      <ente>Scrum.org</ente>
-      <anno>10/05/2024</anno>
-      <descrizione>
-        Base Level Scrum Master Certification
-      </descrizione>
-      <descrizione-ats>
-        Base Level Scrum Master Certification
-      </descrizione-ats>
-    </corso-studio> -->
-    <!-- <corso-studio>
-      <titolo>English lesson</titolo>
-      <ente>My English School</ente>
-      <anno>2015 - 2016</anno>
-      <descrizione-ats>
-        Lezioni di Inglese
-      </descrizione-ats>
-    </corso-studio> -->
-    <!-- <corso-studio>
+    <corso-studio>
       <titolo>Computer Engeenering</titolo>
       <ente>Siena University</ente>
       <anno>2010 - 2013</anno>
+      <descrizione>
+        Software programming and design, computer networks, databases, mathematical analysis I and II, linear agebra, dynamical systems, etc.
+        Development of various projects in C++ and PHP.
+      </descrizione>
       <descrizione-ats>
         Programmazione e progettazione Software, Reti di calcolatori, Basi di dati, Analisi matematica I e II, Agebra lineare, Sistemi dinamici, ecc.
         Programmazione ad oggetti e design patterns.
@@ -193,14 +178,6 @@
         Sviluppo di vari progetti in C++ e PHP.
       </descrizione-ats>
     </corso-studio>
-    <corso-studio>
-      <titolo>Degree of accounter/developer</titolo>
-      <ente>ITCG CA Dalla Chiesa</ente>
-      <anno>2009</anno>
-      <descrizione-ats>
-        Basi di ragioneria, programmazione e matematica
-      </descrizione-ats>
-    </corso-studio> -->
   </formazione>
 
   <approfondimento-formazione>
@@ -234,90 +211,94 @@
     </certificates>
 
     <hardskills>
+      <area>
+        <name>Data</name>
+        <icon>f080</icon>
+        <skills>
+          <hardskill>
+            <item>Python</item>
+            <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url> -->
+            <valore>9</valore>
+          </hardskill>
+          <hardskill>
+            <item>R</item>
+            <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url> -->
+            <valore>8</valore>
+          </hardskill>
+          <hardskill>
+            <item>SQL</item>
+            <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-sql-clausola-with-httpslnkdin-activity-7282160278614536193-aJwb/?utm_source=share&utm_medium=member_desktop]]></url> -->
+            <valore>9</valore>
+          </hardskill>
+          <hardskill>
+            <item>Notebook Jupyter</item>
+            <valore>9</valore>
+          </hardskill>
+          <hardskill>
+            <item>Machine Learning</item>
+            <url>https://github.com/davidMarabottini/studio_data_science/blob/main/readme.md</url>
+            <valore>8</valore>
+          </hardskill>
+        </skills>
+      </area>
+      <area>
+        <name>Frontend</name>
+        <icon>f5fc</icon>
+        <skills>
+          <hardskill>
+          <item>JavaScript</item>
+          <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_javascript-index-consoletime-consoletimeend-activity-7289412701972303872-2ShA/?utm_source=share&utm_medium=member_desktop]]></url> -->
+          <valore>9.5</valore>
+        </hardskill>
+        <hardskill>
+          <item>TypeScript</item>
+          <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_typescript-guide-ita-activity-7270215107379347458-yjqR/?utm_source=share&utm_medium=member_desktop]]></url> -->
+          <valore>9.5</valore>
+        </hardskill>
+        <hardskill>
+          <item>React, Next.js</item>
+          <valore>9</valore>
+        </hardskill>
+        <hardskill>
+          <item>Redux/saga, redux toolkit</item>
+          <valore>9</valore>
+        </hardskill>
+        </skills>
+      </area>
+      <area>
+        <name>Scrum</name>
+        <icon>f2b5</icon>
+        <skills>
+          <hardskill>
+            <item>Scrum</item>
+            <url>https://www.scrum.org/user/1419987</url>
+            <valore>8.5</valore>
+          </hardskill>
+          <hardskill>
+            <item>Suite Atlassian (Jira, Confluece ecc...)</item>
+            <valore>8</valore>
+          </hardskill>
+        </skills>
+      </area>
+      <area>
+      <name>More</name>
+      <icon>f0fe</icon>
+      <skills>
       <hardskill>
-        <item>Python</item>
-        <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url> -->
-        <valore>8</valore>
-      </hardskill>
-      <hardskill>
-        <item>R</item>
-        <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url> -->
-        <valore>8</valore>
-      </hardskill>
-      <hardskill>
-        <item>SQL</item>
-        <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-sql-clausola-with-httpslnkdin-activity-7282160278614536193-aJwb/?utm_source=share&utm_medium=member_desktop]]></url> -->
-        <valore>8.5</valore>
-      </hardskill>
-      <hardskill>
-        <item>Notebook Jupyter</item>
-        <valore>8.5</valore>
-      </hardskill>
-      <hardskill>
-        <item>ML, Sci-kit-learn</item>
-        <url>https://github.com/davidMarabottini/studio_data_science/blob/main/readme.md</url>
-        <valore>8</valore>
-      </hardskill>
-      <hardskill>
-        <item>numpy, pandas, matplotlib</item>
-        <valore>8</valore>
-      </hardskill>
-      <hardskill>
-        <item>sympy</item>
-        <valore>7</valore>
-      </hardskill>
-      <hardskill>
-        <item>imbalanced-learn</item>
-        <valore>6</valore>
-      </hardskill>
-      <hardskill>
-        <item>Deep learning, pytorch</item>
-        <valore>4</valore>
-      </hardskill>
-      <hardskill>
-        <item>JavaScript</item>
-        <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_javascript-index-consoletime-consoletimeend-activity-7289412701972303872-2ShA/?utm_source=share&utm_medium=member_desktop]]></url> -->
-        <valore>9.5</valore>
-      </hardskill>
-      <hardskill>
-        <item>TypeScript</item>
-        <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_typescript-guide-ita-activity-7270215107379347458-yjqR/?utm_source=share&utm_medium=member_desktop]]></url> -->
-        <valore>9.5</valore>
-      </hardskill>
-      <hardskill>
-        <item>React, Next.js</item>
-        <valore>9</valore>
-      </hardskill>
-      <hardskill>
-        <item>Redux/saga, redux toolkit</item>
-        <valore>9</valore>
-      </hardskill>
-      <hardskill>
-        <item>CSS, SCSS, Tailwind</item>
-        <valore>9</valore>
-      </hardskill>
-      <hardskill>
-        <item>shadcn</item>
+        <item>Pacchetto office 365</item>
         <valore>8</valore>
       </hardskill>
       <hardskill>
         <item>XSL-FO</item>
         <url>https://github.com/davidMarabottini/curriculum</url>
-        <valore>7</valore>
-      </hardskill>
-      <hardskill>
-        <item>Scrum</item>
-        <url>https://www.scrum.org/user/1419987</url>
-        <valore>8.5</valore>
-      </hardskill>
-      <hardskill>
-        <item>Jira, Confluence</item>
         <valore>8</valore>
       </hardskill>
       <hardskill>
         <item>figma, Miro</item>
         <valore>8</valore>
       </hardskill>
+      </skills>
+      </area>
     </hardskills>
 
     <softskills>
@@ -333,14 +314,6 @@
         <valore>8.5</valore>
       </softskill>
     </softskills>
-    <!-- <relazionali>
-      <item>Ottima capacità di comunicazione e ascolto attivo all'interno nel team.</item>
-      <item>Predisposizione a dialoghi onesti, costruttivi e trasparenti.</item>
-    </relazionali>
-    <organizzative>
-      <item>Partecipazione e contributo attivo al refinement ed alla pianificazione di sprint.</item>
-      <item>Partecipazione e contributo attivo alle sprint retrospective.</item>
-    </organizzative> -->
   </competenze>
   
   <lingue>
