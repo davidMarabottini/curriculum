@@ -1,0 +1,59 @@
+name: CV PDF Generation and External Push
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  generate_cv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Download Apache FOP Binary
+        run: |
+          FOP_VERSION="2.7"
+          wget https://archive.apache.org/dist/xmlgraphics/fop/binaries/fop-${FOP_VERSION}-bin.tar.gz
+          tar xvf fop-${FOP_VERSION}-bin.tar.gz
+          mv fop-${FOP_VERSION} fop
+          echo "FOP_HOME=$(pwd)/fop/fop/fop" >> $GITHUB_ENV   # NOTA: punta direttamente allo script interno
+      - name: Debug FOP structure
+        run: |
+          ls -l $(pwd)/fop/fop
+          ls -l $(pwd)/fop/fop
+          ls -l $(pwd)/fop/fop
+        env:
+          FOP_HOME: ${{ env.FOP_HOME }}
+
+      - name: Generate CV PDF
+        run: |
+          chmod +x $(pwd)/fop/fop/fop
+          $(pwd)/fop/fop/fop \
+            -c ${GITHUB_WORKSPACE}/fop.xconf \
+            -xml ${GITHUB_WORKSPACE}/dummy.xml \
+            -xsl ${GITHUB_WORKSPACE}/onepagecv.xsl \
+            -pdf ${GITHUB_WORKSPACE}/david_marabottini_expanded/it/cv_david_one_page.pdf \
+            -param lang it \
+            -param root_folder david_marabottini_expanded
+        shell: bash
+        env:
+          FOP_HOME: ${{ env.FOP_HOME }}
+      - name: Push CV PDF to External Repository
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source_file: 'david_marabottini_expanded/it/cv_david_one_page.pdf'
+          destination_repo: 'davidmarabottini/pvt_github_1'
+          destination_folder: 'it/'
+          commit_message: 'Auto-generated CV PDF from FOP, commit ${{ github.sha }}'
+          user_name: 'GitHub Actions Bot'
+          user_email: 'actions@github.com'
