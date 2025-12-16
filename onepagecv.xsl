@@ -8,8 +8,8 @@
   <xsl:param name="lang" select="'it'"/>
   <xsl:param name="data" select="'onepagecv.xml'"/>
 
-  <xsl:variable name="labels" select="document(concat($root_folder, '/', $lang, '/labels.xml'))/labels"/>
-  <xsl:variable name="cv_data" select="document(concat($root_folder, '/', $lang,'/',$data))/curriculum"/>
+  <xsl:variable name="labels" select="document(concat('profiles/', $root_folder, '/', $lang, '/labels.xml'))/labels"/>
+  <xsl:variable name="cv_data" select="document(concat('profiles/', $root_folder, '/', $lang,'/',$data))/curriculum"/>
 
   <xsl:template match="/">
     <fo:root>
@@ -30,9 +30,9 @@
         <fo:flow flow-name="xsl-region-body">
           <xsl:call-template name="header">
             <xsl:with-param name="nome" select="$cv_data/dati-personali/nome"/>
-            <xsl:with-param name="email" select="string(document(concat($root_folder, '/datipersonali.xml'))/dati-personali/email)" />
-            <xsl:with-param name="telefono" select="string(document(concat($root_folder, '/datipersonali.xml'))/dati-personali/telefono)"/>
-            <xsl:with-param name="luogo" select="string(document(concat($root_folder, '/datipersonali.xml'))/dati-personali/luogo)"/>
+            <xsl:with-param name="email" select="string(document(concat('profiles/', $root_folder, '/datipersonali.xml'))/dati-personali/email)" />
+            <xsl:with-param name="telefono" select="string(document(concat('profiles/', $root_folder, '/datipersonali.xml'))/dati-personali/telefono)"/>
+            <xsl:with-param name="luogo" select="string(document(concat('profiles/', $root_folder, '/datipersonali.xml'))/dati-personali/luogo)"/>
           </xsl:call-template>
 
           <fo:table table-layout="fixed" width="100%" space-before="0.05cm">
@@ -94,11 +94,14 @@
                   </fo:block>
 
                   <fo:block>
+                    <xsl:if test="string-length($cv_data/progetti-personali) &gt; 0">
                     <xsl:call-template name="personal-projects">
                       <xsl:with-param name="label" select="$labels/personal-projects"/>
                       <xsl:with-param name="progetti-personali" select="$cv_data/progetti-personali"/>
                       <xsl:with-param name="approfondimento-progetti-personali" select="$cv_data/approfondimento-progetti-personali"/>
                     </xsl:call-template>
+                    </xsl:if>
+
                     <xsl:call-template name="work-experiences">
                       <xsl:with-param name="label" select="$labels/work-experience"/>
                       <xsl:with-param name="esperienze" select="$cv_data/esperienze"/>

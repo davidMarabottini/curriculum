@@ -1,0 +1,16 @@
+<labels>
+  <professional-profile>Professional Profile</professional-profile>
+  <personal-projects>Personal Projects</personal-projects>
+  <work-experience>Work experiences</work-experience>
+  <education>Education</education>
+  <external-links>External links</external-links>
+  <expertise>Expertise</expertise>
+  <expertise-chart-title>Expertise Chart</expertise-chart-title>
+  <expertise-chart>Generated with matplotlib</expertise-chart>
+  <hard-skills>Hard skills</hard-skills>
+  <soft-skills>Soft skills</soft-skills>
+  <languages>Languages</languages>
+  <certificates>Certificates</certificates>
+  <policies>The undersigned is aware that, pursuant to Article 26 of Law 15/66, false statements, falsifying documents, and the use of false documents are punishable under the Criminal Code and special laws. Furthermore, the undersigned authorizes the processing of personal data, in accordance with Legislative Decree 196/2003.</policies>
+  <footer>Designed in Figma and developed in XSLT/FOP</footer>
+</labels>

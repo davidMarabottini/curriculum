@@ -7,7 +7,12 @@ on:
 
 jobs:
   generate_cv:
+    strategy:
+      matrix:
+        lang: [it, en]
+
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout Source Repo
         uses: actions/checkout@v4
@@ -25,11 +30,12 @@ jobs:
           tar xvf fop-${FOP_VERSION}-bin.tar.gz
           mv fop-${FOP_VERSION} fop
           echo "FOP_HOME=$(pwd)/fop/fop/fop" >> $GITHUB_ENV   # NOTA: punta direttamente allo script interno
-      - name: Debug FOP structure
-        run: |
-          ls -l $(pwd)/fop/fop
-          ls -l $(pwd)/fop/fop
-          ls -l $(pwd)/fop/fop
+      # - name: Debug FOP structure
+      #   run: |
+      #     ls -l $(pwd)/fop/fop
+      #     ls -l $(pwd)/fop/fop
+      #     ls -l $(pwd)/fop/fop
+
         env:
           FOP_HOME: ${{ env.FOP_HOME }}
 
@@ -40,20 +46,21 @@ jobs:
             -c ${GITHUB_WORKSPACE}/fop.xconf \
             -xml ${GITHUB_WORKSPACE}/dummy.xml \
             -xsl ${GITHUB_WORKSPACE}/onepagecv.xsl \
-            -pdf ${GITHUB_WORKSPACE}/david_marabottini_expanded/it/cv_david_one_page.pdf \
+            -pdf ${GITHUB_WORKSPACE}/profiles/david_marabottini_expanded/it/cv_david_one_page.pdf \
             -param lang it \
             -param root_folder david_marabottini_expanded
         shell: bash
         env:
           FOP_HOME: ${{ env.FOP_HOME }}
-      - name: Push CV PDF to External Repository
+
+      - name: Push CV PDF to External Repository - Lang ${{ matrix.lang }}
         uses: dmnemec/copy_file_to_another_repo_action@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source_file: 'david_marabottini_expanded/it/cv_david_one_page.pdf'
+          source_file: 'profiles/david_marabottini_expanded/${{ matrix.lang }}/cv_david_one_page.pdf'
           destination_repo: 'davidmarabottini/CV_Insights'
-          destination_folder: 'it/'
+          destination_folder: '${{ matrix.lang }}/'
           commit_message: 'Auto-generated CV PDF from FOP, commit ${{ github.sha }}'
           user_name: 'GitHub Actions Bot'
           user_email: 'actions@github.com'
