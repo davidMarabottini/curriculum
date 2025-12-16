@@ -10,6 +10,7 @@ jobs:
     strategy:
       matrix:
         lang: [it, en]
+        profile: [david_marabottini_expanded, david_marabottini]
 
     runs-on: ubuntu-latest
     
@@ -39,27 +40,27 @@ jobs:
         env:
           FOP_HOME: ${{ env.FOP_HOME }}
 
-      - name: Generate CV PDF - Lang ${{ matrix.lang }}
+      - name: Generate CV PDF - Lang ${{ matrix.lang }} Profile ${{ matrix.profile }}
         run: |
           chmod +x $(pwd)/fop/fop/fop
           $(pwd)/fop/fop/fop \
             -c ${GITHUB_WORKSPACE}/fop.xconf \
             -xml ${GITHUB_WORKSPACE}/dummy.xml \
             -xsl ${GITHUB_WORKSPACE}/onepagecv.xsl \
-            -pdf ${GITHUB_WORKSPACE}/profiles/david_marabottini_expanded/${{ matrix.lang }}/cv_david_one_page.pdf \
+            -pdf ${GITHUB_WORKSPACE}/profiles/${{ matrix.profile }}/${{ matrix.lang }}/cv_david_one_page.pdf \
             -param lang ${{ matrix.lang }} \
-            -param root_folder david_marabottini_expanded
+            -param root_folder ${{ matrix.profile }}
         shell: bash
         env:
           FOP_HOME: ${{ env.FOP_HOME }}
 
-      - name: Push CV PDF to External Repository - Lang ${{ matrix.lang }}
+      - name: Push CV PDF to External Repository - Lang ${{ matrix.lang }} Profile ${{ matrix.profile }}
         uses: dmnemec/copy_file_to_another_repo_action@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source_file: 'profiles/david_marabottini_expanded/${{ matrix.lang }}/cv_david_one_page.pdf'
-          destination_repo: 'davidmarabottini/CV_Insights'
+          source_file: 'profiles/${{ matrix.profile }}/${{ matrix.lang }}/cv_david_one_page.pdf'
+          destination_repo: '${{ matrix.profile }}/CV_Insights'
           destination_folder: '${{ matrix.lang }}/'
           commit_message: 'Auto-generated CV PDF from FOP, commit ${{ github.sha }}'
           user_name: 'GitHub Actions Bot'
