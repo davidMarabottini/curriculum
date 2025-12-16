@@ -164,7 +164,7 @@
       </descrizione-ats>
     </corso-studio>
     <corso-studio>
-      <titolo>Computer Engeenering</titolo>
+      <titolo>Computer Engineering</titolo>
       <ente>Siena University</ente>
       <anno>2010 - 2013</anno>
       <descrizione>
@@ -187,7 +187,7 @@
 
   <link-esterni>
     <link>
-      <tipo>Triangolar relationships on various means</tipo>
+      <tipo>Triangular relationships on various means</tipo>
       <url>https://github.com/davidMarabottini/relazione_media_deviazione_standard</url>
     </link>
     <link>
@@ -285,7 +285,7 @@
       <icon>f0fe</icon>
       <skills>
       <hardskill>
-        <item>Pacchetto office 365</item>
+        <item>Microsoft office 365</item>
         <valore>8</valore>
       </hardskill>
       <hardskill>

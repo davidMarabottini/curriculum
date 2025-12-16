@@ -1,0 +1,16 @@
+<labels>
+  <professional-profile>Profilo professionale</professional-profile>
+  <personal-projects>Progetti personali</personal-projects>
+  <work-experience>Esperienze di lavoro</work-experience>
+  <education>Formazione</education>
+  <external-links>Link esterni</external-links>
+  <expertise>Aree di competenza</expertise>
+  <expertise-chart-title>Grafico delle competenze</expertise-chart-title>
+  <expertise-chart>Generato con matplotlib</expertise-chart>
+  <hard-skills>Hard skills</hard-skills>
+  <soft-skills>Soft skills</soft-skills>
+  <languages>Lingue</languages>
+  <certificates>Certificazioni</certificates>
+  <policies>Il sottoscritto è a conoscenza che, ai sensi dell'art. 26 della legge 15/66, le dichiarazioni mendaci, la falsità negli atti e l'uso di atti falsi sono puniti ai sensi del codice penale e delle leggi speciali. Inoltre, il sottoscritto autorizza al trattamento dei dati personali, secondo quanto previsto dal Decreto legge 196/2003</policies>
+  <footer>Disegnato in Figma e sviluppato in XSLT/FOP</footer>
+</labels>

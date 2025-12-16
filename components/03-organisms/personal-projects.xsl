@@ -7,17 +7,17 @@
   <xsl:import href="../01-atoms/titolo-sezione.xsl"/>
   <xsl:import href="../utils//md-parser/md-parser.xsl"/>
 
-  <xsl:template name="work-experiences">
+  <xsl:template name="personal-projects">
     <xsl:param name="label" />
-    <xsl:param name="esperienze" />
-    <xsl:param name="approfondimento-esperienze" />
+    <xsl:param name="progetti-personali" />
+    <xsl:param name="approfondimento-progetti-personali" />
 
     <fo:block>
       <xsl:call-template name="titolo-sezione">
         <xsl:with-param name="testo" select="$label"/>
-        <xsl:with-param name="link" select="$approfondimento-esperienze" />
+        <xsl:with-param name="link" select="$approfondimento-progetti-personali" />
       </xsl:call-template>
-      <xsl:for-each select="$esperienze/esperienza">
+      <xsl:for-each select="$progetti-personali/progetto-personale">
         <fo:block space-after="{$spaziatura-base}" space-before="{$spaziatura-base}">
           <xsl:if test="position() != last()">
             <xsl:attribute name="border-bottom">1px dotted #888888</xsl:attribute>
@@ -26,14 +26,7 @@
             <xsl:with-param name="testo" select="titolo"/>
           </xsl:call-template>
 
-          <fo:block font-size="{$font-size-small}" color="{$colore-secondario}">
-            <fo:inline font-family="FontAwesome" padding-right="1mm">&#xf2b5;</fo:inline>
-            <xsl:value-of select="azienda"/>
-            <fo:inline font-family="FontAwesome" padding-left="3mm" padding-right="1mm">&#xf133;</fo:inline>
-            <xsl:value-of select="periodo"/>
-          </fo:block>
-
-          <xsl:for-each select="attivita/attivita-item">
+          <xsl:for-each select="descrizione">
             <xsl:call-template name="render-markdown-poc">
               <xsl:with-param name="text" select="."/>
               <xsl:with-param name="font-size" select="$font-size-small"/>

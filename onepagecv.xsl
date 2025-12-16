@@ -21,11 +21,11 @@
       </fo:layout-master-set>
 
       <fo:page-sequence master-reference="A4">
-        <fo:static-content flow-name="xsl-region-after">
+        <!-- <fo:static-content flow-name="xsl-region-after">
           <fo:block text-align="right" font-size="8pt" color="{$colore-secondario}">
             <xsl:value-of select="$labels/footer"/>
           </fo:block>
-        </fo:static-content>
+        </fo:static-content> -->
 
         <fo:flow flow-name="xsl-region-body">
           <xsl:call-template name="header">
@@ -47,7 +47,17 @@
                       <xsl:with-param name="testo" select="$labels/professional-profile"/>
                     </xsl:call-template>
 
-                    <fo:table>
+                    <fo:block>
+                        <!-- <xsl:value-of select="$cv_data/descrizione"/> -->
+                        <xsl:call-template name="render-markdown-poc">
+                          <xsl:with-param name="text" select="$cv_data/descrizione"/>
+                          <xsl:with-param name="font-size" select="$font-size-small"/>
+                          <xsl:with-param name="color" select="$colore-principale"/>
+                          <xsl:with-param name="margin-top" select="'1mm'"/>
+                        </xsl:call-template>
+                      </fo:block>
+
+                    <!--<fo:table>
                       <fo:table-column column-width="19%" />
                       <fo:table-column column-width="81%"/>
                     <fo:table-body>
@@ -80,10 +90,15 @@
                     </fo:table-cell>
                     </fo:table-row>
                     </fo:table-body>
-                    </fo:table>
+                    </fo:table>-->
                   </fo:block>
 
                   <fo:block>
+                    <xsl:call-template name="personal-projects">
+                      <xsl:with-param name="label" select="$labels/personal-projects"/>
+                      <xsl:with-param name="progetti-personali" select="$cv_data/progetti-personali"/>
+                      <xsl:with-param name="approfondimento-progetti-personali" select="$cv_data/approfondimento-progetti-personali"/>
+                    </xsl:call-template>
                     <xsl:call-template name="work-experiences">
                       <xsl:with-param name="label" select="$labels/work-experience"/>
                       <xsl:with-param name="esperienze" select="$cv_data/esperienze"/>
@@ -142,7 +157,7 @@
                     <xsl:for-each select="$cv_data/competenze/hardskills/area">
                       <xsl:variable name="iconCode" select="./icon"/>
 
-                      <fo:block font-size="{$font-size-small}" font-weight="bold" margin-bottom="{$spaziatura-dettaglio}">
+                      <fo:block font-size="{$font-size-small}" font-weight="bold" margin-top="{$spaziatura-dettaglio}" margin-bottom="{$spaziatura-dettaglio}">
                         <fo:inline font-family="FontAwesome" padding-right="1mm" font-weight="bold">&#xf005;</fo:inline>
                         <xsl:value-of select="./name" />
                       </fo:block>

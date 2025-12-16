@@ -227,16 +227,28 @@
 
   <link-esterni>
     <link>
-      <tipo>Teorema relazione triangolari tra medie varie</tipo>
+      <tipo>Teorema relazione triangolari tra medie varie (python sympy)</tipo>
       <url>https://github.com/davidMarabottini/relazione_media_deviazione_standard</url>
     </link>
     <link>
-      <tipo>Ipotesi hanoi 4 + pioli</tipo>
+      <tipo>Ipotesi hanoi 4 + pioli </tipo>
       <url>https://zenodo.org/records/15713333</url>
     </link>
     <link>
       <tipo>linkedin</tipo>
       <url>https://www.linkedin.com/in/david-m-551aba81/</url>
+    </link>
+    <link>
+      <tipo>Analisi R</tipo>
+      <url>https://github.com/davidMarabottini/esercizi_R</url>
+    </link>
+    <link>
+      <tipo>Studio ML</tipo>
+      <url>https://github.com/davidMarabottini/studio_data_science/tree/main/</url>
+    </link>
+    <link>
+      <tipo>Modelli predittivi stroke</tipo>
+      <url>https://github.com/davidMarabottini/studio_data_science/tree/main/000-in-evidenza/02-stroke</url>
     </link>
   </link-esterni>
   

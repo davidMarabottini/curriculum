@@ -10,6 +10,7 @@
   <xsl:import href="./02-molecules/conditional-link.xsl"/>
 
   <xsl:import href="./03-organisms/header.xsl"/>
+  <xsl:import href="./03-organisms/personal-projects.xsl"/>
   <xsl:import href="./03-organisms/work-experiences.xsl"/>
   <xsl:import href="./03-organisms/education.xsl"/>
   <xsl:import href="./03-organisms/external-links.xsl"/>

@@ -18,7 +18,10 @@
     </xsl:call-template>
 
     <xsl:for-each select="$formazione/corso-studio">
-      <fo:block space-after="{$spaziatura-dettaglio}">
+      <fo:block space-after="{$spaziatura-base}" space-before="{$spaziatura-base}">
+      <xsl:if test="position() != last()">
+            <xsl:attribute name="border-bottom">1px dotted #888888</xsl:attribute>
+        </xsl:if>
         <xsl:call-template name="sottotitolo">
           <xsl:with-param name="testo" select="titolo"/>
         </xsl:call-template>
@@ -30,7 +33,13 @@
           <xsl:value-of select="anno"/>
         </fo:block>
         <fo:block font-size="{$font-size-small}" color="{$colore-secondario}" margin-top="1mm">
-          <xsl:value-of select="descrizione"/>
+          <!-- <xsl:value-of select="descrizione"/> -->
+          <xsl:call-template name="render-markdown-poc">
+              <xsl:with-param name="text" select="descrizione"/>
+              <xsl:with-param name="font-size" select="$font-size-small"/>
+              <xsl:with-param name="color" select="$colore-principale"/>
+              <xsl:with-param name="margin-top" select="'1mm'"/>
+            </xsl:call-template>
         </fo:block>
       </fo:block>
     </xsl:for-each>

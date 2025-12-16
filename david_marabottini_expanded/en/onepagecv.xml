@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curriculum>
+  <dati-personali>
+    <nome>David Marabottini</nome>
+    <foto>./assets/david_bn.png</foto>
+  </dati-personali>
+
+  <descrizione>
+    I'm a front-end developer, driven by a strong passion for mathematics and anything that stimulates critical thinking. I enjoy identifying hidden patterns in problems, following intuitions that sometimes turn into personal theories, and translating abstract ideas into concrete solutions. In recent months, I've delved deeper into machine learning and data analysis, developing predictive models that integrate various techniques. I also have a solid knowledge of SQL and am certified PSM I and PSM II. I'm particularly comfortable in dynamic teams where people cultivate a respectful, responsible, and proactive approach.
+  </descrizione>
+  <esperienze>
+    <esperienza>
+      <titolo>Front-end developer</titolo>
+      <azienda>Key2Business</azienda>
+      <periodo>06/2019-05/2025</periodo>
+      <attivita>
+        <attivita-item>Front-end and AM development activities on web portals and management applications in banking, television and retail competitions, working in dynamic and often agile environments</attivita-item>
+        <!-- <attivita-item>Sviluppo test unitari e design system e pagine amp relativi presso vari clienti.</attivita-item>
+        <attivita-item>Partecipazione attiva in team agile cross-funzionali e autogestiti.</attivita-item> -->
+      </attivita>
+      <attivita-ats>
+        - Attività di sviluppo front-end di vari portali web e applicativi gestionali, sviluppo test unitari e design system e pagine amp relativi presso vari clienti.
+
+        - Partecipazione attiva in team agile cross-funzionali e autogestiti
+
+        - AM su xstore
+
+        Tecnologie, ide e strumenti utilizzati:
+        Reactjs, Nextjs, Redux/saga/selectors, jest, storybook, AMP, SCSS, javascript, visual studio code, git, Jira, Jenkins, typescript, material ui, styled components, redux-slice, recoil, miro
+
+        Modalità di lavoro:
+        Scrum, kamban, waterfall
+      </attivita-ats>
+    </esperienza>
+    <esperienza>
+      <titolo>Front-end developer</titolo>
+      <azienda>Blazar</azienda>
+      <periodo>02/2018-05/2019</periodo>
+      <attivita>
+        <attivita-item>Front-end development of various web portals and management applications in dynamic and often agile environments</attivita-item>
+      </attivita>
+      <attivita-ats>
+        Svolta attività di sviluppo di applicazioni web presso vari clienti in ambito front-end.
+
+        Tecnologie, ide e strumenti utilizzati:
+        React, SCSS, jss, javascript, visual studio code, git, gitlab, trello
+
+        Modalità di lavoro:
+        Scrum
+      </attivita-ats>
+    </esperienza>
+    <esperienza>
+      <titolo>PHP developer</titolo>
+      <azienda>JigGiga</azienda>
+      <periodo>04/2017 - 12/2017</periodo>
+      <attivita>
+        <attivita-item>Development of a PHP portal for managing black boxes for car fleets</attivita-item>
+      </attivita>
+      <attivita-ats>
+        Fullstack developer in php5 + javascript/jquery per gestionale di black box basato su un framework MVC custom.
+
+        Tecnologie utilizzate:
+        PHP5, mysql, jquery, bootstrap
+      </attivita-ats>
+    </esperienza>
+    <esperienza>
+      <titolo>Fullstack developer</titolo>
+      <azienda>Modis/Business changers</azienda>
+      <periodo>01/2016 - 04/2017</periodo>
+      <attivita>
+        <attivita-item>Front-end development, procedures, reports, and XML spreadsheets for calls for tenders in the Lombardy region.</attivita-item>
+      </attivita>
+    </esperienza>
+    <esperienza>
+      <titolo>SQL expert and report employee</titolo>
+      <azienda>Runtime Solutions</azienda>
+      <periodo>01/2015 - 10/2015</periodo>
+      <attivita>
+        <attivita-item>Created queries, reports and layouts based on SAP platform of documents for various customers</attivita-item>
+      </attivita>
+      <attivita-ats>
+        Creazione reports in Crystal, interfacciati con SAP Business One.
+        Creazione queries
+
+        Tecnologie utilizzate:
+        Crystal Report,SQL Server,SAP HANA
+      </attivita-ats>
+    </esperienza>
+    <esperienza>
+      <titolo>.NET Developer</titolo>
+      <azienda>Crenway Srl</azienda>
+      <periodo>07/2014 - 11/2014</periodo>
+      <attivita>
+        <attivita-item>Developing of various portals in .net</attivita-item>
+      </attivita>
+      <attivita-ats>
+        Attività di sviluppo e monitoraggio di vari portali.
+
+        Tecnologie utilizzate:
+        Framework ASP.NET, C#, Javascript, SQL (MS SQL SERVER), Linq, Web services, Visual Studio, team foundation, Team explorer, Google analytics, Windows azure
+      </attivita-ats>
+    </esperienza>
+  </esperienze>
+
+    <approfondimento-esperienze>
+    <label>INSIGHT</label>
+    <url>https://github.com/davidMarabottini/CV_Insights/blob/main/en/work_experiences.md</url>
+  </approfondimento-esperienze>
+  
+  <formazione>
+      <corso-studio>
+      <titolo>Power BI and advanced Excel</titolo>
+      <ente>AKG</ente>
+      <anno>01/10/2025 - In progress</anno>
+      <descrizione>
+        Advanced course of Excel, Power Query and Power BI
+      </descrizione>
+      <descrizione-ats>
+        Advanced course of Excel, Power Query and Power BI
+      </descrizione-ats>
+    </corso-studio>
+    <corso-studio>
+      <titolo>Data Analysis</titolo>
+      <ente>UNIMI</ente>
+      <anno>26/09/2025 - In progress</anno>
+      <descrizione>
+        Data analysis theory and language R
+      </descrizione>
+      <descrizione-ats>
+        Data analysis theory and language R
+      </descrizione-ats>
+    </corso-studio>
+    <corso-studio>
+      <titolo>A deep understanding of deep learning</titolo>
+      <ente>Udemy</ente>
+      <anno>08/2025 - In progress</anno>
+      <descrizione>
+        Mathematics and programming behind deep learning, Python review and ML concepts related to neural networks and Python learning
+      </descrizione>
+      <descrizione-ats>
+        Mathematics and programming behind deep learning, Python review and ML concepts related to neural networks and Python learning
+      </descrizione-ats>
+    </corso-studio>
+    <corso-studio>
+      <titolo>Machine learning e data science in python: il corso completo</titolo>
+      <ente>Udemy</ente>
+      <anno>06/2025 - 08/2025</anno>
+      <descrizione>
+        Learn to build supervised and unsupervised learning models with Python and Scikit-learn
+      </descrizione>
+      <descrizione-ats>
+        Learn to build supervised and unsupervised learning models with Python and Scikit-learn
+      </descrizione-ats>
+    </corso-studio>
+    <corso-studio>
+      <titolo>English lessons</titolo>
+      <ente>Preply</ente>
+      <anno>2025</anno>
+      <descrizione>
+        English talking sessions
+      </descrizione>
+      <descrizione-ats>
+        English talking sessions
+      </descrizione-ats>
+    </corso-studio>
+    <corso-studio>
+      <titolo>Computer Engineering</titolo>
+      <ente>Siena University</ente>
+      <anno>2010 - 2013</anno>
+      <descrizione>
+        Software programming and design, computer networks, databases, mathematical analysis I and II, linear agebra, dynamical systems, etc.
+        Development of various projects in C++ and PHP.
+      </descrizione>
+      <descrizione-ats>
+        Programmazione e progettazione Software, Reti di calcolatori, Basi di dati, Analisi matematica I e II, Agebra lineare, Sistemi dinamici, ecc.
+        Programmazione ad oggetti e design patterns.
+        Studio di strumenti matematici.
+        Sviluppo di vari progetti in C++ e PHP.
+      </descrizione-ats>
+    </corso-studio>
+  </formazione>
+
+  <approfondimento-formazione>
+    <label>INSIGHT</label>
+    <url>https://github.com/davidMarabottini/CV_Insights/blob/main/en/education.md</url>
+  </approfondimento-formazione>
+
+  <link-esterni>
+    <link>
+      <tipo>Triangular relationships on various means</tipo>
+      <url>https://github.com/davidMarabottini/relazione_media_deviazione_standard</url>
+    </link>
+    <link>
+      <tipo>hypotesis hanoi 4 + pillars</tipo>
+      <url>https://zenodo.org/records/15713333</url>
+    </link>
+    <link>
+      <tipo>linkedin</tipo>
+      <url>https://www.linkedin.com/in/david-m-551aba81/</url>
+    </link>
+  </link-esterni>
+  <competenze>
+    <skillsspiderweb>./david_marabottini/skills_chart.svg</skillsspiderweb>
+        <chart-description>
+          Frontend 9/10, ML and DL 8/10, Scrum 8/10, SQL 8/10, Matematics 7/10.
+        </chart-description>
+
+    <certificates>
+      <item>PSM II - Professional Scrum Master II</item>
+      <item>PSM I - Professional Scrum Master I</item>
+    </certificates>
+
+    <hardskills>
+      <area>
+        <name>Data</name>
+        <icon>f080</icon>
+        <skills>
+          <hardskill>
+            <item>Python</item>
+            <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url> -->
+            <valore>9</valore>
+          </hardskill>
+          <hardskill>
+            <item>R</item>
+            <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url> -->
+            <valore>8</valore>
+          </hardskill>
+          <hardskill>
+            <item>SQL</item>
+            <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-sql-clausola-with-httpslnkdin-activity-7282160278614536193-aJwb/?utm_source=share&utm_medium=member_desktop]]></url> -->
+            <valore>9</valore>
+          </hardskill>
+          <hardskill>
+            <item>Notebook Jupyter</item>
+            <valore>9</valore>
+          </hardskill>
+          <hardskill>
+            <item>Machine Learning</item>
+            <url>https://github.com/davidMarabottini/studio_data_science/blob/main/readme.md</url>
+            <valore>8</valore>
+          </hardskill>
+        </skills>
+      </area>
+      <area>
+        <name>Frontend</name>
+        <icon>f5fc</icon>
+        <skills>
+          <hardskill>
+          <item>JavaScript</item>
+          <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_javascript-index-consoletime-consoletimeend-activity-7289412701972303872-2ShA/?utm_source=share&utm_medium=member_desktop]]></url> -->
+          <valore>9.5</valore>
+        </hardskill>
+        <hardskill>
+          <item>TypeScript</item>
+          <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_typescript-guide-ita-activity-7270215107379347458-yjqR/?utm_source=share&utm_medium=member_desktop]]></url> -->
+          <valore>9.5</valore>
+        </hardskill>
+        <hardskill>
+          <item>React, Next.js</item>
+          <valore>9</valore>
+        </hardskill>
+        <hardskill>
+          <item>Redux/saga, redux toolkit</item>
+          <valore>9</valore>
+        </hardskill>
+        </skills>
+      </area>
+      <area>
+        <name>Scrum</name>
+        <icon>f2b5</icon>
+        <skills>
+          <hardskill>
+            <item>Scrum</item>
+            <url>https://www.scrum.org/user/1419987</url>
+            <valore>8.5</valore>
+          </hardskill>
+          <hardskill>
+            <item>Suite Atlassian (Jira, Confluece ecc...)</item>
+            <valore>8</valore>
+          </hardskill>
+        </skills>
+      </area>
+      <area>
+      <name>More</name>
+      <icon>f0fe</icon>
+      <skills>
+      <hardskill>
+        <item>Microsoft office 365</item>
+        <valore>8</valore>
+      </hardskill>
+      <hardskill>
+        <item>XSL-FO</item>
+        <url>https://github.com/davidMarabottini/curriculum</url>
+        <valore>8</valore>
+      </hardskill>
+      <hardskill>
+        <item>figma, Miro</item>
+        <valore>8</valore>
+      </hardskill>
+      </skills>
+      </area>
+    </hardskills>
+
+    <softskills>
+      <softskill>
+        <item>Team work</item>
+        <valore>8</valore>
+        </softskill>
+        <softskill><item>Problem solving</item>
+        <valore>8</valore>
+        </softskill>
+        <softskill>
+        <item>Lateral thinking</item>
+        <valore>8.5</valore>
+      </softskill>
+    </softskills>
+  </competenze>
+  
+  <lingue>
+    <lingua>
+      <nome>Italian</nome>
+      <livello>Mothertongue</livello>
+      <url>https://github.com/davidMarabottini/CV_Insights/blob/main/it/cv_david_one_page.pdf</url>
+      <valore>5</valore>
+    </lingua>
+    <lingua>
+      <nome>English</nome>
+      <livello>B1</livello>
+      <valore>3</valore>
+    </lingua>
+  </lingue>
+</curriculum>
