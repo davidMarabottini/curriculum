@@ -61,7 +61,7 @@ jobs:
         with:
           source_file: 'profiles/${{ matrix.profile }}/${{ matrix.lang }}/cv_david_one_page.pdf'
           destination_repo: 'davidmarabottini/CV_Insights'
-          destination_folder: '${{ matrix.lang }}/'
+          destination_folder: '${{ matrix.profile }}/${{ matrix.lang }}/'
           commit_message: 'Auto-generated CV PDF from FOP, commit ${{ github.sha }}'
           user_name: 'GitHub Actions Bot'
           user_email: 'actions@github.com'
