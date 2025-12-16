@@ -30,9 +30,9 @@
       </descrizione>
     </progetto-personale>
     <progetto-personale>
-      <titolo>Rifacimento CV in XSLT</titolo>
+      <titolo>Rifacimento CV in XSLT + inserimento workflow github</titolo>
       <descrizione>
-        Realizzazione di un template per curriculum in formato PDF generato da XML tramite XSLT e Apache FOP.
+        Realizzazione di un template per curriculum in formato PDF generato da XML tramite XSLT e Apache FOP + inserimento workflow github per generazione PDF in FOP.
         Obiettivo: creare un CV facilmente aggiornabile, multilingua e personalizzabile, con un design pulito e professionale.
         **Tecnologie usate**: XML, XSLT, Apache FOP, Figma per il prototipo iniziale.
         [Repository GitHub](https://github.com/davidMarabottini/curriculum)
