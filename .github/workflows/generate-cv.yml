@@ -60,7 +60,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source_file: 'profiles/${{ matrix.profile }}/${{ matrix.lang }}/cv_david_one_page.pdf'
-          destination_repo: '${{ matrix.profile }}/CV_Insights'
+          destination_repo: 'davidmarabottini/CV_Insights'
           destination_folder: '${{ matrix.lang }}/'
           commit_message: 'Auto-generated CV PDF from FOP, commit ${{ github.sha }}'
           user_name: 'GitHub Actions Bot'
