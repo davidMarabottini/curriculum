@@ -214,14 +214,6 @@
        </descrizione>
       <anno>06/2025 - 08/2025</anno>
     </corso-studio>
-    <!--<corso-studio>
-      <titolo>Certificazione PSMII</titolo>
-      <ente>Scrum.org</ente>
-      <anno>19/05/2025</anno>
-      <descrizione>
-        Certificazione Scrum master livello intermedio
-      </descrizione>
-    </corso-studio>-->
     <corso-studio>
       <titolo>Lezioni di inglese</titolo>
       <ente>Preply</ente>
@@ -230,19 +222,6 @@
         Sessioni di talking in Inglese
       </descrizione>
     </corso-studio>
-    <!--<corso-studio>
-      <titolo>Certificazione PSMI</titolo>
-      <ente>Scrum.org</ente>
-      <anno>10/05/2024</anno>
-      <descrizione>
-        Certificazione Scrum master livello base
-      </descrizione>
-    </corso-studio>-->
-    <!-- <corso-studio>
-      <titolo>Lezioni di inglese</titolo>
-      <ente>My English School</ente>
-      <anno>2015 - 2016</anno>
-    </corso-studio>-->
     <corso-studio>
       <titolo>Ingegneria informatica e dell'informazione (non terminata)</titolo>
       <ente>Università degli Studi di Siena</ente>
