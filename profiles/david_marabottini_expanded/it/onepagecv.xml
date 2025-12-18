@@ -14,19 +14,28 @@
   </descrizione>
   <progetti-personali>
     <progetto-personale>
+      <titolo>Frontend sistema riconoscimento spam</titolo>
+      <descrizione>
+        Realizzazione del frontend per un sistema di riconoscimento spam su email e sms (in Inglese).
+        Gestione autenticazione tramite SSO e interfaccia utente.
+        **Tecnologie usate**: React, TypeScript, Tanstack query SASS.
+        [Repository GitHub](https://github.com/davidMarabottini/fe-spam-detector).
+      </descrizione>
+    </progetto-personale>
+    <progetto-personale>
+      <titolo>Backend sistema riconoscimento spam</titolo>
+      <descrizione>
+        Realizzazione e addestramento (dati kaggle) di un sistema di riconoscimento spam per email e sms (in Inglese) basato su un classificatore bayesiano.
+        Esportazione del modello tramite joblib e creazione di un backend in Flask.
+        **Tecnologie usate**: Python, scikit-learn, Flask.
+        [Repository GitHub](https://github.com/davidMarabottini/bayes_spam_detector).
+      </descrizione>
+    </progetto-personale>
+    <progetto-personale>
       <titolo>Hypercube Building Framework</titolo>
       <descrizione>
         Sviluppo di un modello concettuale di osservazione e visualizzazione degli equilibri del team.
         [Repository GitHub](https://github.com/davidMarabottini/Hypercube_building_framework).
-      </descrizione>
-    </progetto-personale>
-    <progetto-personale>
-      <titolo>Filtro antispam</titolo>
-      <descrizione>
-        Realizzazione di un filtro antispam per email e sms basato su un classificatore bayesiano.
-        Esportazione del modello tramite joblib e creazione di un backend in Flask per testare il funzionamento del filtro tramite postman.
-        **Tecnologie usate**: Python, scikit-learn, Flask.
-        [Repository GitHub](https://github.com/davidMarabottini/bayes_spam_detector).
       </descrizione>
     </progetto-personale>
     <progetto-personale>
