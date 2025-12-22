@@ -13,24 +13,19 @@
     Mi trovo particolarmente a mio agio in team dinamici, dove le persone coltivano un approccio rispettoso, responsabile e propositivo.
   </descrizione>
   <progetti-personali>
-    <progetto-personale>
-      <titolo>Frontend sistema riconoscimento spam</titolo>
-      <descrizione>
-        Realizzazione del frontend per un sistema di riconoscimento spam su email e sms (in Inglese).
-        Gestione autenticazione tramite SSO e interfaccia utente.
-        **Tecnologie usate**: React, TypeScript, Tanstack query SASS.
-        [Repository GitHub](https://github.com/davidMarabottini/fe-spam-detector).
-      </descrizione>
-    </progetto-personale>
-    <progetto-personale>
-      <titolo>Backend sistema riconoscimento spam</titolo>
-      <descrizione>
-        Realizzazione e addestramento (dati kaggle) di un sistema di riconoscimento spam per email e sms (in Inglese) basato su un classificatore bayesiano.
-        Esportazione del modello tramite joblib e creazione di un backend in Flask.
-        **Tecnologie usate**: Python, scikit-learn, Flask.
-        [Repository GitHub](https://github.com/davidMarabottini/bayes_spam_detector).
-      </descrizione>
-    </progetto-personale>
+    
+
+
+<progetto-personale>
+  <titolo>Fullstack Spam Detector</titolo>
+  <descrizione>
+    Sviluppo di un sistema di riconoscimento spam per email e SMS, con frontend React/TypeScript e backend Flask + Naive Bayes.
+    - **Frontend**: gestione UI, autenticazione SSO, interfaccia utente, query API, test unitari e Storybook.
+    - **Backend**: addestramento modello predittivo con dataset Kaggle (in lingua Inglese), esposizione tramite API REST, serializzazione con Joblib.
+    **Tecnologie**: React, TypeScript, Tanstack Query, SASS, Axios, Auth0, vitest, Python, Flask, scikit-learn, pandas, joblib.
+    [Repository frontend](https://github.com/davidMarabottini/fe-spam-detector) - [Repository backend](https://github.com/davidMarabottini/bayes_spam_detector)
+  </descrizione>
+</progetto-personale>
     <progetto-personale>
       <titolo>Hypercube Building Framework</titolo>
       <descrizione>
