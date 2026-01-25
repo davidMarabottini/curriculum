@@ -9,7 +9,7 @@ jobs:
   generate_cv:
     strategy:
       matrix:
-        lang: [it]
+        lang: [it, en]
         profile: [david_marabottini_expanded]
 
     runs-on: ubuntu-latest
