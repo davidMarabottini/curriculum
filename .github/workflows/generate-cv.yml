@@ -9,8 +9,8 @@ jobs:
   generate_cv:
     strategy:
       matrix:
-        lang: [it, en]
-        profile: [david_marabottini_expanded, david_marabottini]
+        lang: [it]
+        profile: [david_marabottini_expanded]
 
     runs-on: ubuntu-latest
     
