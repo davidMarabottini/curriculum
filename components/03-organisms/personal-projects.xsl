@@ -26,6 +26,11 @@
             <xsl:with-param name="testo" select="titolo"/>
           </xsl:call-template>
 
+          <fo:block font-size="{$font-size-small}" color="{$colore-secondario}">
+            <fo:inline font-family="FontAwesome" padding-right="1mm">&#xf133;</fo:inline>
+            <xsl:value-of select="periodo"/>
+          </fo:block>
+
           <xsl:for-each select="descrizione">
             <xsl:call-template name="render-markdown-poc">
               <xsl:with-param name="text" select="."/>

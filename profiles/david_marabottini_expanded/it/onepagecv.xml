@@ -18,8 +18,9 @@
 
 <progetto-personale>
   <titolo>Fullstack Spam Detector</titolo>
+  <periodo>12/2025 - in corso</periodo>
   <descrizione>
-    Sviluppo di un sistema di riconoscimento spam per email e SMS, con frontend React/TypeScript e backend Flask + Naive Bayes.
+    Sviluppo di un sistema di riconoscimento spam per email e SMS, con frontend **React/TypeScript** e backend Flask + Naive Bayes.
     - **Frontend**: gestione UI, autenticazione SSO, interfaccia utente, query API, test unitari e Storybook.
     - **Backend**: addestramento modello predittivo con dataset Kaggle (in lingua Inglese), esposizione tramite API REST, serializzazione con Joblib.
     **Tecnologie**: React, TypeScript, Tanstack Query, SASS, Axios, Auth0, vitest, Python, Flask, scikit-learn, pandas, joblib.
@@ -28,6 +29,7 @@
 </progetto-personale>
     <progetto-personale>
       <titolo>Hypercube Building Framework</titolo>
+      <periodo>11/2025</periodo>
       <descrizione>
         Sviluppo di un modello concettuale di osservazione e visualizzazione degli equilibri del team.
         [Repository GitHub](https://github.com/davidMarabottini/Hypercube_building_framework).
@@ -35,6 +37,7 @@
     </progetto-personale>
     <progetto-personale>
       <titolo>Rifacimento CV in XSLT + inserimento workflow github</titolo>
+      <periodo>09/2025 - in corso</periodo>
       <descrizione>
         Realizzazione di un template per curriculum in formato PDF generato da XML tramite XSLT e Apache FOP + inserimento workflow github per generazione PDF in FOP.
         Obiettivo: creare un CV facilmente aggiornabile, multilingua e personalizzabile, con un design pulito e professionale.
@@ -44,6 +47,7 @@
     </progetto-personale>
     <progetto-personale>
       <titolo>Teorema relazione triangolari tra medie varie</titolo>
+      <periodo>09/2025</periodo>
       <descrizione>
         Ipotizzata e dimostrata una relazione pitagorica tra media aritmetica, deviazione standard e media geometrica su 2 numeri.
         **Librerie usate**: sympy di python.
@@ -52,6 +56,7 @@
     </progetto-personale>
     <progetto-personale>
       <titolo>Studio Machine Learning</titolo>
+      <periodo>06/2025 - 08/2025</periodo>
       <descrizione>
         Studio personale incentrato sull'apprendimento delle tecniche di **ML** in Python.
         Implementazione di algoritmi di **apprendimento supervisionato e non**, e gestione dataset complessi.
@@ -62,6 +67,7 @@
     </progetto-personale>
     <progetto-personale>
       <titolo>Congettura personale sulla Torre di Hanoi a p Pioli</titolo>
+      <periodo>06/2025</periodo>
       <descrizione>
         Sviluppo di una congettura personale per calcolare il numero minimo di mosse per risolvere la Torre di Hanoi con 3 o più pioli, attraverso un equazione che inverte i numeri tetraedrici.
         **Competenze e tecnologie usate**: Analisi combinatoria, Ricerca di Pattern, Algoritmi, Wolfram Alpha, JavaScript, Analisi di serie numeriche.
@@ -69,7 +75,17 @@
       </descrizione>
     </progetto-personale>
   </progetti-personali>
-  <esperienze>
+    <esperienze>
+        <esperienza>
+        <titolo>Assistente amministrativo</titolo>
+        <azienda>MPL</azienda>
+        <periodo>05/2025 - in corso</periodo>
+        <attivita>
+          <attivita-item>
+            Supporto tecnico, logistico e ricerca di clienti per azienda familiare
+          </attivita-item>
+        </attivita>
+      </esperienza>
     <esperienza>
       <titolo>Front-end developer</titolo>
       <azienda>Key2Business</azienda>
@@ -185,7 +201,7 @@
         - DAX e M: Infarinatura linguaggi DAX e M
       </descrizione>
     </corso-studio>
-    <corso-studio>
+    <!-- <corso-studio>
       <titolo>Analisi dei dati</titolo>
       <ente>UNIMI</ente>
       <anno>26/09/2025 - In corso</anno>
@@ -204,7 +220,7 @@
       <descrizione>
         Matematica e programmazione dietro al deep learning, ripasso python e concetti di ML legati alle reti neurali e apprendimento pytorch
       </descrizione>
-    </corso-studio>
+    </corso-studio>-->
     <corso-studio>
       <titolo>Machine learning e data science in python: il corso completo</titolo>
       <ente>Udemy</ente>
@@ -217,7 +233,7 @@
         - Modellazione Avanzata: Implementazione di algoritmi performanti (es. XGBoost), metamodelli (stacking-classifier, voting-classifier) e tecniche per la gestione efficace dei dataset sbilanciati.
        </descrizione>
       <anno>06/2025 - 08/2025</anno>
-    </corso-studio>
+    </corso-studio> 
     <corso-studio>
       <titolo>Lezioni di inglese</titolo>
       <ente>Preply</ente>
@@ -262,14 +278,14 @@
   </approfondimento-formazione> -->
 
   <link-esterni>
-    <link>
+    <!-- <link>
       <tipo>Teorema relazione triangolari tra medie varie (python sympy)</tipo>
       <url>https://github.com/davidMarabottini/relazione_media_deviazione_standard</url>
     </link>
     <link>
       <tipo>Ipotesi hanoi 4 + pioli </tipo>
       <url>https://zenodo.org/records/15713333</url>
-    </link>
+    </link> -->
     <link>
       <tipo>linkedin</tipo>
       <url>https://www.linkedin.com/in/david-m-551aba81/</url>
@@ -278,10 +294,10 @@
       <tipo>Analisi R</tipo>
       <url>https://github.com/davidMarabottini/esercizi_R</url>
     </link>
-    <link>
+    <!-- <link>
       <tipo>Studio ML</tipo>
       <url>https://github.com/davidMarabottini/studio_data_science/tree/main/</url>
-    </link>
+    </link> -->
     <link>
       <tipo>Modelli predittivi stroke</tipo>
       <url>https://github.com/davidMarabottini/studio_data_science/tree/main/000-in-evidenza/02-stroke</url>
