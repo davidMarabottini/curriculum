@@ -5,11 +5,7 @@
 
     <xsl:import href="../../constants/spacing.xsl"/>
     <xsl:import href="modules/blocks.xsl"/>
-    <!-- <xsl:include href="modules/items-inline.xsl"/> -->
-    <!-- <xsl:include href="modules/format-inline.xsl"/> -->
-
-    <xsl:param name="spaziatura-min"/>
-
+ 
     <xsl:template name="render-markdown-poc">
         <xsl:param name="text"/>
         <xsl:param name="font-size"/>

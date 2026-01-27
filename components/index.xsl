@@ -14,4 +14,6 @@
   <xsl:import href="./03-organisms/work-experiences.xsl"/>
   <xsl:import href="./03-organisms/education.xsl"/>
   <xsl:import href="./03-organisms/external-links.xsl"/>
+  <xsl:import href="./03-organisms/skill-list.xsl"/>
+  <xsl:import href="./03-organisms/languages.xsl"/>
 </xsl:stylesheet>

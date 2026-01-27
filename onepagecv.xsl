@@ -21,12 +21,6 @@
       </fo:layout-master-set>
 
       <fo:page-sequence master-reference="A4">
-        <!-- <fo:static-content flow-name="xsl-region-after">
-          <fo:block text-align="right" font-size="8pt" color="{$colore-secondario}">
-            <xsl:value-of select="$labels/footer"/>
-          </fo:block>
-        </fo:static-content> -->
-
         <fo:flow flow-name="xsl-region-body">
           <xsl:call-template name="header">
             <xsl:with-param name="nome" select="$cv_data/dati-personali/nome"/>
@@ -48,7 +42,6 @@
                     </xsl:call-template>
 
                     <fo:block>
-                        <!-- <xsl:value-of select="$cv_data/descrizione"/> -->
                         <xsl:call-template name="render-markdown-poc">
                           <xsl:with-param name="text" select="$cv_data/descrizione"/>
                           <xsl:with-param name="font-size" select="$font-size-small"/>
@@ -56,50 +49,15 @@
                           <xsl:with-param name="margin-top" select="'1mm'"/>
                         </xsl:call-template>
                       </fo:block>
-
-                    <!--<fo:table>
-                      <fo:table-column column-width="19%" />
-                      <fo:table-column column-width="81%"/>
-                    <fo:table-body>
-                    
-                    <fo:table-row>
-                      <fo:table-cell padding-right="0.1cm">
-                        <fo:block>
-                          <fo:external-graphic>
-                            <xsl:attribute name="src">
-                              <xsl:value-of select="$cv_data/dati-personali/foto"/>
-                            </xsl:attribute>
-                          <xsl:attribute name="content-width">scale-to-fit</xsl:attribute>
-                          <xsl:attribute name="width">100%</xsl:attribute>
-                          <xsl:attribute name="height">auto</xsl:attribute>
-                          <xsl:attribute name="space-after">10mm</xsl:attribute>
-
-                          <title>
-                            <xsl:value-of select="$labels/competenze/expertise-chart-title" />
-                          </title>
-                          <desc>
-                            <xsl:value-of select="$cv_data/competenze/chart-description" />
-                          </desc>
-                        </fo:external-graphic>
-                      </fo:block>
-                    </fo:table-cell>
-                    <fo:table-cell>
-                      <fo:block>
-                        <xsl:value-of select="$cv_data/descrizione"/>
-                      </fo:block>
-                    </fo:table-cell>
-                    </fo:table-row>
-                    </fo:table-body>
-                    </fo:table>-->
                   </fo:block>
 
                   <fo:block>
                     <xsl:if test="string-length($cv_data/progetti-personali) &gt; 0">
-                    <xsl:call-template name="personal-projects">
-                      <xsl:with-param name="label" select="$labels/personal-projects"/>
-                      <xsl:with-param name="progetti-personali" select="$cv_data/progetti-personali"/>
-                      <xsl:with-param name="approfondimento-progetti-personali" select="$cv_data/approfondimento-progetti-personali"/>
-                    </xsl:call-template>
+                      <xsl:call-template name="personal-projects">
+                        <xsl:with-param name="label" select="$labels/personal-projects"/>
+                        <xsl:with-param name="progetti-personali" select="$cv_data/progetti-personali"/>
+                        <xsl:with-param name="approfondimento-progetti-personali" select="$cv_data/approfondimento-progetti-personali"/>
+                      </xsl:call-template>
                     </xsl:if>
 
                     <xsl:call-template name="work-experiences">
@@ -154,62 +112,20 @@
                       </fo:block>
                     </xsl:for-each>
 
-                    <xsl:call-template name="titolo-sezione">
-                      <xsl:with-param name="testo" select="$labels/hard-skills" />
+                    <xsl:call-template name="skill-list">
+                      <xsl:with-param name="label" select="$labels/hard-skills"/>
+                      <xsl:with-param name="skill-ls" select="$cv_data/competenze/hardskills"/>
                     </xsl:call-template>
-                    <xsl:for-each select="$cv_data/competenze/hardskills/area">
-                      <xsl:variable name="iconCode" select="./icon"/>
-
-                      <fo:block font-size="{$font-size-small}" font-weight="bold" margin-top="{$spaziatura-dettaglio}" margin-bottom="{$spaziatura-dettaglio}">
-                        <fo:inline font-family="FontAwesome" padding-right="1mm" font-weight="bold">&#xf005;</fo:inline>
-                        <xsl:value-of select="./name" />
-                      </fo:block>
-
-                      <xsl:for-each select="./skills/hardskill">
-                        <fo:block font-size="{$font-size-small}" color="{$colore-secondario}" space-after="2.1mm" space-before="0" line-height="0.7">
-                          <xsl:call-template name="conditional-link">
-                            <xsl:with-param name="text" select="item" />
-                            <xsl:with-param name="url" select="url" />
-                          </xsl:call-template>
-                          <xsl:call-template name="progress-bar">
-                            <xsl:with-param name="valore" select="valore" />
-                          </xsl:call-template>
-                        </fo:block>
-                      </xsl:for-each>
-                    </xsl:for-each>
-
-                    <xsl:call-template name="titolo-sezione">
-                      <xsl:with-param name="testo" select="$labels/soft-skills" />
+                    
+                    <xsl:call-template name="skill-list">
+                      <xsl:with-param name="label" select="$labels/soft-skills"/>
+                      <xsl:with-param name="skill-ls" select="$cv_data/competenze/softskills"/>
                     </xsl:call-template>
-                    <xsl:for-each select="$cv_data/competenze/softskills/softskill">
-                      <fo:block font-size="{$font-size-small}" color="{$colore-secondario}" space-after="2.1mm" space-before="0" line-height="0.7">
-                        <xsl:call-template name="conditional-link">
-                          <xsl:with-param name="text" select="item" />
-                          <xsl:with-param name="url" select="url"  disable-output-escaping="yes" />
-                        </xsl:call-template>
-                        <xsl:call-template name="progress-bar">
-                          <xsl:with-param name="valore" select="valore" />
-                        </xsl:call-template>
-                      </fo:block>
-                    </xsl:for-each>
-
-                    <xsl:call-template name="titolo-sezione">
-                      <xsl:with-param name="testo" select="$labels/languages" />
+                    
+                    <xsl:call-template name="languages">
+                      <xsl:with-param name="label" select="$labels/languages"/>
+                      <xsl:with-param name="langs" select="$cv_data/lingue/lingua"/>
                     </xsl:call-template>
-
-                    <xsl:for-each select="$cv_data/lingue/lingua">
-                      <fo:block font-size="{$font-size-small}" space-after="{$spaziatura-dettaglio}">
-                        
-                          <xsl:call-template name="conditional-link">
-                            <xsl:with-param name="text" select="nome" />
-                            <xsl:with-param name="url" select="url"  disable-output-escaping="yes" />
-                          </xsl:call-template>
-                          <xsl:call-template name="rating">
-                            <xsl:with-param name="value" select="valore"/>
-                            <xsl:with-param name="livello" select="livello"/>
-                          </xsl:call-template>
-                      </fo:block>
-                    </xsl:for-each>
                   </fo:block>
                 </fo:table-cell>
               </fo:table-row>
