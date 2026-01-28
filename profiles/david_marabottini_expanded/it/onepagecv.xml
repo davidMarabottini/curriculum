@@ -36,12 +36,16 @@
       </descrizione>
     </progetto-personale>
     <progetto-personale>
-      <titolo>Rifacimento CV in XSLT + inserimento workflow github</titolo>
+      <titolo>Modular CV Rendering Engine &amp; CI/CD Pipeline</titolo>
       <periodo>09/2025 - in corso</periodo>
       <descrizione>
-        Realizzazione di un template per curriculum in formato PDF generato da XML tramite XSLT e Apache FOP + inserimento workflow github per generazione PDF in FOP.
-        Obiettivo: creare un CV facilmente aggiornabile, multilingua e personalizzabile, con un design pulito e professionale.
-        **Tecnologie usate**: XML, XSLT, Apache FOP, Figma per il prototipo iniziale.
+        Ingegnerizzazione di un sistema di generazione documentale data-driven basato su **Atomic Design** e pipeline automatizzata.
+        - **Architettura a Componenti**: Struttura modulare (Atomi, Molecole, Organismi) in **XSLT/XSL-FO** per una separazione totale tra logica di rendering e presentazione.
+        - **Data Management e i18n**: Implementazione di un sistema **multi-profile e multi-language** basato su file system. Gestione avanzata dei contenuti con **disaccoppiamento tra Label (UI) e Dati (Content)**, facilitando la localizzazione e il riutilizzo dei template.
+        - **Core Engine e Parser**: Sviluppo di un **parser Markdown ricorsivo** custom per il rendering dinamico di contenuti formattati da sorgenti XML.
+        - **Automazione**: Pipeline di **CI/CD tramite GitHub Actions** per il build degli asset PDF (Apache FOP). Trigger ottimizzato (workflow_dispatch) per la generazione on-demand, garantendo efficienza operativa.
+        - **Security**: Gestione dei dati sensibili tramite file esterno (datipersonali.xml) segnato nel gitIgnore, simulando il pattern delle Environment Variables (.env).
+        -*Tecnologie**: XSLT 1.0, XML, Apache FOP, GitHub Actions, i18n logic.
         [Repository GitHub](https://github.com/davidMarabottini/curriculum)
       </descrizione>
     </progetto-personale>

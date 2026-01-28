@@ -81,36 +81,17 @@
 
                 <fo:table-cell padding-left="{$spazio-colonne}">
                   <fo:block>
-                    <xsl:call-template name="titolo-sezione">
-                      <xsl:with-param name="testo" select="$labels/expertise" />
+                    <xsl:call-template name="radar-chart">
+                      <xsl:with-param name="label" select="$labels/expertise" />
+                      <xsl:with-param name="spiderweb" select="$cv_data/competenze/skillsspiderweb"/>
+                      <xsl:with-param name="chat-title" select="$labels/competenze/expertise-chart-title"/>
+                      <xsl:with-param name="chart-description" select="$cv_data/competenze/chart-description"/>
                     </xsl:call-template>
-                    <fo:block text-align="center">
-                      <fo:external-graphic>
-                        <xsl:attribute name="src">
-                          <xsl:value-of select="concat('url(', $cv_data/competenze/skillsspiderweb, ')')"/>
-                        </xsl:attribute>
-                        <xsl:attribute name="content-width">scale-to-fit</xsl:attribute>
-                        <xsl:attribute name="width">60%</xsl:attribute>
-                        <xsl:attribute name="height">auto</xsl:attribute>
-                        <xsl:attribute name="space-after">10mm</xsl:attribute>
-
-                        <title>
-                          <xsl:value-of select="$labels/competenze/expertise-chart-title" />
-                        </title>
-                        <desc>
-                          <xsl:value-of select="$cv_data/competenze/chart-description" />
-                        </desc>
-                      </fo:external-graphic>
-                    </fo:block>
-
-                    <xsl:call-template name="titolo-sezione">
-                      <xsl:with-param name="testo" select="$labels/certificates" />
+                    
+                    <xsl:call-template name="certification">
+                      <xsl:with-param name="label" select="$labels/certificates"/>
+                      <xsl:with-param name="certificates" select="$cv_data/competenze/certificates/item"/>
                     </xsl:call-template>
-                    <xsl:for-each select="$cv_data/competenze/certificates/item">
-                      <fo:block font-size="{$font-size-small}" color="{$colore-secondario}">
-                        <fo:inline font-family="FontAwesome" padding-right="1mm">&#xf005;</fo:inline><xsl:value-of select="."/>
-                      </fo:block>
-                    </xsl:for-each>
 
                     <xsl:call-template name="skill-list">
                       <xsl:with-param name="label" select="$labels/hard-skills"/>
