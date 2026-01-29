@@ -46,7 +46,7 @@ jobs:
           $(pwd)/fop/fop/fop \
             -c ${GITHUB_WORKSPACE}/fop.xconf \
             -xml ${GITHUB_WORKSPACE}/dummy.xml \
-            -xsl ${GITHUB_WORKSPACE}/onepagecv.xsl \
+            -xsl ${GITHUB_WORKSPACE}/index.xsl \
             -pdf ${GITHUB_WORKSPACE}/profiles/${{ matrix.profile }}/${{ matrix.lang }}/cv_david_one_page.pdf \
             -param lang ${{ matrix.lang }} \
             -param root_folder ${{ matrix.profile }}
