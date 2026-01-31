@@ -14,19 +14,19 @@
   </descrizione>
   <progetti-personali>
     
-
-
-<progetto-personale>
-  <titolo>Piattaforma web per segnalazione e riconoscimento truffe</titolo>
-  <periodo>12/2025 - in corso</periodo>
-  <descrizione>
-    Sviluppo di una piattaforma web spam per email e SMS, con frontend **React/TypeScript** e backend Flask + Naive Bayes.
-    - **Frontend**: gestione UI, autenticazione SSO, interfaccia utente, query API, test unitari e Storybook.
-    - **Backend**: addestramento modello predittivo con dataset Kaggle (in lingua Inglese), esposizione tramite API REST, serializzazione con Joblib.
-    **Tecnologie**: React, TypeScript, Tanstack Query, SASS, Axios, Auth0, vitest, Python, Flask, scikit-learn, pandas, joblib.
-    [Repository frontend](https://github.com/davidMarabottini/fe-spam-detector) - [Repository backend](https://github.com/davidMarabottini/bayes_spam_detector)
-  </descrizione>
-</progetto-personale>
+    
+    
+    <progetto-personale>
+      <titolo>Piattaforma web per segnalazione e riconoscimento truffe</titolo>
+      <periodo>12/2025 - in corso</periodo>
+      <descrizione>
+        Sviluppo di una piattaforma web spam per email e SMS, con frontend **React/TypeScript** e backend Flask + Naive Bayes.
+        - **Frontend**: gestione UI, autenticazione SSO, interfaccia utente, query API, test unitari e Storybook.
+        - **Backend**: addestramento modello predittivo con dataset Kaggle (in lingua Inglese), esposizione tramite API REST, serializzazione con Joblib.
+        **Tecnologie**: React, TypeScript, Tanstack Query, SASS, Axios, Auth0, vitest, Python, Flask, scikit-learn, pandas, joblib.
+        [Repository frontend](https://github.com/davidMarabottini/fe-spam-detector) - [Repository backend](https://github.com/davidMarabottini/bayes_spam_detector)
+      </descrizione>
+    </progetto-personale>
     <progetto-personale>
       <titolo>Hypercube Building Framework</titolo>
       <periodo>11/2025</periodo>
@@ -79,17 +79,17 @@
       </descrizione>
     </progetto-personale>
   </progetti-personali>
-    <esperienze>
-        <esperienza>
-        <titolo>Assistente amministrativo</titolo>
-        <azienda>MPL</azienda>
-        <periodo>05/2025 - in corso</periodo>
-        <attivita>
-          <attivita-item>
-            Supporto tecnico, logistico e ricerca di clienti per azienda familiare
-          </attivita-item>
-        </attivita>
-      </esperienza>
+  <esperienze>
+    <esperienza>
+      <titolo>Assistente amministrativo</titolo>
+      <azienda>MPL</azienda>
+      <periodo>05/2025 - in corso</periodo>
+      <attivita>
+        <attivita-item>
+          Supporto tecnico, logistico e ricerca di clienti per azienda familiare
+        </attivita-item>
+      </attivita>
+    </esperienza>
     <esperienza>
       <titolo>Front-end developer</titolo>
       <azienda>Key2Business</azienda>
@@ -97,11 +97,11 @@
       <attivita>
         <attivita-item>
           Attività di sviluppo Front-end e Application Maintenance (AM) su portali web e gestionali in contesti Bancario, [Televisivo](video.sky.it) e Retail, con focus su performance e SEO.
-
+          
           - Sviluppo front-end, test unitari, design system e pagine AMP.
           - Partecipazione attiva in team Agile (Scrum/Kanban) cross-funzionali.
           - AM su xStore.
-
+          
           **Tecnologie**: Reactjs, Nextjs, Redux/saga/selectors, jest, storybook, AMP, SCSS, Typescript, Material UI, styled components, Recoil.
           **Metodologie**: Scrum, Kamban, Waterfall
           **IDE/Strumenti**: Visual Studio Code, Git, Jira, Jenkins.
@@ -161,30 +161,30 @@
       <attivita>
         <attivita-item>
           Attività di sviluppo e monitoraggio  del portale punti petalo per startup.
-
+          
           **Tecnologie**: Framework ASP.NET, C#, Javascript, SQL (MS SQL SERVER), Linq, Web services, Visual Studio, team foundation, Team explorer, Google analytics, Windows azure
         </attivita-item>
       </attivita>
     </esperienza>
   </esperienze>
   <!-- <approfondimento-esperienze>
-    <label>APPROFONDISCI</label>
-    <url>https://github.com/davidMarabottini/CV_Insights/blob/main/it/work_experiences.md</url>
-  </approfondimento-esperienze> -->
+       <label>APPROFONDISCI</label>
+       <url>https://github.com/davidMarabottini/CV_Insights/blob/main/it/work_experiences.md</url>
+       </approfondimento-esperienze> -->
   <formazione>
     <corso-studio>
-        <titolo>Cybersecurity</titolo>
-        <ente>AKG</ente>
-        <anno>21/10/2025 - 31/10/2025</anno>
-        <descrizione>
-          Formazione intensiva sui principi essenziali di sicurezza informatica. Competenze acquisite in:
-
-          - Protezione Dati: Gestione della Confidenzialità, Integrità e Disponibilità delle informazioni.
-          - Difesa Attiva: Tecniche contro l'Ingegneria Sociale, il Furto di Identità e la Protezione da Malware (Trojan, Ransomware, Virus).
-          - Sicurezza Digitale: Uso di password robuste, cifratura di file/cartelle, gestione sicura delle reti (Firewall, VPN) e autenticazione a più fattori.
-          - Gestione Finale: Procedure di Backup e distruzione/eliminazione sicura dei dati e dei dispositivi.
-        </descrizione>
-      </corso-studio>
+      <titolo>Cybersecurity</titolo>
+      <ente>AKG</ente>
+      <anno>21/10/2025 - 31/10/2025</anno>
+      <descrizione>
+        Formazione intensiva sui principi essenziali di sicurezza informatica. Competenze acquisite in:
+        
+        - Protezione Dati: Gestione della Confidenzialità, Integrità e Disponibilità delle informazioni.
+        - Difesa Attiva: Tecniche contro l'Ingegneria Sociale, il Furto di Identità e la Protezione da Malware (Trojan, Ransomware, Virus).
+        - Sicurezza Digitale: Uso di password robuste, cifratura di file/cartelle, gestione sicura delle reti (Firewall, VPN) e autenticazione a più fattori.
+        - Gestione Finale: Procedure di Backup e distruzione/eliminazione sicura dei dati e dei dispositivi.
+      </descrizione>
+    </corso-studio>
     <corso-studio>
       <titolo>Excel avanzato e power bi</titolo>
       <ente>AKG</ente>
@@ -206,25 +206,25 @@
       </descrizione>
     </corso-studio>
     <!-- <corso-studio>
-      <titolo>Analisi dei dati</titolo>
-      <ente>UNIMI</ente>
-      <anno>26/09/2025 - In corso</anno>
-      <descrizione>
-        Corso di [analisi dei dati 2](https://www.unimi.it/it/corsi/insegnamenti-dei-corsi-di-laurea/2026/analisi-dei-dati-2) e software R.
-        - Statistica Descrittiva: Consolidamento dei concetti base (varianza, covarianza, correlazione, ecc.).
-        - Statistica Inferenziale: Padroneggiamento della Stima Puntuale, degli Intervalli di Confidenza e delle metodologie di Verifica d'Ipotesi.
-        - Analisi Bivariata e Modellazione: Applicazione del Test del Chi-Quadrato per l'indipendenza statistica e implementazione della Regressione Lineare Semplice e Multipla.
-        - Tool di Analisi: Uso pratico del software statistico R per lo svolgimento autonomo di analisi complesse.
-      </descrizione>
-    </corso-studio>
-    <corso-studio>
-      <titolo>A deep understanding of deep learning</titolo>
-      <ente>Udemy</ente>
-      <anno>08/2025 - In corso</anno>
-      <descrizione>
-        Matematica e programmazione dietro al deep learning, ripasso python e concetti di ML legati alle reti neurali e apprendimento pytorch
-      </descrizione>
-    </corso-studio>-->
+         <titolo>Analisi dei dati</titolo>
+         <ente>UNIMI</ente>
+         <anno>26/09/2025 - In corso</anno>
+         <descrizione>
+         Corso di [analisi dei dati 2](https://www.unimi.it/it/corsi/insegnamenti-dei-corsi-di-laurea/2026/analisi-dei-dati-2) e software R.
+         - Statistica Descrittiva: Consolidamento dei concetti base (varianza, covarianza, correlazione, ecc.).
+         - Statistica Inferenziale: Padroneggiamento della Stima Puntuale, degli Intervalli di Confidenza e delle metodologie di Verifica d'Ipotesi.
+         - Analisi Bivariata e Modellazione: Applicazione del Test del Chi-Quadrato per l'indipendenza statistica e implementazione della Regressione Lineare Semplice e Multipla.
+         - Tool di Analisi: Uso pratico del software statistico R per lo svolgimento autonomo di analisi complesse.
+         </descrizione>
+         </corso-studio>
+         <corso-studio>
+         <titolo>A deep understanding of deep learning</titolo>
+         <ente>Udemy</ente>
+         <anno>08/2025 - In corso</anno>
+         <descrizione>
+         Matematica e programmazione dietro al deep learning, ripasso python e concetti di ML legati alle reti neurali e apprendimento pytorch
+         </descrizione>
+         </corso-studio>-->
     <corso-studio>
       <titolo>Machine learning e data science in python: il corso completo</titolo>
       <ente>Udemy</ente>
@@ -235,7 +235,7 @@
         - Architettura e Sviluppo: Esperienza diretta nella creazione di Pipeline (scikit-learn/imblearn) per organizzare il flusso di lavoro di ML e nell'uso di Metamodelli.
         - Performance e Tuning: Ottimizzazione degli iperparametri tramite Grid Search, Random Search e librerie di tuning automatizzato (cutting-edge) come Optuna.
         - Modellazione Avanzata: Implementazione di algoritmi performanti (es. XGBoost), metamodelli (stacking-classifier, voting-classifier) e tecniche per la gestione efficace dei dataset sbilanciati.
-       </descrizione>
+      </descrizione>
       <anno>06/2025 - 08/2025</anno>
     </corso-studio> 
     <corso-studio>
@@ -254,7 +254,7 @@
         Formazione universitaria incentrata sull'ingegneria dei sistemi e sul ciclo di vita dello sviluppo software.
         
         **Competenze Core e Progetti Sviluppati**:
-
+        
         - Progettazione e Programmazione Software: Apprendimento e applicazione dei principi della Programmazione Orientata agli Oggetti (OOP) e dei principali Design Patterns.
         - Sviluppo di Progetti: Esperienza pratica nello sviluppo di applicazioni utilizzando linguaggi di programmazione backend come C++ e PHP.
         - Architettura e Reti: Comprensione approfondita delle Reti di Calcolatori, dei fondamenti di Basi di Dati (Database) e della progettazione di sistemi.
@@ -267,9 +267,9 @@
       <anno>2009</anno>
       <descrizione>
         Formazione tecnica focalizzata sull'intersezione tra le competenze economico-aziendali e lo sviluppo informatico. Questo percorso ha fornito le prime basi strutturali necessarie per la successiva specializzazione universitaria e professionale.
-
+        
         **Competenze Acquisite:**
-
+        
         - Fondamenti di Programmazione: Prime nozioni e basi della logica algoritmica e SQL.
         - Contabilità e Ragioneria: Basi di ragioneria, contabilità e principi amministrativi.
         - Matematica Applicata: Solida preparazione analitica e matematica propedeutica agli studi universitari di Ingegneria.
@@ -277,19 +277,19 @@
     </corso-studio>
   </formazione>
   <!-- <approfondimento-formazione>
-    <label>APPROFONDISCI</label>
-    <url>https://github.com/davidMarabottini/CV_Insights/blob/main/it/education.md</url>
-  </approfondimento-formazione> -->
-
+       <label>APPROFONDISCI</label>
+       <url>https://github.com/davidMarabottini/CV_Insights/blob/main/it/education.md</url>
+       </approfondimento-formazione> -->
+  
   <link-esterni>
     <!-- <link>
-      <tipo>Teorema relazione triangolari tra medie varie (python sympy)</tipo>
-      <url>https://github.com/davidMarabottini/relazione_media_deviazione_standard</url>
-    </link>
-    <link>
-      <tipo>Ipotesi hanoi 4 + pioli </tipo>
-      <url>https://zenodo.org/records/15713333</url>
-    </link> -->
+         <tipo>Teorema relazione triangolari tra medie varie (python sympy)</tipo>
+         <url>https://github.com/davidMarabottini/relazione_media_deviazione_standard</url>
+         </link>
+         <link>
+         <tipo>Ipotesi hanoi 4 + pioli </tipo>
+         <url>https://zenodo.org/records/15713333</url>
+         </link> -->
     <link>
       <tipo>linkedin</tipo>
       <url>https://www.linkedin.com/in/david-m-551aba81/</url>
@@ -299,9 +299,9 @@
       <url>https://github.com/davidMarabottini/esercizi_R</url>
     </link>
     <!-- <link>
-      <tipo>Studio ML</tipo>
-      <url>https://github.com/davidMarabottini/studio_data_science/tree/main/</url>
-    </link> -->
+         <tipo>Studio ML</tipo>
+         <url>https://github.com/davidMarabottini/studio_data_science/tree/main/</url>
+         </link> -->
     <link>
       <tipo>Modelli predittivi stroke</tipo>
       <url>https://github.com/davidMarabottini/studio_data_science/tree/main/000-in-evidenza/02-stroke</url>
@@ -309,17 +309,17 @@
   </link-esterni>
   
   <competenze>
-    <skillsspiderweb>./profiles/david_marabottini_expanded/skills_chart.svg</skillsspiderweb>
-
+    <skillsspiderweb>./profiles/david_marabottini/skills_chart.svg</skillsspiderweb>
+    
     <certificates>
       <item>PSM II - Professional Scrum Master II</item>
       <item>PSM I - Professional Scrum Master I</item>
     </certificates>
-
+    
     <chart-description>
       Grafico radar delle competenze. Frontend 9 su 10, ML e DL 8 su 10, Scrum 8 su 10, SQL 8 su 10, Matematics 7 su 10.
     </chart-description>
-
+    
     <hardskills>
       <area>
         <name>Machine learning</name>
@@ -416,39 +416,39 @@
         <icon>f5fc</icon>
         <skills>
           <hardskill>
-          <item>JavaScript</item>
-          <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_javascript-index-consoletime-consoletimeend-activity-7289412701972303872-2ShA/?utm_source=share&utm_medium=member_desktop]]></url> -->
-          <valore>9.5</valore>
-        </hardskill>
-        <hardskill>
-          <item>TypeScript</item>
-          <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_typescript-guide-ita-activity-7270215107379347458-yjqR/?utm_source=share&utm_medium=member_desktop]]></url> -->
-          <valore>9.5</valore>
-        </hardskill>
-        <hardskill>
-          <item>React, Next.js</item>
-          <valore>9.5</valore>
-        </hardskill>
-        <hardskill>
-          <item>Redux/saga, redux toolkit</item>
-          <valore>9</valore>
-        </hardskill>
-        <hardskill>
-          <item>SEO, Web vitals, accessibilità</item>
-          <valore>9</valore>
-        </hardskill>
-        <hardskill>
-          <item>HTML5/CSS3</item>
-          <valore>9.5</valore>
-        </hardskill>
-        <hardskill>
-          <item>Bootstrap</item>
-          <valore>8</valore>
-        </hardskill>
-        <hardskill>
-          <item>JQuery</item>
-          <valore>7</valore>
-        </hardskill>
+            <item>JavaScript</item>
+            <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_javascript-index-consoletime-consoletimeend-activity-7289412701972303872-2ShA/?utm_source=share&utm_medium=member_desktop]]></url> -->
+            <valore>9.5</valore>
+          </hardskill>
+          <hardskill>
+            <item>TypeScript</item>
+            <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_typescript-guide-ita-activity-7270215107379347458-yjqR/?utm_source=share&utm_medium=member_desktop]]></url> -->
+            <valore>9.5</valore>
+          </hardskill>
+          <hardskill>
+            <item>React, Next.js</item>
+            <valore>9.5</valore>
+          </hardskill>
+          <hardskill>
+            <item>Redux/saga, redux toolkit</item>
+            <valore>9</valore>
+          </hardskill>
+          <hardskill>
+            <item>SEO, Web vitals, accessibilità</item>
+            <valore>9</valore>
+          </hardskill>
+          <hardskill>
+            <item>HTML5/CSS3</item>
+            <valore>9.5</valore>
+          </hardskill>
+          <hardskill>
+            <item>Bootstrap</item>
+            <valore>8</valore>
+          </hardskill>
+          <hardskill>
+            <item>JQuery</item>
+            <valore>7</valore>
+          </hardskill>
         </skills>
       </area>
       <area>
@@ -467,35 +467,35 @@
         </skills>
       </area>
       <area>
-      <name>altro</name>
-      <icon>f0fe</icon>
-      <skills>
-      <hardskill>
-        <item>Pacchetto office 365</item>
-        <valore>8</valore>
-      </hardskill>
-      <hardskill>
-        <item>XSL-FO</item>
-        <url>https://github.com/davidMarabottini/curriculum</url>
-        <valore>8</valore>
-      </hardskill>
-      <hardskill>
-        <item>figma, Miro</item>
-        <valore>8</valore>
-      </hardskill>
-      </skills>
+        <name>altro</name>
+        <icon>f0fe</icon>
+        <skills>
+          <hardskill>
+            <item>Pacchetto office 365</item>
+            <valore>8</valore>
+          </hardskill>
+          <hardskill>
+            <item>XSL-FO</item>
+            <url>https://github.com/davidMarabottini/curriculum</url>
+            <valore>8</valore>
+          </hardskill>
+          <hardskill>
+            <item>figma, Miro</item>
+            <valore>8</valore>
+          </hardskill>
+        </skills>
       </area>
     </hardskills>
-
+    
     <softskills>
       <softskill>
         <item>Team work</item>
         <valore>8</valore>
-        </softskill>
-        <softskill><item>Problem solving</item>
+      </softskill>
+      <softskill><item>Problem solving</item>
         <valore>8</valore>
-        </softskill>
-        <softskill>
+      </softskill>
+      <softskill>
         <item>Lateral thinking</item>
         <valore>8.5</valore>
       </softskill>
@@ -510,7 +510,7 @@
     </lingua>
     <lingua>
       <nome>Inglese</nome>
-      <url>https://github.com/davidMarabottini/CV_Insights/blob/main/cv/curriculum/cv-en-david_marabottini.pdf</url>
+      <url>https://github.com/davidMarabottini/CV_Insights/blob/main/cv/cv-david_marabottini-en.pdf</url>
       <livello>B1</livello>
       <valore>3</valore>
     </lingua>
