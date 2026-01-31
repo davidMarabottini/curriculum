@@ -10,7 +10,7 @@ jobs:
     strategy:
       matrix:
         lang: [it, en]
-        profile: [david_marabottini_expanded]
+        profile: [david_marabottini]
 
     runs-on: ubuntu-latest
     
