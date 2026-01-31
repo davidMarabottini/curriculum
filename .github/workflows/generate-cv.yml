@@ -47,7 +47,7 @@ jobs:
             -c ${GITHUB_WORKSPACE}/fop.xconf \
             -xml ${GITHUB_WORKSPACE}/dummy.xml \
             -xsl ${GITHUB_WORKSPACE}/index.xsl \
-            -pdf ${GITHUB_WORKSPACE}/profiles/${{ matrix.profile }}/${{ matrix.lang }}/cv-${{ matrix.profile }}-${{ matrix.lang }}.pdf \
+            -pdf ${GITHUB_WORKSPACE}/profiles/${{ matrix.profile }}/${{ matrix.lang }}/cv-${{ matrix.lang }}.pdf \
             -param lang ${{ matrix.lang }} \
             -param root_folder ${{ matrix.profile }}
         shell: bash
@@ -59,9 +59,9 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source_file: 'profiles/${{ matrix.profile }}/${{ matrix.lang }}/cv-${{ matrix.profile }}-${{ matrix.lang }}.pdf'
+          source_file: 'profiles/${{ matrix.profile }}/${{ matrix.lang }}/cv-${{ matrix.lang }}.pdf'
           destination_repo: 'davidmarabottini/CV_Insights'
-          destination_folder: 'cv/'
+          destination_folder: '${{ matrix.profile }}/'
           commit_message: 'Auto-generated CV PDF from FOP, commit ${{ github.sha }}'
           user_name: 'GitHub Actions Bot'
           user_email: 'actions@github.com'
