@@ -6,23 +6,16 @@
   </dati-personali>
   
   <descrizione>
-    Sono uno **sviluppatore front-end**, mosso da una forte passione per la matematica e per tutto ciò che stimola il pensiero critico.
-    Mi piace individuare schemi nascosti nei problemi, seguire intuizioni che talvolta si trasformano in piccole teorie personali e tradurre idee astratte in soluzioni concrete.
-    Negli ultimi mesi ho approfondito **machine learning** e **data analysis**, sviluppando modelli predittivi che integrano diverse tecniche.
-    Possiedo inoltre una **solida conoscenza di SQL** e sono certificato **PSM I e PSM II**.
-    Mi trovo particolarmente a mio agio in team dinamici, dove le persone coltivano un approccio rispettoso, responsabile e propositivo.
+    Sviluppatore Front-end Senior con forte background in matematica, data analysis e machine learning.
+    Esperienza in architetture moderne React/TypeScript, ottimizzazione performance e sistemi data-driven.
+    Certificato PSM I e PSM II, con solida competenza SQL.
   </descrizione>
   <progetti-personali>
-    
-    
-    
     <progetto-personale>
       <titolo>Piattaforma web per segnalazione e riconoscimento truffe</titolo>
       <periodo>12/2025 - in corso</periodo>
       <descrizione>
-        Sviluppo di una piattaforma web spam per email e SMS, con frontend **React/TypeScript** e backend Flask + Naive Bayes.
-        - **Frontend**: gestione UI, autenticazione SSO, interfaccia utente, query API, test unitari e Storybook.
-        - **Backend**: addestramento modello predittivo con dataset Kaggle (in lingua Inglese), esposizione tramite API REST, serializzazione con Joblib.
+       Piattaforma web per rilevamento spam email/SMS con frontend React/TypeScript e backend ML in Python (Naive Bayes).
         **Tecnologie**: React, TypeScript, Tanstack Query, SASS, Axios, Auth0, vitest, Python, Flask, scikit-learn, pandas, joblib.
         [Repository frontend](https://github.com/davidMarabottini/fe-spam-detector) - [Repository backend](https://github.com/davidMarabottini/bayes_spam_detector)
       </descrizione>
@@ -31,51 +24,17 @@
       <titolo>Hypercube Building Framework</titolo>
       <periodo>11/2025</periodo>
       <descrizione>
-        Sviluppo di un modello concettuale di osservazione e visualizzazione degli equilibri del team.
+        Framework concettuale per visualizzazione e analisi degli equilibri di team.
         [Repository GitHub](https://github.com/davidMarabottini/Hypercube_building_framework).
-      </descrizione>
-    </progetto-personale>
-    <progetto-personale>
-      <titolo>Modular CV Rendering Engine &amp; CI/CD Pipeline</titolo>
-      <periodo>09/2025 - in corso</periodo>
-      <descrizione>
-        Ingegnerizzazione di un sistema di generazione documentale data-driven basato su **Atomic Design** e pipeline automatizzata.
-        - **Architettura a Componenti**: Struttura modulare (Atomi, Molecole, Organismi) in **XSLT/XSL-FO** per una separazione totale tra logica di rendering e presentazione.
-        - **Data Management e i18n**: Implementazione di un sistema **multi-profile e multi-language** basato su file system. Gestione avanzata dei contenuti con **disaccoppiamento tra Label (UI) e Dati (Content)**, facilitando la localizzazione e il riutilizzo dei template.
-        - **Core Engine e Parser**: Sviluppo di un **parser Markdown ricorsivo** custom per il rendering dinamico di contenuti formattati da sorgenti XML.
-        - **Automazione**: Pipeline di **CI/CD tramite GitHub Actions** per il build degli asset PDF (Apache FOP). Trigger ottimizzato (workflow_dispatch) per la generazione on-demand, garantendo efficienza operativa.
-        - **Security**: Gestione dei dati sensibili tramite file esterno (datipersonali.xml) segnato nel gitIgnore, simulando il pattern delle Environment Variables (.env).
-        -*Tecnologie**: XSLT 1.0, XML, Apache FOP, GitHub Actions, i18n logic.
-        [Repository GitHub](https://github.com/davidMarabottini/curriculum)
-      </descrizione>
-    </progetto-personale>
-    <progetto-personale>
-      <titolo>Teorema relazione triangolari tra medie varie</titolo>
-      <periodo>09/2025</periodo>
-      <descrizione>
-        Ipotizzata e dimostrata una relazione pitagorica tra media aritmetica, deviazione standard e media geometrica su 2 numeri.
-        **Librerie usate**: sympy di python.
-        [Notebook dimostrazione](https://github.com/davidMarabottini/relazione_media_deviazione_standard/blob/main/ipotesi-triangolo-prodotto-media-deviazione-standard.ipynb).
       </descrizione>
     </progetto-personale>
     <progetto-personale>
       <titolo>Studio Machine Learning</titolo>
       <periodo>06/2025 - 08/2025</periodo>
       <descrizione>
-        Studio personale incentrato sull'apprendimento delle tecniche di **ML** in Python.
-        Implementazione di algoritmi di **apprendimento supervisionato e non**, e gestione dataset complessi.
-        Analisi esplorativa, pulizia e preparazione dei dati, costruzione di modelli predittivi e valutazione performance.
+        Studio avanzato di machine learning e data science in Python con sviluppo di modelli predittivi.
         **Librerie usate**: scikit-learn, imbalanced-learn, pandas, matplotlib, optuna.
         [repository GitHub](https://github.com/davidMarabottini/studio_data_science).
-      </descrizione>
-    </progetto-personale>
-    <progetto-personale>
-      <titolo>Congettura personale sulla Torre di Hanoi a p Pioli</titolo>
-      <periodo>06/2025</periodo>
-      <descrizione>
-        Sviluppo di una congettura personale per calcolare il numero minimo di mosse per risolvere la Torre di Hanoi con 3 o più pioli, attraverso un equazione che inverte i numeri tetraedrici.
-        **Competenze e tecnologie usate**: Analisi combinatoria, Ricerca di Pattern, Algoritmi, Wolfram Alpha, JavaScript, Analisi di serie numeriche.
-        [Repository Zenodo](https://zenodo.org/records/15802510).
       </descrizione>
     </progetto-personale>
   </progetti-personali>
@@ -96,11 +55,8 @@
       <periodo>06/2019-05/2025</periodo>
       <attivita>
         <attivita-item>
-          Attività di sviluppo Front-end e Application Maintenance (AM) su portali web e gestionali in contesti Bancario, [Televisivo](video.sky.it) e Retail, con focus su performance e SEO.
-          
-          - Sviluppo front-end, test unitari, design system e pagine AMP.
-          - Partecipazione attiva in team Agile (Scrum/Kanban) cross-funzionali.
-          - AM su xStore.
+          Sviluppo front-end su portali web enterprise in ambito bancario, media e retail.
+          Focus su performance, SEO e architetture React/Next.js in team Agile.
           
           **Tecnologie**: Reactjs, Nextjs, Redux/saga/selectors, jest, storybook, AMP, SCSS, Typescript, Material UI, styled components, Recoil.
           **Metodologie**: Scrum, Kamban, Waterfall
@@ -177,12 +133,7 @@
       <ente>AKG</ente>
       <anno>21/10/2025 - 31/10/2025</anno>
       <descrizione>
-        Formazione intensiva sui principi essenziali di sicurezza informatica. Competenze acquisite in:
-        
-        - Protezione Dati: Gestione della Confidenzialità, Integrità e Disponibilità delle informazioni.
-        - Difesa Attiva: Tecniche contro l'Ingegneria Sociale, il Furto di Identità e la Protezione da Malware (Trojan, Ransomware, Virus).
-        - Sicurezza Digitale: Uso di password robuste, cifratura di file/cartelle, gestione sicura delle reti (Firewall, VPN) e autenticazione a più fattori.
-        - Gestione Finale: Procedure di Backup e distruzione/eliminazione sicura dei dati e dei dispositivi.
+        Corso intensivo sui principi di sicurezza informatica, protezione dei dati e difesa da minacce digitali.
       </descrizione>
     </corso-studio>
     <corso-studio>
@@ -190,19 +141,7 @@
       <ente>AKG</ente>
       <anno>01/10/2025 - 20/10/2025</anno>
       <descrizione>
-        Obiettivo: apprendere le basi di excel avanzato, power BI e power Query:
-        **Modulo 1 - Excel avanzato (fondamenti e analisi dei dati)**
-        - Formule avanzate: Padronanza riferimenti assoluti, relativi, funzioni logiche e uso di funzioni avanzate di ricerca (cerca.vert, cerca.x, ecc)
-        - Gestione dati: Ordinamento a piu livelli, filtri avanzati
-        - Tabelle pivot: Creazione, analisi, personalizzazione e sviluppo di report dinamici utilizzando slicer e KPI.
-        **Modulo 2 - Excel avanzato (automazione e data modeling)**
-        - DAX: Scrittura formule DAX per creazione di misure e KPI per analisi avanzata
-        - Visualizzazione: Creazione di Grafici Pivot e Dashboard di analisi dati.
-        - Power Query (ETL): Padronanza nell'importazione e trasformazione (Normalizzazione, Merge) dei dati da varie fonti (Web, CSV, PDF).
-        **Modulo 3: Power BI (Visualizzazione e Reporting)**
-        - Power Query: Utilizzo di power qury direttamente su Power BI
-        - Dashboard e Report: Applicazione delle best practices per la progettazione e la creazione di dashboard e report interattivi
-        - DAX e M: Infarinatura linguaggi DAX e M
+        Formazione avanzata su analisi dati, automazione, dashboard interattive e modellazione con DAX e Power Query.
       </descrizione>
     </corso-studio>
     <!-- <corso-studio>
@@ -229,12 +168,7 @@
       <titolo>Machine learning e data science in python: il corso completo</titolo>
       <ente>Udemy</ente>
       <descrizione>
-        Formazione avanzata in [Machine Learning](https://github.com/davidMarabottini/studio_data_science/tree/main), incentrata sull'implementazione di modelli e sulla gestione di sfide analitiche complesse (e.g., dataset sbilanciati).
-        Forti competenze nello sviluppo di pipeline di modellazione robuste e nell'ottimizzazione automatica degli algoritmi.
-        - Algoritmi e Fondamenti: Padroneggiamento di tecniche di Apprendimento Supervisionato e Non Supervisionato, implementazione di Regolarizzazioni e strategie di Riduzione di Dimensionalità.
-        - Architettura e Sviluppo: Esperienza diretta nella creazione di Pipeline (scikit-learn/imblearn) per organizzare il flusso di lavoro di ML e nell'uso di Metamodelli.
-        - Performance e Tuning: Ottimizzazione degli iperparametri tramite Grid Search, Random Search e librerie di tuning automatizzato (cutting-edge) come Optuna.
-        - Modellazione Avanzata: Implementazione di algoritmi performanti (es. XGBoost), metamodelli (stacking-classifier, voting-classifier) e tecniche per la gestione efficace dei dataset sbilanciati.
+        Formazione avanzata su modelli predittivi, pipeline ML e ottimizzazione automatica degli algoritmi.
       </descrizione>
       <anno>06/2025 - 08/2025</anno>
     </corso-studio> 
@@ -243,7 +177,7 @@
       <ente>Preply</ente>
       <anno>02/2025 - In corso</anno>
       <descrizione>
-        Sessioni di talking in Inglese
+         Conversazione in lingua inglese per miglioramento fluency e comunicazione professionale.
       </descrizione>
     </corso-studio>
     <corso-studio>
@@ -251,14 +185,7 @@
       <ente>Università degli Studi di Siena</ente>
       <anno>2010 - 2013</anno>
       <descrizione>
-        Formazione universitaria incentrata sull'ingegneria dei sistemi e sul ciclo di vita dello sviluppo software.
-        
-        **Competenze Core e Progetti Sviluppati**:
-        
-        - Progettazione e Programmazione Software: Apprendimento e applicazione dei principi della Programmazione Orientata agli Oggetti (OOP) e dei principali Design Patterns.
-        - Sviluppo di Progetti: Esperienza pratica nello sviluppo di applicazioni utilizzando linguaggi di programmazione backend come C++ e PHP.
-        - Architettura e Reti: Comprensione approfondita delle Reti di Calcolatori, dei fondamenti di Basi di Dati (Database) e della progettazione di sistemi.
-        - Strumenti Analitici: Acquisizione di solide basi in discipline fondamentali (Analisi Matematica I e II, Algebra Lineare, Sistemi Dinamici), essenziali per la risoluzione di problemi complessi e l'analisi algoritmica.
+        Studi in ingegneria dei sistemi con focus su programmazione, architetture software, reti e basi matematiche.
       </descrizione>
     </corso-studio>
     <corso-studio>
@@ -266,13 +193,7 @@
       <ente>ITCG CA Dalla Chiesa</ente>
       <anno>2009</anno>
       <descrizione>
-        Formazione tecnica focalizzata sull'intersezione tra le competenze economico-aziendali e lo sviluppo informatico. Questo percorso ha fornito le prime basi strutturali necessarie per la successiva specializzazione universitaria e professionale.
-        
-        **Competenze Acquisite:**
-        
-        - Fondamenti di Programmazione: Prime nozioni e basi della logica algoritmica e SQL.
-        - Contabilità e Ragioneria: Basi di ragioneria, contabilità e principi amministrativi.
-        - Matematica Applicata: Solida preparazione analitica e matematica propedeutica agli studi universitari di Ingegneria.
+        Formazione tecnica in programmazione, SQL, matematica applicata e discipline economico-aziendali.
       </descrizione>
     </corso-studio>
   </formazione>
@@ -280,7 +201,34 @@
        <label>APPROFONDISCI</label>
        <url>https://github.com/davidMarabottini/CV_Insights/blob/main/it/education.md</url>
        </approfondimento-formazione> -->
-  
+  <progetti-concettuali>
+    <progetto-personale>
+      <titolo>Modular CV Rendering Engine &amp; CI/CD Pipeline</titolo>
+      <periodo>09/2025 - in corso</periodo>
+      <descrizione>
+        Engine modulare XSLT/XSL-FO per CV PDF automatizzati con supporto multi-language e CI/CD.
+        [Repository GitHub](https://github.com/davidMarabottini/curriculum)
+      </descrizione>
+    </progetto-personale>
+    <progetto-personale>
+      <titolo>Teorema relazione triangolari tra medie varie</titolo>
+      <periodo>09/2025</periodo>
+      <descrizione>
+        Dimostrazione di una relazione matematica tra media aritmetica, deviazione standard e media geometrica.
+        **Librerie usate**: sympy di python.
+        [Notebook dimostrazione](https://github.com/davidMarabottini/relazione_media_deviazione_standard/blob/main/ipotesi-triangolo-prodotto-media-deviazione-standard.ipynb).
+      </descrizione>
+    </progetto-personale>
+    <progetto-personale>
+      <titolo>Congettura personale sulla Torre di Hanoi a p Pioli</titolo>
+      <periodo>06/2025</periodo>
+      <descrizione>
+        Sviluppo di una congettura matematica per la generalizzazione della Torre di Hanoi con più pioli.
+        **Competenze e tecnologie usate**: Analisi combinatoria, Ricerca di Pattern, Algoritmi, Wolfram Alpha, JavaScript, Analisi di serie numeriche.
+        [Repository Zenodo](https://zenodo.org/records/15802510).
+      </descrizione>
+    </progetto-personale>
+  </progetti-concettuali>
   <link-esterni>
     <!-- <link>
          <tipo>Teorema relazione triangolari tra medie varie (python sympy)</tipo>

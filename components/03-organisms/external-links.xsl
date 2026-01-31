@@ -16,18 +16,15 @@
 
     <fo:block margin-top="{$spaziatura-base}">
       <xsl:for-each select="$links/link">
-        <fo:inline font-size="{$font-size-base}" color="{$colore-secondario}">
-          <xsl:call-template name="link">
-            <xsl:with-param name="url" select="url"/>
-            <xsl:with-param name="tipo" select="tipo"/>
-          </xsl:call-template>
-
-          <xsl:if test="position() != last()">
-            <fo:inline padding-start="5pt" padding-end="5pt" font-size="{$font-size-base}" color="{$colore-secondario}">
-              •
-            </fo:inline>
-          </xsl:if>
-        </fo:inline>
+        <fo:block font-size="{$font-size-base}" color="{$colore-secondario}">
+          <fo:inline font-size="{$font-size-small}" margin-top="{$spaziatura-dettaglio}" margin-bottom="{$spaziatura-dettaglio}" color="{$colore-secondario}">
+            <fo:inline font-family="FontAwesome" padding-right="1mm">&#xf02e;</fo:inline>
+            <xsl:call-template name="link">
+              <xsl:with-param name="url" select="url"/>
+              <xsl:with-param name="tipo" select="tipo"/>
+            </xsl:call-template>
+          </fo:inline>
+        </fo:block>
       </xsl:for-each>
     </fo:block>
   </xsl:template>
