@@ -5,19 +5,20 @@
 
   <xsl:import href="../../constants/index.xsl"/>
   <xsl:import href="../01-atoms/titolo-sezione.xsl"/>
+  <xsl:import href="../01-atoms/sottotitolo.xsl"/>
+  <xsl:import href="../utils/md-parser/md-parser.xsl"/>
 
-  <xsl:template name="template-formazione">
+  <xsl:template name="paragraph">
     <xsl:param name="label" />
-    <xsl:param name="formazione" />
-    <xsl:param name="approfondimento-formazione" />
+    <xsl:param name="data" />
+    <xsl:param name="company-icon" />
 
     <fo:block>
     <xsl:call-template name="titolo-sezione">
       <xsl:with-param name="testo" select="$label" />
-      <xsl:with-param name="link" select="$approfondimento-formazione" />
     </xsl:call-template>
 
-    <xsl:for-each select="$formazione/corso-studio">
+    <xsl:for-each select="$data/item">
       <fo:block space-after="{$spaziatura-base}" space-before="{$spaziatura-base}">
       <xsl:if test="position() != last()">
             <xsl:attribute name="border-bottom">1px dotted #888888</xsl:attribute>
@@ -27,19 +28,22 @@
         </xsl:call-template>
 
         <fo:block font-size="{$font-size-small}" color="{$colore-secondario}">
-          <fo:inline font-family="FontAwesome" padding-right="1mm" font-weight="bold">&#xf02d;</fo:inline>
-          <xsl:value-of select="ente"/>
-          <fo:inline font-family="FontAwesome" padding-left="3mm" padding-right="1mm">&#xf133;</fo:inline>
-          <xsl:value-of select="anno"/>
+          <fo:inline font-family="FontAwesome" padding-right="1mm" font-weight="bold">
+            <xsl:value-of select="$company-icon" />    
+          </fo:inline>
+          <fo:inline padding-right="3mm">
+            <xsl:value-of select="azienda" />
+          </fo:inline>
+          <fo:inline font-family="FontAwesome" padding-right="1mm">&#xf133;</fo:inline>
+          <xsl:value-of select="periodo"/>
         </fo:block>
         <fo:block font-size="{$font-size-small}" color="{$colore-secondario}" margin-top="1mm">
-          <!-- <xsl:value-of select="descrizione"/> -->
           <xsl:call-template name="render-markdown-poc">
-              <xsl:with-param name="text" select="descrizione"/>
-              <xsl:with-param name="font-size" select="$font-size-small"/>
-              <xsl:with-param name="color" select="$colore-principale"/>
-              <xsl:with-param name="margin-top" select="'1mm'"/>
-            </xsl:call-template>
+            <xsl:with-param name="text" select="descrizione"/>
+            <xsl:with-param name="font-size" select="$font-size-small"/>
+            <xsl:with-param name="color" select="$colore-principale"/>
+            <xsl:with-param name="margin-top" select="'1mm'"/>
+          </xsl:call-template>
         </fo:block>
       </fo:block>
     </xsl:for-each>

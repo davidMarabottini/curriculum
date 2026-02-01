@@ -11,7 +11,7 @@
     Certificato PSM I e PSM II, con solida competenza SQL.
   </descrizione>
   <progetti-personali>
-    <progetto-personale>
+    <item>
       <titolo>Piattaforma web per segnalazione e riconoscimento truffe</titolo>
       <periodo>12/2025 - in corso</periodo>
       <descrizione>
@@ -19,16 +19,16 @@
         **Tecnologie**: React, TypeScript, Tanstack Query, SASS, Axios, Auth0, vitest, Python, Flask, scikit-learn, pandas, joblib.
         [Repository frontend](https://github.com/davidMarabottini/fe-spam-detector) - [Repository backend](https://github.com/davidMarabottini/bayes_spam_detector)
       </descrizione>
-    </progetto-personale>
-    <progetto-personale>
+    </item>
+    <item>
       <titolo>Hypercube Building Framework</titolo>
       <periodo>11/2025</periodo>
       <descrizione>
         Framework concettuale per visualizzazione e analisi degli equilibri di team.
         [Repository GitHub](https://github.com/davidMarabottini/Hypercube_building_framework).
       </descrizione>
-    </progetto-personale>
-    <progetto-personale>
+    </item>
+    <item>
       <titolo>Studio Machine Learning</titolo>
       <periodo>06/2025 - 08/2025</periodo>
       <descrizione>
@@ -36,181 +36,139 @@
         **Librerie usate**: scikit-learn, imbalanced-learn, pandas, matplotlib, optuna.
         [repository GitHub](https://github.com/davidMarabottini/studio_data_science).
       </descrizione>
-    </progetto-personale>
+    </item>
   </progetti-personali>
   <esperienze>
-    <esperienza>
+    <item>
       <titolo>Assistente amministrativo</titolo>
       <azienda>MPL</azienda>
       <periodo>05/2025 - in corso</periodo>
-      <attivita>
-        <attivita-item>
-          Supporto tecnico, logistico e ricerca di clienti per azienda familiare
-        </attivita-item>
-      </attivita>
-    </esperienza>
-    <esperienza>
+      <descrizione>
+        Supporto tecnico, logistico e ricerca di clienti per azienda familiare
+      </descrizione>
+    </item>
+    <item>
       <titolo>Front-end developer</titolo>
       <azienda>Key2Business</azienda>
       <periodo>06/2019-05/2025</periodo>
-      <attivita>
-        <attivita-item>
-          Sviluppo front-end su portali web enterprise in ambito bancario, media e retail.
-          Focus su performance, SEO e architetture React/Next.js in team Agile.
-          
-          **Tecnologie**: Reactjs, Nextjs, Redux/saga/selectors, jest, storybook, AMP, SCSS, Typescript, Material UI, styled components, Recoil.
-          **Metodologie**: Scrum, Kamban, Waterfall
-          **IDE/Strumenti**: Visual Studio Code, Git, Jira, Jenkins.
-        </attivita-item>
-      </attivita>
-    </esperienza>
-    <esperienza>
+      <descrizione>
+        Sviluppo front-end su portali web enterprise in ambito bancario, media e retail.
+        Focus su performance, SEO e architetture React/Next.js in team Agile.
+        
+        **Tecnologie**: Reactjs, Nextjs, Redux/saga/selectors, jest, storybook, AMP, SCSS, Typescript, Material UI, styled components, Recoil.
+        **Metodologie**: Scrum, Kamban, Waterfall
+        **IDE/Strumenti**: Visual Studio Code, Git, Jira, Jenkins.
+      </descrizione>
+    </item>
+    <item>
       <titolo>Front-end developer</titolo>
       <azienda>Blazar</azienda>
       <periodo>02/2018-05/2019</periodo>
-      <attivita>
-        <attivita-item>
-          Attività di sviluppo front-end su vari applicativi gestionali in contesti bancario ed energetico in ambienti dinamici e spesso agili
-          **Tecnologie**: React.js, SCSS, JavaScript,
-          **Metodologie**: Scrum
-          **IDE/Strumenti**: Jira, Trello, Git, Gitlab, Visual Studio Code
-        </attivita-item>
-      </attivita>
-    </esperienza>
-    <esperienza>
+      <descrizione>
+        Attività di sviluppo front-end su vari applicativi gestionali in contesti bancario ed energetico in ambienti dinamici e spesso agili
+        **Tecnologie**: React.js, SCSS, JavaScript,
+        **Metodologie**: Scrum
+        **IDE/Strumenti**: Jira, Trello, Git, Gitlab, Visual Studio Code
+      </descrizione>
+    </item>
+    <item>
       <titolo>PHP developer</titolo>
       <azienda>JigGiga</azienda>
       <periodo>04/2017 - 12/2017</periodo>
-      <attivita>
-        <attivita-item>
-          Sviluppo di un portale in PHP5, mysql, JQuery, Bootstrap per la gestione di scatole nere per flotte di auto
-          **Tecnologie**: PHP5, mysql, jquery, bootstrap
-        </attivita-item>
-      </attivita>
-    </esperienza>
-    <esperienza>
+      <descrizione>
+        Sviluppo di un portale in PHP5, mysql, JQuery, Bootstrap per la gestione di scatole nere per flotte di auto
+        **Tecnologie**: PHP5, mysql, jquery, bootstrap
+      </descrizione>
+    </item>
+    <item>
       <titolo>Fullstack developer</titolo>
       <azienda>Modis/Business changers</azienda>
       <periodo>01/2016 - 04/2017</periodo>
-      <attivita>
-        <attivita-item>
-          Sviluppo Frontend, procedure e algoritmi per le form dei bandi della regione lombardia
-          **Tecnologie**: JavaScript, Oracle V9, Apache FOP
-        </attivita-item>
-      </attivita>
-    </esperienza>
-    <esperienza>
+      <descrizione>
+        Sviluppo Frontend, procedure e algoritmi per le form dei bandi della regione lombardia
+        **Tecnologie**: JavaScript, Oracle V9, Apache FOP
+      </descrizione>
+    </item>
+    <item>
       <titolo>SQL expert e addetto report</titolo>
       <azienda>Runtime Solutions</azienda>
       <periodo>01/2015 - 10/2015</periodo>
-      <attivita>
-        <attivita-item>
-          Creazione query, report e layout in Crystal Report basati su piattaforma SAP di documenti per vari clienti
-          **Tecnologie**: Crystal Report, SQL server, SAP
-        </attivita-item>
-      </attivita>
-    </esperienza>
-    <esperienza>
+      <descrizione>
+        Creazione query, report e layout in Crystal Report basati su piattaforma SAP di documenti per vari clienti
+        **Tecnologie**: Crystal Report, SQL server, SAP
+      </descrizione>
+    </item>
+    <item>
       <titolo>.NET Developer</titolo>
       <azienda>Crenway Srl</azienda>
       <periodo>07/2014 - 11/2014</periodo>
-      <attivita>
-        <attivita-item>
-          Attività di sviluppo e monitoraggio  del portale punti petalo per startup.
-          
-          **Tecnologie**: Framework ASP.NET, C#, Javascript, SQL (MS SQL SERVER), Linq, Web services, Visual Studio, team foundation, Team explorer, Google analytics, Windows azure
-        </attivita-item>
-      </attivita>
-    </esperienza>
+      <descrizione>
+        Attività di sviluppo e monitoraggio  del portale punti petalo per startup.
+        
+        **Tecnologie**: Framework ASP.NET, C#, Javascript, SQL (MS SQL SERVER), Linq, Web services, Visual Studio, team foundation, Team explorer, Google analytics, Windows azure
+      </descrizione>
+    </item>
   </esperienze>
-  <!-- <approfondimento-esperienze>
-       <label>APPROFONDISCI</label>
-       <url>https://github.com/davidMarabottini/CV_Insights/blob/main/it/work_experiences.md</url>
-       </approfondimento-esperienze> -->
   <formazione>
-    <corso-studio>
+    <item>
       <titolo>Cybersecurity</titolo>
-      <ente>AKG</ente>
-      <anno>21/10/2025 - 31/10/2025</anno>
+      <azienda>AKG</azienda>
+      <periodo>21/10/2025 - 31/10/2025</periodo>
       <descrizione>
         Corso intensivo sui principi di sicurezza informatica, protezione dei dati e difesa da minacce digitali.
       </descrizione>
-    </corso-studio>
-    <corso-studio>
+    </item>
+    <item>
       <titolo>Excel avanzato e power bi</titolo>
-      <ente>AKG</ente>
-      <anno>01/10/2025 - 20/10/2025</anno>
+      <azienda>AKG</azienda>
+      <periodo>01/10/2025 - 20/10/2025</periodo>
       <descrizione>
         Formazione avanzata su analisi dati, automazione, dashboard interattive e modellazione con DAX e Power Query.
       </descrizione>
-    </corso-studio>
-    <!-- <corso-studio>
-         <titolo>Analisi dei dati</titolo>
-         <ente>UNIMI</ente>
-         <anno>26/09/2025 - In corso</anno>
-         <descrizione>
-         Corso di [analisi dei dati 2](https://www.unimi.it/it/corsi/insegnamenti-dei-corsi-di-laurea/2026/analisi-dei-dati-2) e software R.
-         - Statistica Descrittiva: Consolidamento dei concetti base (varianza, covarianza, correlazione, ecc.).
-         - Statistica Inferenziale: Padroneggiamento della Stima Puntuale, degli Intervalli di Confidenza e delle metodologie di Verifica d'Ipotesi.
-         - Analisi Bivariata e Modellazione: Applicazione del Test del Chi-Quadrato per l'indipendenza statistica e implementazione della Regressione Lineare Semplice e Multipla.
-         - Tool di Analisi: Uso pratico del software statistico R per lo svolgimento autonomo di analisi complesse.
-         </descrizione>
-         </corso-studio>
-         <corso-studio>
-         <titolo>A deep understanding of deep learning</titolo>
-         <ente>Udemy</ente>
-         <anno>08/2025 - In corso</anno>
-         <descrizione>
-         Matematica e programmazione dietro al deep learning, ripasso python e concetti di ML legati alle reti neurali e apprendimento pytorch
-         </descrizione>
-         </corso-studio>-->
-    <corso-studio>
+    </item>
+    <item>
       <titolo>Machine learning e data science in python: il corso completo</titolo>
-      <ente>Udemy</ente>
+      <azienda>Udemy</azienda>
       <descrizione>
         Formazione avanzata su modelli predittivi, pipeline ML e ottimizzazione automatica degli algoritmi.
       </descrizione>
-      <anno>06/2025 - 08/2025</anno>
-    </corso-studio> 
-    <corso-studio>
+      <periodo>06/2025 - 08/2025</periodo>
+    </item> 
+    <item>
       <titolo>Lezioni di inglese</titolo>
-      <ente>Preply</ente>
-      <anno>02/2025 - In corso</anno>
+      <azienda>Preply</azienda>
+      <periodo>02/2025 - In corso</periodo>
       <descrizione>
          Conversazione in lingua inglese per miglioramento fluency e comunicazione professionale.
       </descrizione>
-    </corso-studio>
-    <corso-studio>
+    </item>
+    <item>
       <titolo>Ingegneria informatica e dell'informazione (non terminata)</titolo>
-      <ente>Università degli Studi di Siena</ente>
-      <anno>2010 - 2013</anno>
+      <azienda>Università degli Studi di Siena</azienda>
+      <periodo>2010 - 2013</periodo>
       <descrizione>
         Studi in ingegneria dei sistemi con focus su programmazione, architetture software, reti e basi matematiche.
       </descrizione>
-    </corso-studio>
-    <corso-studio>
+    </item>
+    <item>
       <titolo>Diploma da ragioniere programmatore</titolo>
-      <ente>ITCG CA Dalla Chiesa</ente>
-      <anno>2009</anno>
+      <azienda>ITCG CA Dalla Chiesa</azienda>
+      <periodo>2009</periodo>
       <descrizione>
         Formazione tecnica in programmazione, SQL, matematica applicata e discipline economico-aziendali.
       </descrizione>
-    </corso-studio>
+    </item>
   </formazione>
-  <!-- <approfondimento-formazione>
-       <label>APPROFONDISCI</label>
-       <url>https://github.com/davidMarabottini/CV_Insights/blob/main/it/education.md</url>
-       </approfondimento-formazione> -->
   <progetti-concettuali>
-    <progetto-personale>
+    <item>
       <titolo>Modular CV Rendering Engine &amp; CI/CD Pipeline</titolo>
       <periodo>09/2025 - in corso</periodo>
       <descrizione>
-        Engine modulare XSLT/XSL-FO per CV PDF automatizzati con supporto multi-language e CI/CD.
+        Engine modulare XSLT/XSL-FO per CV PDF automatizzati con supporto multi-lingua, multi-profilo e multi-template e CI/CD.
         [Repository GitHub](https://github.com/davidMarabottini/curriculum)
       </descrizione>
-    </progetto-personale>
-    <progetto-personale>
+    </item>
+    <item>
       <titolo>Teorema relazione triangolari tra medie varie</titolo>
       <periodo>09/2025</periodo>
       <descrizione>
@@ -218,8 +176,8 @@
         **Librerie usate**: sympy di python.
         [Notebook dimostrazione](https://github.com/davidMarabottini/relazione_media_deviazione_standard/blob/main/ipotesi-triangolo-prodotto-media-deviazione-standard.ipynb).
       </descrizione>
-    </progetto-personale>
-    <progetto-personale>
+    </item>
+    <item>
       <titolo>Congettura personale sulla Torre di Hanoi a p Pioli</titolo>
       <periodo>06/2025</periodo>
       <descrizione>
@@ -227,17 +185,9 @@
         **Competenze e tecnologie usate**: Analisi combinatoria, Ricerca di Pattern, Algoritmi, Wolfram Alpha, JavaScript, Analisi di serie numeriche.
         [Repository Zenodo](https://zenodo.org/records/15802510).
       </descrizione>
-    </progetto-personale>
+    </item>
   </progetti-concettuali>
   <link-esterni>
-    <!-- <link>
-         <tipo>Teorema relazione triangolari tra medie varie (python sympy)</tipo>
-         <url>https://github.com/davidMarabottini/relazione_media_deviazione_standard</url>
-         </link>
-         <link>
-         <tipo>Ipotesi hanoi 4 + pioli </tipo>
-         <url>https://zenodo.org/records/15713333</url>
-         </link> -->
     <link>
       <tipo>linkedin</tipo>
       <url>https://www.linkedin.com/in/david-m-551aba81/</url>
@@ -246,10 +196,6 @@
       <tipo>Analisi R</tipo>
       <url>https://github.com/davidMarabottini/esercizi_R</url>
     </link>
-    <!-- <link>
-         <tipo>Studio ML</tipo>
-         <url>https://github.com/davidMarabottini/studio_data_science/tree/main/</url>
-         </link> -->
     <link>
       <tipo>Modelli predittivi stroke</tipo>
       <url>https://github.com/davidMarabottini/studio_data_science/tree/main/000-in-evidenza/02-stroke</url>
@@ -275,27 +221,22 @@
         <skills>
           <hardskill>
             <item>Apprendimento supervisionato</item>
-            <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url> -->
             <valore>8</valore>
           </hardskill>
           <hardskill>
             <item>Apprendimento non supervisionato</item>
-            <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url> -->
             <valore>7</valore>
           </hardskill>
           <hardskill>
             <item>Metamodelli</item>
-            <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url> -->
             <valore>6</valore>
           </hardskill>
           <hardskill>
             <item>Gridsearch/randomizedsearch</item>
-            <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url> -->
             <valore>8</valore>
           </hardskill>
           <hardskill>
             <item>Gestione dati sbilanciati</item>
-            <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url> -->
             <valore>7</valore>
           </hardskill>
         </skills>
@@ -306,12 +247,10 @@
         <skills>
           <hardskill>
             <item>Python</item>
-            <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url> -->
             <valore>9</valore>
           </hardskill>
           <hardskill>
             <item>R</item>
-            <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_lista-post-python-cheatsheet-machine-activity-7365319687603216386-Im_f/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFtSY0BCO-TVfgXxYoimGMi2NXV-9lmULc]]></url> -->
             <valore>8</valore>
           </hardskill>
           <hardskill>
@@ -365,12 +304,10 @@
         <skills>
           <hardskill>
             <item>JavaScript</item>
-            <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_javascript-index-consoletime-consoletimeend-activity-7289412701972303872-2ShA/?utm_source=share&utm_medium=member_desktop]]></url> -->
             <valore>9.5</valore>
           </hardskill>
           <hardskill>
             <item>TypeScript</item>
-            <!-- <url><![CDATA[https://www.linkedin.com/posts/david-m-551aba81_typescript-guide-ita-activity-7270215107379347458-yjqR/?utm_source=share&utm_medium=member_desktop]]></url> -->
             <valore>9.5</valore>
           </hardskill>
           <hardskill>

@@ -40,33 +40,27 @@
             </fo:block>
 
             <fo:block>
-              <xsl:if test="string-length($cv_data/progetti-personali) &gt; 0">
-                <xsl:call-template name="personal-projects">
-                  <xsl:with-param name="label" select="$labels/personal-projects"/>
-                  <xsl:with-param name="progetti-personali" select="$cv_data/progetti-personali"/>
-                  <xsl:with-param name="approfondimento-progetti-personali" select="$cv_data/approfondimento-progetti-personali"/>
-                </xsl:call-template>
-              </xsl:if>
-
-              <xsl:call-template name="work-experiences">
-                <xsl:with-param name="label" select="$labels/work-experience"/>
-                <xsl:with-param name="esperienze" select="$cv_data/esperienze"/>
-                <xsl:with-param name="approfondimento-esperienze" select="$cv_data/approfondimento-esperienze"/>
-              </xsl:call-template>
-
-              <xsl:call-template name="template-formazione">
-                <xsl:with-param name="label" select="$labels/education"/>
-                <xsl:with-param name="formazione" select="$cv_data/formazione"/>
-                <xsl:with-param name="approfondimento-formazione" select="$cv_data/approfondimento-formazione"/>
+              <xsl:call-template name="paragraph">
+                <xsl:with-param name="label" select="$labels/personal-projects"/>
+                <xsl:with-param name="data" select="$cv_data/progetti-personali"/>
               </xsl:call-template>
               
-              <xsl:if test="string-length($cv_data/progetti-personali) &gt; 0">
-                <xsl:call-template name="personal-projects">
-                  <xsl:with-param name="label" select="$labels/conceptual-projects"/>
-                  <xsl:with-param name="progetti-personali" select="$cv_data/progetti-concettuali"/>
-                  <xsl:with-param name="approfondimento-progetti-personali" select="$cv_data/approfondimento-progetti-personali"/>
-                </xsl:call-template>
-              </xsl:if>
+              <xsl:call-template name="paragraph">
+                <xsl:with-param name="label" select="$labels/work-experience"/>
+                <xsl:with-param name="data" select="$cv_data/esperienze"/>
+                <xsl:with-param name="company-icon" select="'&#xf2b5;'"/>
+              </xsl:call-template>
+              
+              <xsl:call-template name="paragraph">
+                <xsl:with-param name="label" select="$labels/education"/>
+                <xsl:with-param name="data" select="$cv_data/formazione"/>
+                <xsl:with-param name="company-icon" select="'&#xf02d;'"/>
+              </xsl:call-template>
+              
+              <xsl:call-template name="paragraph">
+                <xsl:with-param name="label" select="$labels/conceptual-projects"/>
+                <xsl:with-param name="data" select="$cv_data/progetti-concettuali"/>
+              </xsl:call-template>
             </fo:block>
           </fo:table-cell>
 
