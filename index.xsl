@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 
-  <xsl:import href="./template/index.xsl" />
+  <xsl:import href="./src/template/index.xsl" />
 
   <xsl:param name="root_folder" select="'david_marabottini'"/>
   <xsl:param name="lang" select="'it'"/>

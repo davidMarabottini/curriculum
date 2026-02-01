@@ -7,51 +7,34 @@ Questo progetto genera PDF a partire da dati XML strutturati, trasformati tramit
 ## Struttura del progetto
 
 ```
-.
-├── index.xsl                 # Entry point XSLT
-├── launch.txt                    # Esempio di comando per generare il PDF
-├── dummy.xml                     # File XML vuoto richiesto da FOP
-├── .gitignore                    # Esclusione file sensibili
-├── constants/                     # Costanti condivise
-│   ├── colors.xsl
-│   ├── fonts.xsl
-│   ├── spacing.xsl
-│   └── index.xsl
-├── components/                    # Componenti modulari
-│   ├── 01-atoms/                  # Elementi base riutilizzabili
-│   │   ├── link.xsl
-│   │   ├── progress-bar.xsl
-│   │   ├── rating.xsl
-│   │   ├── sottotitolo.xsl
-│   │   └── titolo-sezione.xsl
-│   ├── 02-molecules/              # Combinazioni di atoms
-│   │   └── conditional-link.xsl
-│   └── 03-organisms/              # Blocchi complessi (header, paragrafi, skill chart, ecc.)
-│       ├── header.xsl
-│       ├── paragraph.xsl
-│       ├── external-links.xsl
-│       ├── skill-list.xsl
-│       ├── languages.xsl
-│       ├── certification.xsl
-│       ├── radar-chart.xsl
-│       └── radar-chart-ats.xsl
-├── templates/                     # Template PDF
-│   ├── index.xsl
-│   ├── ats-template.xsl
-│   └── human-template.xsl
-└── profiles/                      # Dati personali e multilingua
-    ├── david_marabottini/
-    │   ├── dati_personali.xml     # ⚠️ NON va su git o va vuoto
-    │   ├── skills_chart.ipynb     # Notebook Python per grafico a ragnatela
-    │   ├── skills_chart.svg       # Grafico esportato in SVG
-    │   ├── it/                    # Lingua italiana
-    │   │   ├── labels.xml         # Etichette localizzate
-    │   │   ├── onepagecv.xml      # Dati CV in italiano
-    │   │   └── cv_david_one_page.pdf
-    │   └── en/                    # Lingua inglese
-    │       ├── labels.xml
-    │       ├── onepagecv.xml
-    │       └── cv_david_one_page.pdf
+├── index.xsl
+├── launch.txt
+├── dummy.xml
+├── .gitignore
+
+├── src/
+│   ├── constants/
+│   │   ├── colors.xsl
+│   │   ├── fonts.xsl
+│   │   ├── spacing.xsl
+│   │   └── index.xsl
+│   ├── components/
+│   │   ├── 01-atoms/
+│   │   ├── 02-molecules/
+│   │   └── 03-organisms/
+│   └── templates/
+│       ├── index.xsl
+│       ├── ats-template.xsl
+│       └── human-template.xsl
+
+├── profiles/
+│   └── david_marabottini/
+│       ├── dati_personali.xml
+│       ├── skills_chart.ipynb
+│       ├── skills_chart.svg
+│       ├── it/
+│       └── en/
+
 ```
 
 ---
