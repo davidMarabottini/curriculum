@@ -8,7 +8,7 @@ Questo progetto genera PDF a partire da dati XML strutturati, trasformati tramit
 
 ```
 .
-├── onepagecv.xsl                 # Entry point XSLT
+├── index.xsl                 # Entry point XSLT
 ├── launch.txt                    # Esempio di comando per generare il PDF
 ├── dummy.xml                     # File XML vuoto richiesto da FOP
 ├── .gitignore                    # Esclusione file sensibili
