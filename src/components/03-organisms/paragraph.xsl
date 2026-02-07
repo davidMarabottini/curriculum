@@ -19,9 +19,9 @@
     </xsl:call-template>
 
     <xsl:for-each select="$data/item">
-      <fo:block space-after="{$spaziatura-base}" space-before="{$spaziatura-base}">
-      <xsl:if test="position() != last()">
-            <xsl:attribute name="border-bottom">1px dotted #888888</xsl:attribute>
+      <fo:block  space-after="{$spaziatura-base}" space-before="{$spaziatura-base}">
+        <xsl:if test="position() != last()">
+          <xsl:attribute name="border-bottom">1px dotted #888888</xsl:attribute>
         </xsl:if>
         <xsl:call-template name="sottotitolo">
           <xsl:with-param name="testo" select="titolo"/>
@@ -31,12 +31,15 @@
           <fo:inline font-family="FontAwesome" padding-right="1mm" font-weight="bold">
             <xsl:value-of select="$company-icon" />    
           </fo:inline>
+              
           <fo:inline padding-right="3mm">
             <xsl:value-of select="azienda" />
           </fo:inline>
+              
           <fo:inline font-family="FontAwesome" padding-right="1mm">&#xf133;</fo:inline>
           <xsl:value-of select="periodo"/>
         </fo:block>
+            
         <fo:block font-size="{$font-size-small}" color="{$colore-secondario}" margin-top="1mm">
           <xsl:call-template name="render-markdown-poc">
             <xsl:with-param name="text" select="descrizione"/>
@@ -46,7 +49,7 @@
           </xsl:call-template>
         </fo:block>
       </fo:block>
-    </xsl:for-each>
+      </xsl:for-each>
     </fo:block>
   </xsl:template>
   
