@@ -7,11 +7,19 @@
   <xsl:template name="link">
     <xsl:param name="url"/>
     <xsl:param name="tipo"/>
-    <xsl:param name="icon" select="''"/> <!-- opzionale -->
+    <xsl:param name="icon" select="''"/>
+    <xsl:param name="is-dark" select="false()" />
+    
+        <xsl:variable name="colore-testo">
+      <xsl:choose>
+        <xsl:when test="$is-dark"><xsl:value-of select="$colore-testo-chiaro"/></xsl:when>
+        <xsl:otherwise><xsl:value-of select="$colore-link"/></xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
 
     <fo:basic-link
       external-destination="{$url}"
-      color="{$colore-link}"
+      color="{$colore-testo}"
     >
       <xsl:if test="string-length($icon) &gt; 0">
         <fo:inline font-family="FontAwesome" font-weight="bold" padding-right="3pt">

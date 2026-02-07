@@ -12,9 +12,6 @@
   <xsl:import href="./03-organisms/header.xsl"/>
   <xsl:import href="./03-organisms/paragraph.xsl"/>
   <xsl:import href="./03-organisms/external-links.xsl"/>
-  <xsl:import href="./03-organisms/skill-list.xsl"/>
-  <xsl:import href="./03-organisms/languages.xsl"/>
-  <xsl:import href="./03-organisms/certification.xsl"/>
   <xsl:import href="./03-organisms/radar-chart.xsl"/>
   <xsl:import href="./03-organisms/radar-chart-ats.xsl"/>
 </xsl:stylesheet>

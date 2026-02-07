@@ -3,8 +3,8 @@
      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
      xmlns:fo="http://www.w3.org/1999/XSL/Format"
 >
-     <xsl:import href="../../constants/index.xsl"/>
-     <xsl:import href="../01-atoms/titolo-sezione.xsl"/>
+     <xsl:import href="../../../constants/index.xsl"/>
+     <xsl:import href="../../../components/01-atoms/titolo-sezione.xsl"/>
      
      <xsl:template name="certification">
           <xsl:param name="label" />

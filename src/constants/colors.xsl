@@ -5,5 +5,9 @@
   <xsl:variable name="colore-principale" select="'#222'"/>
   <xsl:variable name="colore-secondario" select="'#555'"/>
   <xsl:variable name="colore-link" select="'#007acc'"/>
-
+  
+  <xsl:variable name="colore-sidebar" select="'#1a1c2c'"/>
+  <xsl:variable name="colore-testo-chiaro" select="'#ffffff'"/>
+  <xsl:variable name="colore-accento" select="'#4eb1cb'"/>
+  <xsl:variable name="colore-sfondo-soft" select="'#f4f7f6'"/>
 </xsl:stylesheet>
