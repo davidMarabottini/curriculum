@@ -93,17 +93,17 @@
                   <xsl:with-param name="chart-description" select="$cv_data/competenze/chart-description"/>
                 </xsl:call-template>
                 
-                <xsl:call-template name="certification">
+                <xsl:call-template name="human__certification">
                   <xsl:with-param name="label" select="$labels/certificates"/>
                   <xsl:with-param name="certificates" select="$cv_data/competenze/certificates/item"/>
                 </xsl:call-template>
                 
-                <xsl:call-template name="skill-list">
+                <xsl:call-template name="human__skill-list">
                   <xsl:with-param name="label" select="$labels/hard-skills"/>
                   <xsl:with-param name="skill-ls" select="$cv_data/competenze/hardskills"/>
                 </xsl:call-template>
                 
-                <xsl:call-template name="skill-list">
+                <xsl:call-template name="human__skill-list">
                   <xsl:with-param name="label" select="$labels/soft-skills"/>
                   <xsl:with-param name="skill-ls" select="$cv_data/competenze/softskills"/>
                 </xsl:call-template>
@@ -113,7 +113,7 @@
                   <xsl:with-param name="links" select="$cv_data/link-esterni" />
                 </xsl:call-template>
                 
-                <xsl:call-template name="languages">
+                <xsl:call-template name="human__languages">
                   <xsl:with-param name="label" select="$labels/languages"/>
                   <xsl:with-param name="langs" select="$cv_data/lingue/lingua"/>
                 </xsl:call-template>

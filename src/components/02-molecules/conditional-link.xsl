@@ -12,10 +12,23 @@
     <xsl:param name="url"/>
     <xsl:param name="is-dark" select="false()"/>
     
+    <xsl:message>
+      is-dark =
+      <xsl:value-of select="$is-dark"/>
+      | boolean =
+      <xsl:value-of select="boolean($is-dark)"/>
+      | string =
+      "<xsl:value-of select="string($is-dark)"/>"
+    </xsl:message>
+    
     <xsl:variable name="colore-testo">
       <xsl:choose>
-        <xsl:when test="$is-dark"><xsl:value-of select="$colore-testo-chiaro"/></xsl:when>
-        <xsl:otherwise><xsl:value-of select="$colore-secondario"/></xsl:otherwise>
+        <xsl:when test="$is-dark">
+          <xsl:value-of select="$colore-testo-chiaro"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="$colore-secondario"/>
+        </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
     

@@ -6,7 +6,7 @@
      <xsl:import href="../../../constants/index.xsl"/>
      <xsl:import href="../../../components/01-atoms/titolo-sezione.xsl"/>
      
-     <xsl:template name="certification">
+     <xsl:template name="human__certification">
           <xsl:param name="label" />
           <xsl:param name="certificates" />
           

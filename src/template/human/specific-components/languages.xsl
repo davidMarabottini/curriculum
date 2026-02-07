@@ -6,9 +6,8 @@
   <xsl:import href="../../../constants/index.xsl"/>
   <xsl:import href="../../../components/01-atoms/titolo-sezione.xsl"/>
   <xsl:import href="../../../components/01-atoms/rating.xsl"/>
-  <xsl:import href="../../../components/02-molecules/conditional-link.xsl"/>
 
-  <xsl:template name="languages">
+  <xsl:template name="human__languages">
     <xsl:param name="label" />
     <xsl:param name="langs" />
 
@@ -18,10 +17,9 @@
     
     <xsl:for-each select="$langs">
       <fo:block font-size="{$font-size-small}" space-after="{$spaziatura-dettaglio}">
-        <xsl:call-template name="conditional-link">
-          <xsl:with-param name="text" select="nome" />
-          <xsl:with-param name="url" select="url" />
-        </xsl:call-template>
+        <fo:block color="{$colore-secondario}">
+          <xsl:value-of select="nome"/>
+        </fo:block>
         <xsl:call-template name="rating">
           <xsl:with-param name="value" select="valore"/>
           <xsl:with-param name="livello" select="livello"/>

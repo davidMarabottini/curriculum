@@ -57,22 +57,22 @@
       </xsl:call-template>
     </fo:block>
     
-    <xsl:call-template name="certification-modern-dark">
+    <xsl:call-template name="modern-dark__certification">
       <xsl:with-param name="label" select="$labels/certificates"/>
       <xsl:with-param name="certificates" select="$cv_data/competenze/certificates/item"/>
     </xsl:call-template>
     
-    <xsl:call-template name="skill-list-dark-modern">
+    <xsl:call-template name="modern-dark__skill-list">
       <xsl:with-param name="label" select="$labels/hard-skills"/>
       <xsl:with-param name="skill-ls" select="$cv_data/competenze/hardskills"/>
     </xsl:call-template>
     
-    <xsl:call-template name="skill-list-dark-modern">
+    <xsl:call-template name="modern-dark__skill-list">
       <xsl:with-param name="label" select="$labels/soft-skills"/>
       <xsl:with-param name="skill-ls" select="$cv_data/competenze/softskills"/>
     </xsl:call-template>
     
-    <xsl:call-template name="languages">
+    <xsl:call-template name="modern-dark__languages">
       <xsl:with-param name="label" select="$labels/languages"/>
       <xsl:with-param name="langs" select="$cv_data/lingue/lingua"/>
     </xsl:call-template>

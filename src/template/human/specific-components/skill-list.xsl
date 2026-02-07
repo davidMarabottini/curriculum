@@ -7,9 +7,8 @@
   <xsl:import href="../../../constants/index.xsl"/>
   <xsl:import href="../../../components/01-atoms/titolo-sezione.xsl"/>
   <xsl:import href="../../../components/01-atoms/progress-bar.xsl"/>
-  <xsl:import href="../../../components/02-molecules/conditional-link.xsl"/>
   
-  <xsl:template name="skill-list">
+  <xsl:template name="human__skill-list">
     <xsl:param name="label" />
     <xsl:param name="skill-ls" />
     
@@ -28,7 +27,7 @@
             </fo:block>
             
             <xsl:for-each select="./skills/hardskill">
-              <xsl:call-template name="atomic-skills">
+              <xsl:call-template name="human__atomic-skills">
                 <xsl:with-param name="skill" select="."/>
               </xsl:call-template>
             </xsl:for-each>
@@ -36,7 +35,7 @@
         </xsl:when>
         <xsl:otherwise>
           <xsl:for-each select="$skill-ls/softskill">
-            <xsl:call-template name="atomic-skills">
+            <xsl:call-template name="human__atomic-skills">
               <xsl:with-param name="skill" select="."/>
             </xsl:call-template> 
           </xsl:for-each>
@@ -45,13 +44,10 @@
     </fo:block>
   </xsl:template>
   
-  <xsl:template name="atomic-skills">
+  <xsl:template name="human__atomic-skills">
     <xsl:param name="skill" />
     <fo:block font-size="{$font-size-small}" color="{$colore-secondario}" space-after="2.1mm" space-before="0" line-height="0.7">
-      <xsl:call-template name="conditional-link">
-        <xsl:with-param name="text" select="$skill/item" />
-        <xsl:with-param name="url" select="$skill/url" />
-      </xsl:call-template>
+      <xsl:value-of select="$skill/item" />
       <xsl:call-template name="progress-bar">
         <xsl:with-param name="valore" select="$skill/valore" />
       </xsl:call-template>
