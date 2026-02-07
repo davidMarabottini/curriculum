@@ -50,7 +50,7 @@ jobs:
             -xsl ${GITHUB_WORKSPACE}/index.xsl \
             -pdf ${GITHUB_WORKSPACE}/profiles/${{ matrix.profile }}/${{ matrix.lang }}/cv-${{ matrix.lang }}-${{ matrix.profile }}.pdf \
             -param lang ${{ matrix.lang }} \
-            -param root_folder ${{ matrix.profile }}
+            -param root_folder ${{ matrix.profile }} \
             -param name_template ${{ matrix.template }}
         shell: bash
         env:
