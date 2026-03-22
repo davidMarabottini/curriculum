@@ -6,9 +6,12 @@
   </dati-personali>
   
   <descrizione>
-    Senior Front-end Developer with a strong background in mathematics, data analysis, and machine learning.
-    Experience in modern React/TypeScript architectures, performance optimization, and data-driven systems.
-    Certified PSM I and PSM II, with solid SQL expertise.
+    Senior Front-end Developer with 10+ years of experience in building scalable and high-performance web applications.
+    Strong expertise in React and TypeScript ecosystems, with a focus on performance optimization, SEO, and modern architectures.
+    
+    Solid background in data analysis and SQL, with recent hands-on experience in machine learning and data-driven systems using Python.
+    
+    Certified Professional Scrum Master (PSM I and II), used to working in Agile environments and cross-functional teams.
   </descrizione>
   
   <progetti-personali>
@@ -22,11 +25,14 @@
       </descrizione>
     </item>
     <item>
-      <titolo>Hypercube Building Framework</titolo>
-      <periodo>11/2025</periodo>
+      <titolo>Modular CV Rendering Engine &amp; CI/CD Pipeline</titolo>
+      <periodo>09/2025 - ongoing</periodo>
       <descrizione>
-        Conceptual framework for team balance visualization and analysis.
-        [GitHub repository](https://github.com/davidMarabottini/Hypercube_building_framework).
+        Modular XSLT/XSL-FO engine for automated CV generation with multi-language and multi-template support.
+        
+        Includes CI/CD pipeline for automated document generation and deployment.
+        
+        [GitHub repository](https://github.com/davidMarabottini/curriculum)
       </descrizione>
     </item>
     <item>
@@ -42,7 +48,19 @@
   
   <esperienze>
     <item>
-      <titolo>Administrative Assistant</titolo>
+      <titolo>Odoo ERP Specialist &amp; Process Automation</titolo>
+      <azienda>Kagi srl</azienda>
+      <periodo>02/2026 - ongoing</periodo>
+      <descrizione>
+        Optimization and customization of the **Odoo ERP** ecosystem to digitize and streamline business workflows.
+        
+        * **Low-Code Automation**: Designed and implemented automated actions based on custom prompts to increase operational efficiency.
+        * **Field Service Optimization**: Tailored the "Field Service" module workflow to meet specific business requirements and improve mobile workforce management.
+        * **Business Intelligence &amp; Reporting**: Developed data-driven dashboards using **Power BI** and customized technical document layouts via the **QWeb** (XML-based) engine.
+      </descrizione>
+    </item>
+    <item>
+      <titolo>Business and Technical Support</titolo>
       <azienda>MPL</azienda>
       <periodo>05/2025 - ongoing</periodo>
       <descrizione>
@@ -165,29 +183,21 @@
   
   <progetti-concettuali>
     <item>
-      <titolo>Modular CV Rendering Engine &amp; CI/CD Pipeline</titolo>
-      <periodo>09/2025 - ongoing</periodo>
+      <titolo>Hypercube Building Framework</titolo>
+      <periodo>11/2025</periodo>
       <descrizione>
-        Modular XSLT/XSL-FO engine for automated PDF CV generation with multi-language, multi-profile and multi-template support and CI/CD.
-        [GitHub repository](https://github.com/davidMarabottini/curriculum)
+        Conceptual framework for team balance visualization and analysis.
+        [GitHub repository](https://github.com/davidMarabottini/Hypercube_building_framework).
       </descrizione>
     </item>
+    
     <item>
-      <titolo>Theorem on Triangular Relationship Between Different Means</titolo>
-      <periodo>09/2025</periodo>
+      <titolo>Mathematical and Algorithmic Explorations</titolo>
+      <periodo>2025</periodo>
       <descrizione>
-        Proof of a mathematical relationship between arithmetic mean, standard deviation, and geometric mean.
-        **Libraries used**: Python sympy.
-        [Proof notebook](https://github.com/davidMarabottini/relazione_media_deviazione_standard/blob/main/ipotesi-triangolo-prodotto-media-deviazione-standard.ipynb).
-      </descrizione>
-    </item>
-    <item>
-      <titolo>Personal Conjecture on the Tower of Hanoi with p Pegs</titolo>
-      <periodo>06/2025</periodo>
-      <descrizione>
-        Development of a mathematical conjecture for the generalization of the Tower of Hanoi with multiple pegs.
-        **Skills and technologies used**: Combinatorial analysis, pattern research, algorithms, Wolfram Alpha, JavaScript, numerical series analysis.
-        [Zenodo repository](https://zenodo.org/records/15802510).
+        Independent research on mathematical models, algorithms, and pattern analysis, including combinatorial problems and statistical relationships.
+        
+        Tools used include Python (SymPy), numerical analysis, and algorithm design.
       </descrizione>
     </item>
   </progetti-concettuali>

@@ -7,9 +7,13 @@
   </dati-personali>
   
   <descrizione>
-    Sviluppatore Front-end Senior con forte background in matematica, data analysis e machine learning.
-    Esperienza in architetture moderne React/TypeScript, ottimizzazione performance e sistemi data-driven.
-    Certificato PSM I e PSM II, con solida competenza SQL.
+    Sviluppatore Front-end Senior con oltre 10 anni di esperienza nella creazione di applicazioni web scalabili e ad alte prestazioni.
+    
+    Solida competenza negli ecosistemi React e TypeScript, con particolare attenzione all'ottimizzazione delle prestazioni, alla SEO e alle architetture moderne.
+    
+    Solida preparazione nell'analisi dei dati e in SQL, con recente esperienza pratica in machine learning e sistemi data-driven utilizzando Python.
+
+    Certificato Professional Scrum Master (PSM I e II), abituato a lavorare in ambienti Agile e team interfunzionali.
   </descrizione>
   <progetti-personali>
     <item>
@@ -22,11 +26,14 @@
       </descrizione>
     </item>
     <item>
-      <titolo>Hypercube Building Framework</titolo>
-      <periodo>11/2025</periodo>
+      <titolo>Motore di Rendering per CV &amp; Pipeline CI/CD</titolo>
+      <periodo>09/2025 - in corso</periodo>
       <descrizione>
-        Framework concettuale per visualizzazione e analisi degli equilibri di team.
-        [Repository GitHub](https://github.com/davidMarabottini/Hypercube_building_framework).
+        Sviluppo di un sistema modulare basato su **XSLT/XSL-FO** ottimizzato per la generazione automatizzata di CV con supporto multi-lingua e multi-template.
+        
+        Include una pipeline **CI/CD** per il build deterministico e il deployment automatico dei documenti.
+        
+        [Repository GitHub](https://github.com/davidMarabottini/curriculum)
       </descrizione>
     </item>
     <item>
@@ -41,7 +48,19 @@
   </progetti-personali>
   <esperienze>
     <item>
-      <titolo>Assistente amministrativo</titolo>
+      <titolo>Specialista ERP Odoo &amp; Automazione Processi</titolo>
+      <azienda>Kagi srl</azienda>
+      <periodo>02/2026 - in corso</periodo>
+      <descrizione>
+        Ottimizzazione e personalizzazione dell'ecosistema **Odoo** per la digitalizzazione dei flussi aziendali.
+        
+        * **Automazione Low-Code**: Progettazione e implementazione di azioni automatiche basate su prompt per l'efficientamento operativo.
+        * **Field Service Optimization**: Personalizzazione del workflow del modulo "Assistenza sul campo" per adattarlo alle specifiche esigenze di business.
+        * **Reporting &amp; Layout**: Sviluppo di dashboard in **Power BI** e personalizzazione tecnica dei documenti tramite engine **QWeb** (XML).
+      </descrizione>
+    </item>
+    <item>
+      <titolo>Supporto tecnico e business</titolo>
       <azienda>MPL</azienda>
       <periodo>05/2025 - in corso</periodo>
       <descrizione>
@@ -162,11 +181,11 @@
   </formazione>
   <progetti-concettuali>
     <item>
-      <titolo>Modular CV Rendering Engine &amp; CI/CD Pipeline</titolo>
-      <periodo>09/2025 - in corso</periodo>
+      <titolo>Hypercube Building Framework</titolo>
+      <periodo>11/2025</periodo>
       <descrizione>
-        Engine modulare XSLT/XSL-FO per CV PDF automatizzati con supporto multi-lingua, multi-profilo e multi-template e CI/CD.
-        [Repository GitHub](https://github.com/davidMarabottini/curriculum)
+        Framework concettuale per visualizzazione e analisi degli equilibri di team.
+        [Repository GitHub](https://github.com/davidMarabottini/Hypercube_building_framework).
       </descrizione>
     </item>
     <item>

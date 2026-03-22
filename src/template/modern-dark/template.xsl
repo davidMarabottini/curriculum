@@ -115,9 +115,9 @@
       <xsl:with-param name="data" select="$cv_data/progetti-concettuali"/>
     </xsl:call-template>
     
-    <fo:block font-size="7pt" color="#aaa" margin-top="10mm" text-align="right">
+    <!--<fo:block font-size="7pt" color="#aaa" margin-top="10mm" text-align="right">
       <xsl:value-of select="$labels/footer"/>
-    </fo:block>
+    </fo:block>-->
     
   </xsl:template>
   
