@@ -8,6 +8,7 @@ on:
 jobs:
   generate_cv:
     strategy:
+      fail-fast: false
       matrix:
         lang: [it, en]
         profile: [david_marabottini]
