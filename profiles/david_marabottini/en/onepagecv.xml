@@ -48,6 +48,19 @@
   
   <esperienze>
     <item>
+      <titolo>PHP jQuery fullstack developer</titolo>
+      <azienda>PHSE</azienda>
+      <periodo>04/2026 - present</periodo>
+      <descrizione>
+        Development and maintenance of the internal transport and warehouse management system for a pharmaceutical transport company.
+        * Maintenance of legacy features, development of new features (e.g. AWB) and optimization of queries and performance.
+        * Integration of tools such as Jira and Confluence into business processes, as well as various Agile practices.
+        * Continuous improvement of code and architecture, with particular attention to scalability and maintainability.
+        * Git process improvement
+        **Technologies**: PHP, MySQL, jQuery, Bootstrap, DevExtreme.
+      </descrizione>
+    </item>
+    <item>
       <titolo>Odoo ERP Specialist &amp; Process Automation</titolo>
       <azienda>Kagi srl</azienda>
       <periodo>02/2026 - ongoing</periodo>

@@ -42,6 +42,14 @@
           </xsl:call-template>
         </xsl:when>
         
+        <xsl:when test="$name_template = 'europass'">
+          <xsl:call-template name="layout-europass">
+            <xsl:with-param name="cv_data" select="$cv_data"/>
+            <xsl:with-param name="labels" select="$labels"/>
+            <xsl:with-param name="dati_personali" select="$dati_personali"/>
+          </xsl:call-template>
+        </xsl:when>
+        
         <xsl:otherwise>
           <xsl:call-template name="layout-human">
             <xsl:with-param name="cv_data" select="$cv_data"/>
