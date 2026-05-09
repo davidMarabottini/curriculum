@@ -48,15 +48,35 @@
   </progetti-personali>
   <esperienze>
     <item>
-      <titolo>Specialista ERP Odoo &amp; Automazione Processi</titolo>
+      <titolo>PHP jquery fullstack developer</titolo>
+      <azienda>PHSE</azienda>
+      <periodo>04/2026 - in corso</periodo>
+      <descrizione>
+        Sviluppo e manutenzione del gestionale interno di trasporto e magazzino per un'azienda di trasporto farmaci.
+        * Mantenimento vecchie funzionalità, sviluppo nuove feature (es. awb) e ottimizzazione query e performance.
+        * Integrazione nel processo aziendale di strumenti come jira e confluence nonchè di varie pratiche agile
+        * Miglioramento continuo del codice e dell'architettura, con particolare attenzione alla scalabilità e alla manutenibilità.
+        * Miglioramento processo git
+        **Tecnologie**: PHP, MySQL, jQuery, Bootstrap, devextreme.
+      </descrizione>
+    </item>
+    <item>
+      <titolo>Sviluppatore fullstack e odoo specialist</titolo>
       <azienda>Kagi srl</azienda>
       <periodo>02/2026 - in corso</periodo>
       <descrizione>
-        Ottimizzazione e personalizzazione dell'ecosistema **Odoo** per la digitalizzazione dei flussi aziendali.
+        Sviluppo di **Lucy**, software gestionale desktop proprietario, progettato e realizzato end-to-end:
         
-        * **Automazione Low-Code**: Progettazione e implementazione di azioni automatiche basate su prompt per l'efficientamento operativo.
-        * **Field Service Optimization**: Personalizzazione del workflow del modulo "Assistenza sul campo" per adattarlo alle specifiche esigenze di business.
-        * **Reporting &amp; Layout**: Sviluppo di dashboard in **Power BI** e personalizzazione tecnica dei documenti tramite engine **QWeb** (XML).
+        * Architettura full-stack con backend in **Python** e database **SQLite**  
+        * Interfaccia utente sviluppata in **React/TypeScript**  
+        * Modulo manageriale desktop realizzato in **Tkinter**  
+        * Progettazione autonoma di architettura, funzionalità e integrazioni  
+
+        Ottimizzazione e personalizzazione dell'ecosistema **Odoo** per la digitalizzazione e l'efficientamento dei processi aziendali.
+        
+        * **Automazione Low-Code**: progettazione e implementazione di azioni automatiche per l'ottimizzazione dei flussi operativi  
+        * **Field Service Optimization**: personalizzazione del modulo Field Service in base alle esigenze specifiche di business  
+        * **Reporting and Layout**: sviluppo di dashboard in **Excel** e personalizzazione documentale tramite **QWeb (XML)**  
       </descrizione>
     </item>
     <item>
