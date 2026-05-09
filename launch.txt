@@ -1,1 +1,6 @@
-..\..\fop-2.7\fop\fop -c fop.xconf -xml dummy.xml -xsl onepagecv.xsl -param root_folder "david_marabottini" -param lang "it" -pdf ./david_marabottini/it/cv_david_one_page.pdf
+..\..\fop-2.7\fop\fop -c fop.xconf -xml dummy.xml -xsl index.xsl -param root_folder "david_marabottini" -param lang "en" -param name_template "modern-dark" -pdf ./profiles/david_marabottini/en/generated/david_marabottini_cv_modern_dark_en.pdf
+
+params:
+  root_folder -> david_marabottini
+  lang -> it | en
+  name_template -> modern-dark | human | europass

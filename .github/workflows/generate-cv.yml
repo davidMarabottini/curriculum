@@ -12,7 +12,7 @@ jobs:
       matrix:
         lang: [it, en]
         profile: [david_marabottini]
-        template: ['modern-dark']
+        template: ['modern-dark', 'human', 'europass']
 
     runs-on: ubuntu-latest
     
